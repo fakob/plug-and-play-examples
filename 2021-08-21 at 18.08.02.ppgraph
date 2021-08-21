@@ -1,0 +1,251 @@
+{
+  "customNodeTypes": {},
+  "nodes": [
+    {
+      "id": "shy-kangaroo-37",
+      "name": "Mouse",
+      "type": "Mouse",
+      "x": 11.2578125,
+      "y": 205.640625,
+      "updateBehaviour": {
+        "update": true,
+        "interval": true,
+        "intervalFrequency": 10
+      },
+      "inputSocketArray": [],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "screen-x",
+          "dataType": "number",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "screen-y",
+          "dataType": "number",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "world-x",
+          "dataType": "number",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "world-y",
+          "dataType": "number",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "scale",
+          "dataType": "number",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "buttons",
+          "dataType": "number",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "little-dragonfly-66",
+      "name": "Note",
+      "type": "Note",
+      "x": 100.453125,
+      "y": 435.14453125,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "data",
+          "dataType": "string",
+          "data": "This is a test",
+          "defaultData": "This is a test",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "data",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "fluffy-goat-39",
+      "name": "Label",
+      "type": "Label",
+      "x": 252.8984375,
+      "y": 175.76953125,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "string",
+          "defaultData": "",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "number",
+          "data": 32,
+          "defaultData": 32,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 100,
+            "round": true
+          }
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "color",
+          "data": {
+            "r": 126,
+            "g": 211,
+            "b": 33,
+            "a": 1
+          },
+          "defaultData": {
+            "r": 126,
+            "g": 211,
+            "b": 33,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "number",
+          "data": 128,
+          "defaultData": 128,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 128,
+            "round": true
+          }
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "chilly-yak-15",
+      "name": "Label",
+      "type": "Label",
+      "x": 258.04296875,
+      "y": 301.79296875,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "string",
+          "defaultData": "",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "number",
+          "data": 32,
+          "defaultData": 32,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 100,
+            "round": true
+          }
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "color",
+          "data": {
+            "r": 208,
+            "g": 2,
+            "b": 27,
+            "a": 1
+          },
+          "defaultData": {
+            "r": 208,
+            "g": 2,
+            "b": 27,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "number",
+          "data": 128,
+          "defaultData": 128,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 128,
+            "round": true
+          }
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "type": "string",
+      "sourceNodeId": "shy-kangaroo-37",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "fluffy-goat-39",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 2,
+      "type": "string",
+      "sourceNodeId": "shy-kangaroo-37",
+      "sourceSocketIndex": 1,
+      "targetNodeId": "chilly-yak-15",
+      "targetSocketIndex": 0
+    }
+  ],
+  "version": 0.1
+}
