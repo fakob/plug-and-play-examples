@@ -56,8 +56,8 @@
       "id": "fluffy-wasp-79",
       "name": "Label",
       "type": "Label",
-      "x": 339.765625,
-      "y": 284.21484375,
+      "x": 357.25,
+      "y": 337.19921875,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -75,8 +75,8 @@
           "socketType": "in",
           "name": "fontSize",
           "dataType": "number",
-          "data": 32,
-          "defaultData": 32,
+          "data": 24,
+          "defaultData": 24,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -89,15 +89,15 @@
           "name": "backgroundColor",
           "dataType": "color",
           "data": {
-            "r": 255,
-            "g": 255,
-            "b": 255,
+            "r": 208,
+            "g": 2,
+            "b": 27,
             "a": 1
           },
           "defaultData": {
-            "r": 255,
-            "g": 255,
-            "b": 255,
+            "r": 208,
+            "g": 2,
+            "b": 27,
             "a": 1
           },
           "visible": false
@@ -106,8 +106,8 @@
           "socketType": "in",
           "name": "min-width",
           "dataType": "number",
-          "data": 128,
-          "defaultData": 128,
+          "data": 200,
+          "defaultData": 200,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -129,8 +129,8 @@
       "id": "selfish-robin-56",
       "name": "Label",
       "type": "Label",
-      "x": 367.30078125,
-      "y": 500.01171875,
+      "x": 357.328125,
+      "y": 396.05859375,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -148,8 +148,8 @@
           "socketType": "in",
           "name": "fontSize",
           "dataType": "number",
-          "data": 32,
-          "defaultData": 32,
+          "data": 24,
+          "defaultData": 24,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -162,15 +162,15 @@
           "name": "backgroundColor",
           "dataType": "color",
           "data": {
-            "r": 189,
-            "g": 16,
-            "b": 224,
+            "r": 126,
+            "g": 211,
+            "b": 33,
             "a": 1
           },
           "defaultData": {
-            "r": 189,
-            "g": 16,
-            "b": 224,
+            "r": 126,
+            "g": 211,
+            "b": 33,
             "a": 1
           },
           "visible": false
@@ -179,8 +179,81 @@
           "socketType": "in",
           "name": "min-width",
           "dataType": "number",
-          "data": 128,
-          "defaultData": 128,
+          "data": 200,
+          "defaultData": 200,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 240,
+            "round": true
+          }
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "young-gecko-28",
+      "name": "Label",
+      "type": "Label",
+      "x": 359.44921875,
+      "y": 463.6875,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "string",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "number",
+          "data": 16,
+          "defaultData": 16,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 100,
+            "round": true
+          }
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "color",
+          "data": {
+            "r": 208,
+            "g": 2,
+            "b": 27,
+            "a": 1
+          },
+          "defaultData": {
+            "r": 208,
+            "g": 2,
+            "b": 27,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "number",
+          "data": 180,
+          "defaultData": 180,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -199,104 +272,11 @@
       ]
     },
     {
-      "id": "chatty-rabbit-36",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 281.97265625,
-      "y": 628.5,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "number",
-          "data": 0,
-          "defaultData": 0,
-          "visible": false,
-          "custom": {
-            "minValue": 0,
-            "maxValue": 100,
-            "round": false
-          }
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "number",
-          "data": 0,
-          "defaultData": 0,
-          "visible": false,
-          "custom": {
-            "minValue": 0,
-            "maxValue": 100,
-            "round": false
-          }
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "number",
-          "data": 9,
-          "defaultData": 9,
-          "visible": false,
-          "custom": {
-            "minValue": 0,
-            "maxValue": 100,
-            "round": true
-          }
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "number",
-          "data": 3,
-          "defaultData": 3,
-          "visible": false,
-          "custom": {
-            "minValue": 0,
-            "maxValue": 100,
-            "round": true
-          }
-        },
-        {
-          "socketType": "in",
-          "name": "distance",
-          "dataType": "number",
-          "data": 100,
-          "defaultData": 100,
-          "visible": false,
-          "custom": {
-            "minValue": 0,
-            "maxValue": 100,
-            "round": false
-          }
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "array",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "array",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "young-gecko-28",
+      "id": "good-shrimp-12",
       "name": "Label",
       "type": "Label",
-      "x": 358.8046875,
-      "y": 391.8515625,
+      "x": 360.40625,
+      "y": 503.28125,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -314,8 +294,8 @@
           "socketType": "in",
           "name": "fontSize",
           "dataType": "number",
-          "data": 32,
-          "defaultData": 32,
+          "data": 16,
+          "defaultData": 16,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -328,15 +308,15 @@
           "name": "backgroundColor",
           "dataType": "color",
           "data": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
+            "r": 126,
+            "g": 211,
+            "b": 33,
             "a": 1
           },
           "defaultData": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
+            "r": 126,
+            "g": 211,
+            "b": 33,
             "a": 1
           },
           "visible": false
@@ -345,8 +325,154 @@
           "socketType": "in",
           "name": "min-width",
           "dataType": "number",
-          "data": 128,
-          "defaultData": 128,
+          "data": 180,
+          "defaultData": 180,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 128,
+            "round": true
+          }
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "fuzzy-insect-81",
+      "name": "Label",
+      "type": "Label",
+      "x": 359.4709134929325,
+      "y": 543.3617388528907,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "string",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "number",
+          "data": 16,
+          "defaultData": 16,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 100,
+            "round": true
+          }
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "color",
+          "data": {
+            "r": 74,
+            "g": 144,
+            "b": 226,
+            "a": 1
+          },
+          "defaultData": {
+            "r": 74,
+            "g": 144,
+            "b": 226,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "number",
+          "data": 180,
+          "defaultData": 180,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 128,
+            "round": true
+          }
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "string",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "chilly-husky-79",
+      "name": "Label",
+      "type": "Label",
+      "x": 358.31605112010516,
+      "y": 583.8328546139714,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "string",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "number",
+          "data": 16,
+          "defaultData": 16,
+          "visible": false,
+          "custom": {
+            "minValue": 1,
+            "maxValue": 100,
+            "round": true
+          }
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "color",
+          "data": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "defaultData": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "number",
+          "data": 40,
+          "defaultData": 40,
           "visible": false,
           "custom": {
             "minValue": 1,
@@ -388,6 +514,30 @@
       "sourceNodeId": "mighty-sheep-23",
       "sourceSocketIndex": 2,
       "targetNodeId": "young-gecko-28",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 4,
+      "type": "string",
+      "sourceNodeId": "mighty-sheep-23",
+      "sourceSocketIndex": 3,
+      "targetNodeId": "good-shrimp-12",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 5,
+      "type": "string",
+      "sourceNodeId": "mighty-sheep-23",
+      "sourceSocketIndex": 4,
+      "targetNodeId": "fuzzy-insect-81",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 6,
+      "type": "string",
+      "sourceNodeId": "mighty-sheep-23",
+      "sourceSocketIndex": 5,
+      "targetNodeId": "chilly-husky-79",
       "targetSocketIndex": 0
     }
   ],
