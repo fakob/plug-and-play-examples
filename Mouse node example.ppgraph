@@ -2,11 +2,13 @@
   "customNodeTypes": {},
   "nodes": [
     {
-      "id": "mighty-sheep-23",
+      "id": "fuzzy-fish-64",
       "name": "Mouse",
       "type": "Mouse",
-      "x": 139.43359375,
-      "y": 383.20703125,
+      "x": 119.5522862270058,
+      "y": 241.2938229653107,
+      "width": 160,
+      "minWidth": 160,
       "updateBehaviour": {
         "update": true,
         "interval": true,
@@ -17,47 +19,50 @@
         {
           "socketType": "out",
           "name": "screen-x",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "screen-y",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "world-x",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "world-y",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "scale",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "buttons",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "fluffy-wasp-79",
+      "id": "stale-wombat-55",
       "name": "Label",
       "type": "Label",
-      "x": 357.25,
-      "y": 337.19921875,
+      "x": 411.17896618540135,
+      "y": 122.87920157885205,
+      "width": 229.52604166666666,
+      "height": 69,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -67,34 +72,21 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
-          "data": 24,
-          "defaultData": 24,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 32,
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
-            "a": 1
-          },
-          "defaultData": {
             "r": 208,
             "g": 2,
             "b": 27,
@@ -105,32 +97,29 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 200,
-          "defaultData": 200,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 128,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
     },
     {
-      "id": "selfish-robin-56",
+      "id": "funny-dingo-28",
       "name": "Label",
       "type": "Label",
-      "x": 357.328125,
-      "y": 396.05859375,
+      "x": 410.82467180710324,
+      "y": 201.3543512560431,
+      "width": 229.52604166666666,
+      "height": 69,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -140,37 +129,24 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
-          "data": 24,
-          "defaultData": 24,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 32,
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 126,
-            "g": 211,
-            "b": 33,
-            "a": 1
-          },
-          "defaultData": {
-            "r": 126,
-            "g": 211,
-            "b": 33,
+            "r": 65,
+            "g": 117,
+            "b": 5,
             "a": 1
           },
           "visible": false
@@ -178,32 +154,29 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 200,
-          "defaultData": 200,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 240,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
     },
     {
-      "id": "young-gecko-28",
+      "id": "silent-ape-21",
       "name": "Label",
       "type": "Label",
-      "x": 359.44921875,
-      "y": 463.6875,
+      "x": 412.20703125,
+      "y": 286.77734375,
+      "width": 168.15364583333334,
+      "height": 35,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -213,37 +186,24 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "defaultData": 16,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
-            "a": 1
-          },
-          "defaultData": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
+            "r": 245,
+            "g": 166,
+            "b": 35,
             "a": 1
           },
           "visible": false
@@ -251,32 +211,29 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 180,
-          "defaultData": 180,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 128,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
     },
     {
-      "id": "good-shrimp-12",
+      "id": "dull-grasshopper-9",
       "name": "Label",
       "type": "Label",
-      "x": 360.40625,
-      "y": 503.28125,
+      "x": 412.0375423741929,
+      "y": 333.3341164357972,
+      "width": 168.15364583333334,
+      "height": 35,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -286,34 +243,21 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "defaultData": 16,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 126,
-            "g": 211,
-            "b": 33,
-            "a": 1
-          },
-          "defaultData": {
             "r": 126,
             "g": 211,
             "b": 33,
@@ -324,32 +268,29 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 180,
-          "defaultData": 180,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 128,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
     },
     {
-      "id": "fuzzy-insect-81",
+      "id": "white-yak-100",
       "name": "Label",
       "type": "Label",
-      "x": 359.4709134929325,
-      "y": 543.3617388528907,
+      "x": 411.1981278361855,
+      "y": 378.82270641084733,
+      "width": 177.05208333333334,
+      "height": 35,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -359,34 +300,21 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "defaultData": 16,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 74,
-            "g": 144,
-            "b": 226,
-            "a": 1
-          },
-          "defaultData": {
             "r": 74,
             "g": 144,
             "b": 226,
@@ -397,32 +325,29 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 180,
-          "defaultData": 180,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 128,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
     },
     {
-      "id": "chilly-husky-79",
+      "id": "new-chicken-97",
       "name": "Label",
       "type": "Label",
-      "x": 358.31605112010516,
-      "y": 583.8328546139714,
+      "x": 412.163619752329,
+      "y": 432.17923774191604,
+      "width": 128,
+      "height": 52,
+      "minWidth": 128,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -432,37 +357,24 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "string",
-          "defaultData": "",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "number",
-          "data": 16,
-          "defaultData": 16,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 100,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 24,
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "backgroundColor",
-          "dataType": "color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": {
-            "r": 255,
-            "g": 255,
-            "b": 255,
-            "a": 1
-          },
-          "defaultData": {
-            "r": 255,
-            "g": 255,
-            "b": 255,
+            "r": 0,
+            "g": 0,
+            "b": 0,
             "a": 1
           },
           "visible": false
@@ -470,22 +382,16 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "number",
-          "data": 40,
-          "defaultData": 40,
-          "visible": false,
-          "custom": {
-            "minValue": 1,
-            "maxValue": 128,
-            "round": true
-          }
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "text",
-          "dataType": "string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
       ]
@@ -494,50 +400,44 @@
   "links": [
     {
       "id": 1,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 0,
-      "targetNodeId": "fluffy-wasp-79",
+      "targetNodeId": "stale-wombat-55",
       "targetSocketIndex": 0
     },
     {
       "id": 2,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 1,
-      "targetNodeId": "selfish-robin-56",
+      "targetNodeId": "funny-dingo-28",
       "targetSocketIndex": 0
     },
     {
       "id": 3,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 2,
-      "targetNodeId": "young-gecko-28",
+      "targetNodeId": "silent-ape-21",
       "targetSocketIndex": 0
     },
     {
       "id": 4,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 3,
-      "targetNodeId": "good-shrimp-12",
+      "targetNodeId": "dull-grasshopper-9",
       "targetSocketIndex": 0
     },
     {
       "id": 5,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 4,
-      "targetNodeId": "fuzzy-insect-81",
+      "targetNodeId": "white-yak-100",
       "targetSocketIndex": 0
     },
     {
       "id": 6,
-      "type": "string",
-      "sourceNodeId": "mighty-sheep-23",
+      "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 5,
-      "targetNodeId": "chilly-husky-79",
+      "targetNodeId": "new-chicken-97",
       "targetSocketIndex": 0
     }
   ],
