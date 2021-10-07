@@ -12,44 +12,44 @@
       "updateBehaviour": {
         "update": true,
         "interval": true,
-        "intervalFrequency": 10
+        "intervalFrequency": 1000
       },
       "inputSocketArray": [],
       "outputSocketArray": [
         {
           "socketType": "out",
           "name": "screen-x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "screen-y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "world-x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "world-y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "scale",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "out",
           "name": "buttons",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         }
       ]
@@ -58,9 +58,9 @@
       "id": "stale-wombat-55",
       "name": "Label",
       "type": "Label",
-      "x": 411.17896618540135,
-      "y": 122.87920157885205,
-      "width": 229.52604166666666,
+      "x": 429.41463324074107,
+      "y": 132.35976428800328,
+      "width": 247.32291666666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -78,7 +78,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 32,
           "visible": false
         },
@@ -97,7 +97,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -115,9 +115,9 @@
       "id": "funny-dingo-28",
       "name": "Label",
       "type": "Label",
-      "x": 410.82467180710324,
-      "y": 201.3543512560431,
-      "width": 229.52604166666666,
+      "x": 429.0603388624429,
+      "y": 210.83491396519432,
+      "width": 247.32291666666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -135,7 +135,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 32,
           "visible": false
         },
@@ -154,7 +154,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -172,9 +172,9 @@
       "id": "silent-ape-21",
       "name": "Label",
       "type": "Label",
-      "x": 412.20703125,
-      "y": 286.77734375,
-      "width": 168.15364583333334,
+      "x": 430.4426983053397,
+      "y": 296.25790645915123,
+      "width": 128,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -192,7 +192,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 16,
           "visible": false
         },
@@ -211,7 +211,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -229,9 +229,9 @@
       "id": "dull-grasshopper-9",
       "name": "Label",
       "type": "Label",
-      "x": 412.0375423741929,
-      "y": 333.3341164357972,
-      "width": 168.15364583333334,
+      "x": 430.2732094295327,
+      "y": 342.81467914494846,
+      "width": 128,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -249,7 +249,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 16,
           "visible": false
         },
@@ -268,7 +268,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -286,9 +286,9 @@
       "id": "white-yak-100",
       "name": "Label",
       "type": "Label",
-      "x": 411.1981278361855,
-      "y": 378.82270641084733,
-      "width": 177.05208333333334,
+      "x": 429.43379489152517,
+      "y": 388.30326911999856,
+      "width": 128,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -306,7 +306,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 16,
           "visible": false
         },
@@ -325,7 +325,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -343,8 +343,8 @@
       "id": "new-chicken-97",
       "name": "Label",
       "type": "Label",
-      "x": 412.163619752329,
-      "y": 432.17923774191604,
+      "x": 430.39928680766866,
+      "y": 441.65980045106727,
       "width": 128,
       "height": 52,
       "minWidth": 128,
@@ -363,7 +363,7 @@
         {
           "socketType": "in",
           "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 24,
           "visible": false
         },
@@ -382,7 +382,7 @@
         {
           "socketType": "in",
           "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[],\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "data": 128,
           "visible": false
         }
@@ -392,6 +392,467 @@
           "socketType": "out",
           "name": "text",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "kind-impala-70",
+      "name": "Note",
+      "type": "Note",
+      "x": 118.55207330534051,
+      "y": 503.507906459151,
+      "width": 160,
+      "height": 160,
+      "minWidth": 160,
+      "minHeight": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "data",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Node updated every 1000ms",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "data",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "proud-bat-11",
+      "name": "Mouse",
+      "type": "Mouse",
+      "x": 966.2172258393456,
+      "y": 250.50698976967232,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": true,
+        "intervalFrequency": 10
+      },
+      "inputSocketArray": [],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "screen-x",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "screen-y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "world-x",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "world-y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "scale",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "buttons",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "splendid-cougar-27",
+      "name": "Label",
+      "type": "Label",
+      "x": 1276.0795728530811,
+      "y": 141.57293109236488,
+      "width": 247.32291666666666,
+      "height": 69,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 32,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 208,
+            "g": 2,
+            "b": 27,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "silent-elephant-61",
+      "name": "Label",
+      "type": "Label",
+      "x": 1275.725278474783,
+      "y": 220.0480807695559,
+      "width": 247.32291666666666,
+      "height": 69,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 32,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 65,
+            "g": 117,
+            "b": 5,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "little-otter-53",
+      "name": "Label",
+      "type": "Label",
+      "x": 1277.1076379176798,
+      "y": 305.47107326351284,
+      "width": 128,
+      "height": 35,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 16,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 245,
+            "g": 166,
+            "b": 35,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "helpless-horse-73",
+      "name": "Label",
+      "type": "Label",
+      "x": 1276.9381490418727,
+      "y": 352.02784594931006,
+      "width": 128,
+      "height": 35,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 16,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 126,
+            "g": 211,
+            "b": 33,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "tricky-fireant-60",
+      "name": "Label",
+      "type": "Label",
+      "x": 1276.0987345038652,
+      "y": 397.51643592436017,
+      "width": 128,
+      "height": 35,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 16,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 74,
+            "g": 144,
+            "b": 226,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "new-baboon-2",
+      "name": "Label",
+      "type": "Label",
+      "x": 1277.0642264200087,
+      "y": 450.8729672554289,
+      "width": 128,
+      "height": 52,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 24,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":128,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "short-dodo-96",
+      "name": "Note",
+      "type": "Note",
+      "x": 965.2170129176803,
+      "y": 512.7210732635126,
+      "width": 160,
+      "height": 160,
+      "minWidth": 160,
+      "minHeight": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "data",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Node updated every 10ms",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "data",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }
       ]
@@ -438,6 +899,48 @@
       "sourceNodeId": "fuzzy-fish-64",
       "sourceSocketIndex": 5,
       "targetNodeId": "new-chicken-97",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 7,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "splendid-cougar-27",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 8,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 1,
+      "targetNodeId": "silent-elephant-61",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 9,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 2,
+      "targetNodeId": "little-otter-53",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 10,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 3,
+      "targetNodeId": "helpless-horse-73",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 11,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 4,
+      "targetNodeId": "tricky-fireant-60",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 12,
+      "sourceNodeId": "proud-bat-11",
+      "sourceSocketIndex": 5,
+      "targetNodeId": "new-baboon-2",
       "targetSocketIndex": 0
     }
   ],
