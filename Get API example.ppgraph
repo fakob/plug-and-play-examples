@@ -1,0 +1,272 @@
+{
+  "customNodeTypes": {},
+  "nodes": [
+    {
+      "id": "nasty-husky-42",
+      "name": "Get",
+      "type": "Get",
+      "x": 80.65751514974218,
+      "y": 195.9792852921707,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://randomuser.me/api/",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "stupid-termite-4",
+      "name": "JSONGet",
+      "type": "JSONGet",
+      "x": 297.5858569506362,
+      "y": 245.75433430832885,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Name 1",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "results",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "witty-dolphin-8",
+      "name": "ArrayGet",
+      "type": "ArrayGet",
+      "x": 507.09081527383523,
+      "y": 316.2285386108394,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Index",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Element",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "young-baboon-57",
+      "name": "JSONGet",
+      "type": "JSONGet",
+      "x": 706.861808308203,
+      "y": 422.6790634097688,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Name 1",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "name",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "neat-mouse-18",
+      "name": "JSONValues",
+      "type": "JSONValues",
+      "x": 910.5787529230506,
+      "y": 522.9659377973168,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "nervous-bullfrog-77",
+      "name": "Label",
+      "type": "Label",
+      "x": 1129.8661489503947,
+      "y": 609.2615045060646,
+      "width": 323.0729166666667,
+      "height": 69,
+      "minWidth": 128,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 32,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 86,
+            "g": 225,
+            "b": 204,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "sourceNodeId": "nasty-husky-42",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "stupid-termite-4",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 2,
+      "sourceNodeId": "stupid-termite-4",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "witty-dolphin-8",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 3,
+      "sourceNodeId": "witty-dolphin-8",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "young-baboon-57",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 4,
+      "sourceNodeId": "young-baboon-57",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "neat-mouse-18",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 5,
+      "sourceNodeId": "neat-mouse-18",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "nervous-bullfrog-77",
+      "targetSocketIndex": 0
+    }
+  ],
+  "version": 0.1
+}
