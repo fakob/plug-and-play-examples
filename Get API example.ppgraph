@@ -12,7 +12,7 @@
       "updateBehaviour": {
         "update": false,
         "interval": true,
-        "intervalFrequency": 10000
+        "intervalFrequency": 2000
       },
       "inputSocketArray": [
         {
@@ -179,7 +179,7 @@
       "type": "Label",
       "x": 1129.8661489503947,
       "y": 609.2615045060646,
-      "width": 323.0729166666667,
+      "width": 241.83854166666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
