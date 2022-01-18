@@ -2,37 +2,6 @@
   "customNodeTypes": {},
   "nodes": [
     {
-      "id": "nasty-husky-42",
-      "name": "Get",
-      "type": "Get",
-      "x": 80.65751514974218,
-      "y": 195.9792852921707,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 2000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "https://randomuser.me/api/",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
       "id": "stupid-termite-4",
       "name": "JSONGet",
       "type": "JSONGet",
@@ -86,7 +55,7 @@
         {
           "socketType": "in",
           "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "visible": true
         },
         {
@@ -123,7 +92,7 @@
         {
           "socketType": "in",
           "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         },
         {
@@ -179,7 +148,7 @@
       "type": "Label",
       "x": 1129.8661489503947,
       "y": 609.2615045060646,
-      "width": 241.83854166666666,
+      "width": 318.3541666666667,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -191,8 +160,8 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "in",
@@ -229,16 +198,49 @@
           "visible": false
         }
       ]
+    },
+    {
+      "id": "sweet-donkey-76",
+      "name": "Get",
+      "type": "Get",
+      "x": 88,
+      "y": 187.55078125,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": true,
+        "intervalFrequency": 10000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://jsonplaceholder.typicode.com/posts",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
     }
   ],
   "links": [
-    {
-      "id": 1,
-      "sourceNodeId": "nasty-husky-42",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "stupid-termite-4",
-      "targetSocketIndex": 0
-    },
     {
       "id": 2,
       "sourceNodeId": "stupid-termite-4",
@@ -265,6 +267,13 @@
       "sourceNodeId": "neat-mouse-18",
       "sourceSocketIndex": 0,
       "targetNodeId": "nervous-bullfrog-77",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 6,
+      "sourceNodeId": "sweet-donkey-76",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "stupid-termite-4",
       "targetSocketIndex": 0
     }
   ],
