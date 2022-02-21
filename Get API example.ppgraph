@@ -1,13 +1,11 @@
 {
+  "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 400,
-      "y": 600
+      "x": 788.2716303424872,
+      "y": 430.72830252512625
     },
-    "viewportScale": 1
-  },
-  "customNodeTypes": {
-    "CustomNode": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction CustomNode(a, b) {\n  return `We predict a person with the name of ${a} to be ${b} years old`;\n}"
+    "viewportScale": 0.868448262767316
   },
   "nodes": [
     {
@@ -301,7 +299,7 @@
       "type": "Label",
       "x": 827.3575144795996,
       "y": 127.61062111064649,
-      "width": 236.72395833333334,
+      "width": 242.95052083333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -699,5 +697,7 @@
       "targetSocketIndex": 0
     }
   ],
-  "version": 0.1
+  "customNodeTypes": {
+    "CustomNode": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction CustomNode(a, b) {\n  return `We predict a person with the name of ${a} to be ${b} years old`;\n}"
+  }
 }

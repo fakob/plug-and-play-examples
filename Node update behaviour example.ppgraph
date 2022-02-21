@@ -1,12 +1,12 @@
 {
+  "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 400,
-      "y": 600
+      "x": 826.8001328795627,
+      "y": 402.540418775758
     },
-    "viewportScale": 1
+    "viewportScale": 0.9569268127782934
   },
-  "customNodeTypes": {},
   "nodes": [
     {
       "id": "fuzzy-fish-64",
@@ -79,7 +79,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -136,7 +136,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -181,7 +181,7 @@
       "type": "Label",
       "x": 430.4426983053397,
       "y": 296.25790645915123,
-      "width": 128,
+      "width": 168.15364583333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -193,7 +193,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -238,7 +238,7 @@
       "type": "Label",
       "x": 430.2732094295327,
       "y": 342.81467914494846,
-      "width": 128,
+      "width": 168.15364583333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -250,7 +250,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -295,7 +295,7 @@
       "type": "Label",
       "x": 429.43379489152517,
       "y": 388.30326911999856,
-      "width": 128,
+      "width": 177.05208333333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -307,7 +307,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -364,7 +364,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -495,7 +495,7 @@
       "type": "Label",
       "x": 1276.0795728530811,
       "y": 141.57293109236488,
-      "width": 247.32291666666666,
+      "width": 229.52604166666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -507,7 +507,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -552,7 +552,7 @@
       "type": "Label",
       "x": 1275.725278474783,
       "y": 220.0480807695559,
-      "width": 247.32291666666666,
+      "width": 176.13541666666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -564,7 +564,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -609,7 +609,7 @@
       "type": "Label",
       "x": 1277.1076379176798,
       "y": 305.47107326351284,
-      "width": 128,
+      "width": 168.15364583333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -621,7 +621,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -666,7 +666,7 @@
       "type": "Label",
       "x": 1276.9381490418727,
       "y": 352.02784594931006,
-      "width": 128,
+      "width": 168.15364583333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -678,7 +678,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -723,7 +723,7 @@
       "type": "Label",
       "x": 1276.0987345038652,
       "y": 397.51643592436017,
-      "width": 128,
+      "width": 177.05208333333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -735,7 +735,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -792,7 +792,7 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
         {
@@ -951,5 +951,5 @@
       "targetSocketIndex": 0
     }
   ],
-  "version": 0.1
+  "customNodeTypes": {}
 }

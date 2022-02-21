@@ -1,13 +1,11 @@
 {
+  "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 400,
-      "y": 600
+      "x": 2666.7182409064944,
+      "y": 771.7626137406049
     },
-    "viewportScale": 1
-  },
-  "customNodeTypes": {
-    "asdasd": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction asdasd(a, b) {\n  return a * b;\n}"
+    "viewportScale": 0.43974994747940904
   },
   "nodes": [
     {
@@ -65,7 +63,7 @@
         {
           "socketType": "in",
           "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -109,7 +107,6 @@
           "socketType": "in",
           "name": "Index",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
-          "data": 0,
           "visible": true
         }
       ],
@@ -139,7 +136,7 @@
         {
           "socketType": "in",
           "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -176,7 +173,7 @@
         {
           "socketType": "in",
           "name": "Target",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -243,14 +240,13 @@
         {
           "socketType": "in",
           "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "in",
           "name": "Index",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
-          "data": 0,
           "visible": true
         }
       ],
@@ -280,13 +276,13 @@
         {
           "socketType": "in",
           "name": "Target",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
           "socketType": "in",
           "name": "Node",
-          "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -312,9 +308,10 @@
       "type": "Image",
       "x": 3250.172706863992,
       "y": 506.02879859461035,
-      "width": 651.2430574380705,
-      "height": 498.06851345575336,
+      "width": 160,
+      "height": 153.45454545454544,
       "minWidth": 160,
+      "minHeight": 153.45454545454544,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -326,6 +323,20 @@
           "name": "Image",
           "dataType": "{\"class\":\"ImageType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Object fit",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"contain\"},{\"text\":\"cover\"},{\"text\":\"fill\"},{\"text\":\"none\"},{\"text\":\"scale-down\"}]}}",
+          "data": "cover",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Reset size",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         }
       ],
       "outputSocketArray": [
@@ -334,6 +345,12 @@
           "name": "Image",
           "dataType": "{\"class\":\"ImageType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Details",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false
         }
       ]
     },
@@ -354,7 +371,7 @@
         {
           "socketType": "in",
           "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -399,7 +416,7 @@
         {
           "socketType": "in",
           "name": "Images",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "dataType": "{\"class\":\"ImageType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": true
         },
         {
@@ -513,5 +530,7 @@
       "targetSocketIndex": 1
     }
   ],
-  "version": 0.1
+  "customNodeTypes": {
+    "asdasd": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction asdasd(a, b) {\n  return a * b;\n}"
+  }
 }

@@ -1,13 +1,11 @@
 {
+  "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 400,
-      "y": 600
+      "x": -285.7090795136987,
+      "y": 457.1529157790708
     },
-    "viewportScale": 1
-  },
-  "customNodeTypes": {
-    "length": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction length(a, b) {\n  return a * b;\n}"
+    "viewportScale": 0.5269701432140017
   },
   "nodes": [
     {
@@ -93,7 +91,7 @@
       "type": "Label",
       "x": 598.6790837642031,
       "y": 195.7985334880633,
-      "width": 1069.0572916666667,
+      "width": 128,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -371,7 +369,6 @@
           "socketType": "in",
           "name": "angle",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": false
         },
         {
@@ -410,8 +407,7 @@
           "name": "onClick",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(e) => {\n  console.log(\"Clicked node:\", this);\n  console.log(\"Clicked index:\", e.currentTarget.index);\n  this.executeOnClick(e.currentTarget.index);\n}",
-          "visible": false,
-          "custom": {}
+          "visible": false
         }
       ],
       "outputSocketArray": [
@@ -576,7 +572,6 @@
           "socketType": "in",
           "name": "y",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": false
         },
         {
@@ -791,7 +786,6 @@
           "socketType": "in",
           "name": "angle",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": false
         },
         {
@@ -805,7 +799,6 @@
           "socketType": "in",
           "name": "pivot",
           "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": 0,
           "visible": false
         },
         {
@@ -919,21 +912,18 @@
           "socketType": "in",
           "name": "x",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": true
         },
         {
           "socketType": "in",
           "name": "y",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": true
         },
         {
           "socketType": "in",
           "name": "angle",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
           "visible": false
         },
         {
@@ -996,7 +986,7 @@
       "type": "Label",
       "x": 432.2966317701994,
       "y": 306.1120570547771,
-      "width": 7682.213541666667,
+      "width": 128,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -1246,5 +1236,7 @@
       "targetSocketIndex": 1
     }
   ],
-  "version": 0.1
+  "customNodeTypes": {
+    "length": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction length(a, b) {\n  return a * b;\n}"
+  }
 }
