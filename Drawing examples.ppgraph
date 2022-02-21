@@ -1,16 +1,19 @@
 {
-  "customNodeTypes": {
-    "labb": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction labb(a, b) {\n  return a * b;\n}",
-    "squareRoot": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction squareRoot(a, b) {\n  return Math.sqrt(a);\n}",
-    "arrayLength": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction arrayLength(a) {\n  return a?.length;\n}"
+  "version": 0.1,
+  "graphSettings": {
+    "viewportCenterPosition": {
+      "x": 1721.4274421359294,
+      "y": 772.6084639456244
+    },
+    "viewportScale": 0.29511713449293553
   },
   "nodes": [
     {
       "id": "strange-bear-54",
       "name": "Color array",
       "type": "ColorArray",
-      "x": 158.23070078164096,
-      "y": 201.1305468758264,
+      "x": -555.3164317276145,
+      "y": 212.78385735717478,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -22,7 +25,7 @@
         {
           "socketType": "in",
           "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         },
         {
@@ -63,8 +66,8 @@
       "id": "weak-treefrog-66",
       "name": "Constant",
       "type": "Constant",
-      "x": -154.6547817496289,
-      "y": 106.68394659889728,
+      "x": -981.489335610813,
+      "y": 85.19112842178151,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -77,7 +80,7 @@
           "socketType": "in",
           "name": "In",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 9.55,
+          "data": 3,
           "visible": true
         }
       ],
@@ -94,8 +97,8 @@
       "id": "afraid-emu-84",
       "name": "Label",
       "type": "Label",
-      "x": 85.1875795133825,
-      "y": 352.0910176951753,
+      "x": -716.0628822586324,
+      "y": -31.74250584545723,
       "width": 128,
       "height": 69,
       "minWidth": 128,
@@ -108,8 +111,8 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
         },
         {
           "socketType": "in",
@@ -126,147 +129,6 @@
             "r": 86,
             "g": 225,
             "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "tidy-stingray-59",
-      "name": "Color array",
-      "type": "ColorArray",
-      "x": 465.12385784942296,
-      "y": 1884.6047734567724,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "colorA",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "colorB",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 66,
-            "g": 165,
-            "b": 65,
-            "a": 1
-          },
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "color-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "brown-moth-91",
-      "name": "Constant",
-      "type": "Constant",
-      "x": 41.20777253705427,
-      "y": 1716.031968972709,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "In",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Out",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "young-wolverine-87",
-      "name": "Label",
-      "type": "Label",
-      "x": 265.69001499854426,
-      "y": 1624.8812193387537,
-      "width": 247.32291666666666,
-      "height": 69,
-      "minWidth": 128,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 32,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 126,
-            "g": 211,
-            "b": 33,
             "a": 1
           },
           "visible": false
@@ -292,14 +154,14 @@
       "id": "friendly-shrimp-27",
       "name": "Mouse",
       "type": "Mouse",
-      "x": -176.99909463768574,
-      "y": 1779.0473937669249,
+      "x": -1042.4262353171725,
+      "y": 919.6881909124128,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
         "update": true,
         "interval": true,
-        "intervalFrequency": 10
+        "intervalFrequency": 100
       },
       "inputSocketArray": [],
       "outputSocketArray": [
@@ -342,11 +204,256 @@
       ]
     },
     {
-      "id": "nasty-zebra-78",
-      "name": "squareRoot",
-      "type": "squareRoot",
-      "x": 240.83268862205136,
-      "y": 1823.49659866606,
+      "id": "heavy-newt-16",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": -513.9945389216003,
+      "y": -68.96753632629714,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"}]}}",
+          "data": "Circle",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 236,
+            "g": 9,
+            "b": 9,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 90,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "loud-lionfish-73",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": -159.06989488429883,
+      "y": -32.004574181153714,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "curvy-eagle-77",
+      "name": "Map",
+      "type": "Map",
+      "x": -357.7837021147435,
+      "y": 201.594520623827,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return {\"Color\": a}\n}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "little-turkey-75",
+      "name": "power",
+      "type": "power",
+      "x": -757.0728399765977,
+      "y": 198.19157873612352,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -358,14 +465,14 @@
         {
           "socketType": "in",
           "name": "a",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "in",
           "name": "b",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": 0,
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": "2",
           "visible": true
         }
       ],
@@ -379,139 +486,11 @@
       ]
     },
     {
-      "id": "rude-panda-84",
-      "name": "Label",
-      "type": "Label",
-      "x": 464.63950409310246,
-      "y": 2048.9777215693616,
-      "width": 354.1041666666667,
-      "height": 69,
-      "minWidth": 128,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 32,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "sweet-cobra-10",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 2244.3670174870463,
-      "y": 12.206017001180584,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 3,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distance",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 100,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceHeight",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "serious-fish-47",
+      "id": "terrible-sloth-25",
       "name": "Color array",
       "type": "ColorArray",
-      "x": 2243.9081854532064,
-      "y": 155.82370851432336,
+      "x": 1422.8436685356132,
+      "y": 285.6797007529336,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -523,7 +502,7 @@
         {
           "socketType": "in",
           "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
@@ -561,11 +540,11 @@
       ]
     },
     {
-      "id": "perfect-walrus-66",
-      "name": "Constant",
-      "type": "Constant",
-      "x": 2012.4675649878752,
-      "y": 90.49038318033288,
+      "id": "heavy-emu-61",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": 1607.9136407662181,
+      "y": -109.52389642180117,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -576,8 +555,554 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "In",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"}]}}",
+          "data": "Circle",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 236,
+            "g": 9,
+            "b": 9,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 90,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "mighty-badger-79",
+      "name": "Map",
+      "type": "Map",
+      "x": 1618.8888655219862,
+      "y": 253.79286704444428,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return [[],{\"Color\": a}]\n}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "wise-ladybug-23",
+      "name": "DRAW_Text",
+      "type": "DRAW_Text",
+      "x": 1611.1210047611594,
+      "y": -315.3839995413765,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "ExampleText",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 23,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Line Height",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 18,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "0": 255,
+            "1": 55,
+            "2": 0,
+            "3": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "center center",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "ordinary-impala-20",
+      "name": "DRAW_Combine",
+      "type": "DRAW_Combine",
+      "x": 1825.6479561823216,
+      "y": -90.38617031794627,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Foreground",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Background",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "ancient-baboon-74",
+      "name": "JSONGet",
+      "type": "JSONGet",
+      "x": 1001.6190942278478,
+      "y": 137.54563260980456,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Name 1",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "*.title",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "serious-cobra-53",
+      "name": "Map",
+      "type": "Map",
+      "x": 1612.5902669404868,
+      "y": 120.96588278479351,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return [{\"Text\": a.split(' ').shift()},[]]\n}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "polite-fly-18",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": 2038.805653930131,
+      "y": -69.02258491741134,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num X",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num Y",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "shy-pug-84",
+      "name": "Get",
+      "type": "Get",
+      "x": 788.6083387234536,
+      "y": 47.56030235895116,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://jsonplaceholder.typicode.com/posts",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "brown-frog-30",
+      "name": "MergeDataArrays",
+      "type": "MergeDataArrays",
+      "x": 1830.9245770366033,
+      "y": 162.12367599025595,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input 2",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true
         }
       ],
@@ -585,20 +1110,49 @@
         {
           "socketType": "out",
           "name": "Out",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "lovely-lionfish-92",
+      "name": "ArrayLength",
+      "type": "ArrayLength",
+      "x": 1217.0557938326242,
+      "y": 233.63121958445106,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "ArrayLength",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "sharp-panther-35",
-      "name": "Label",
-      "type": "Label",
-      "x": 2268.379460028119,
-      "y": 310.65913451328856,
-      "width": 128,
-      "height": 69,
-      "minWidth": 128,
+      "id": "wicked-eagle-63",
+      "name": "squareRoot",
+      "type": "squareRoot",
+      "x": 1410.5683806569587,
+      "y": 40.28026824376741,
+      "width": 160,
+      "minWidth": 160,
       "updateBehaviour": {
         "update": true,
         "interval": false,
@@ -607,91 +1161,32 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 32,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "honest-vampirebat-20",
-      "name": "Table",
-      "type": "Table",
-      "x": 1786.0070524143102,
-      "y": 517.546602106299,
-      "width": 572.1384908851362,
-      "height": 388.0840513350847,
-      "minWidth": 200,
-      "minHeight": 200,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "reload",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{}}",
+          "name": "a",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "\"Index\", \"Year\", \"Age\", \"Name\", \"Movie\"\n 1, 1928, 22, \"Janet Gaynor\", \"Seventh Heaven, Street Angel and Sunrise: A Song of Two Humans\"\n 2, 1929, 37, \"Mary Pickford\", \"Coquette\"\n 3, 1930, 28, \"Norma Shearer\", \"The Divorcee\"\t\n 4, 1931, 63, \"Marie Dressler\", \"Min and Bill\"\n 5, 1932, 32, \"Helen Hayes\", \"The Sin of Madelon Claudet\"\t\n 6, 1933, 26, \"Katharine Hepburn\", \"Morning Glory\"\n 7, 1934, 31, \"Claudette Colbert\", \"It Happened One Night\"\n 8, 1935, 27, \"Bette Davis\", \"Dangerous\"\n 9, 1936, 27, \"Luise Rainer\", \"The Great Ziegfeld\"\n10, 1937, 28, \"Luise Rainer\", \"The Good Earth\"\n11, 1938, 30, \"Bette Davis\", \"Jezebel\"\n12, 1939, 26, \"Vivien Leigh\", \"Gone with the Wind\"\n13, 1940, 29, \"Ginger Rogers\", \"Kitty Foyle\"\n14, 1941, 24, \"Joan Fontaine\", \"Suspicion\"\t\n15, 1942, 38, \"Greer Garson\", \"Mrs. Miniver\"\n16, 1943, 25, \"Jennifer Jones\", \"The Song of Bernadette\"\n17, 1944, 29, \"Ingrid Bergman\", \"Gaslight\"\n18, 1945, 40, \"Joan Crawford\", \"Mildred Pierce\"\n19, 1946, 30, \"Olivia de Havilland\", \"To Each His Own\"\n20, 1947, 35, \"Loretta Young\", \"The Farmer's Daughter\"\n21, 1948, 32, \"Jane Wyman\", \"Johnny Belinda\"\n22, 1949, 33, \"Olivia de Havilland\", \"The Heiress\"\n23, 1950, 29, \"Judy Holliday\", \"Born Yesterday\"\n24, 1951, 38, \"Vivien Leigh\", \"A Streetcar Named Desire\"\n25, 1952, 54, \"Shirley Booth\", \"Come Back, Little Sheba\"\n26, 1953, 24, \"Audrey Hepburn\", \"Roman Holiday\"\n27, 1954, 25, \"Grace Kelly\", \"The Country Girl\"\n28, 1955, 48, \"Anna Magnani\", \"The Rose Tattoo\"\n29, 1956, 41, \"Ingrid Bergman\", \"Anastasia\"\n30, 1957, 28, \"Joanne Woodward\", \"The Three Faces of Eve\"\n31, 1958, 41, \"Susan Hayward\", \"I Want to Live!\"\n32, 1959, 39, \"Simone Signoret\", \"Room at the Top\"\n33, 1960, 29, \"Elizabeth Taylor\", \"BUtterfield 8\"\n34, 1961, 27, \"Sophia Loren\", \"Two Women\"\n35, 1962, 31, \"Anne Bancroft\", \"The Miracle Worker\"\n36, 1963, 31, \"Patricia Neal\", \"Hud\"\n37, 1964, 29, \"Julie Andrews\", \"Mary Poppins\"\n38, 1965, 25, \"Julie Christie\", \"Darling\"\n39, 1966, 35, \"Elizabeth Taylor\", \"Who's Afraid of Virginia Woolf?\"\n40, 1967, 60, \"Katharine Hepburn\", \"Guess Who's Coming to Dinner\"\n41, 1968, 61, \"Katharine Hepburn\", \"The Lion in Winter\"\n42, 1969, 26, \"Barbra Streisand\", \"Funny Girl\"\n43, 1970, 35, \"Maggie Smith\", \"The Prime of Miss Jean Brodie\"\n44, 1971, 34, \"Glenda Jackson\", \"Women in Love\"\n45, 1972, 34, \"Jane Fonda\", \"Klute\"\n46, 1973, 27, \"Liza Minnelli\", \"Cabaret\"\n47, 1974, 37, \"Glenda Jackson\", \"A Touch of Class\"\n48, 1975, 42, \"Ellen Burstyn\", \"Alice Doesn't Live Here Anymore\"\t\n49, 1976, 41, \"Louise Fletcher\", \"One Flew Over the Cuckoo's Nest\"\n50, 1977, 36, \"Faye Dunaway\", \"Network\"\n51, 1978, 32, \"Diane Keaton\", \"Annie Hall\"\n52, 1979, 41, \"Jane Fonda\", \"Coming Home\"\n53, 1980, 33, \"Sally Field\", \"Norma Rae\"\n54, 1981, 31, \"Sissy Spacek\", \"Coal Miner's Daughter\"\t\n55, 1982, 74, \"Katharine Hepburn\", \"On Golden Pond\"\n56, 1983, 33, \"Meryl Streep\", \"Sophie's Choice\"\n57, 1984, 49, \"Shirley MacLaine\", \"Terms of Endearment\"\t\n58, 1985, 38, \"Sally Field\", \"Places in the Heart\"\n59, 1986, 61, \"Geraldine Page\", \"The Trip to Bountiful\"\t\n60, 1987, 21, \"Marlee Matlin\", \"Children of a Lesser God\"\n61, 1988, 41, \"Cher\", \"Moonstruck\"\n62, 1989, 26, \"Jodie Foster\", \"The Accused\"\n63, 1990, 80, \"Jessica Tandy\", \"Driving Miss Daisy\"\n64, 1991, 42, \"Kathy Bates\", \"Misery\"\n65, 1992, 29, \"Jodie Foster\", \"The Silence of the Lambs\"\n66, 1993, 33, \"Emma Thompson\", \"Howards End\"\n67, 1994, 36, \"Holly Hunter\", \"The Piano\"\n68, 1995, 45, \"Jessica Lange\", \"Blue Sky\"\n69, 1996, 49, \"Susan Sarandon\", \"Dead Man Walking\"\n70, 1997, 39, \"Frances McDormand\", \"Fargo\"\n71, 1998, 34, \"Helen Hunt\", \"As Good as It Gets\"\n72, 1999, 26, \"Gwyneth Paltrow\", \"Shakespeare in Love\"\n73, 2000, 25, \"Hilary Swank\", \"Boys Don't Cry\"\n74, 2001, 33, \"Julia Roberts\", \"Erin Brockovich\"\n75, 2002, 35, \"Halle Berry\", \"Monster's Ball\"\n76, 2003, 35, \"Nicole Kidman\", \"The Hours\"\n77, 2004, 28, \"Charlize Theron\", \"Monster\"\n78, 2005, 30, \"Hilary Swank\", \"Million Dollar Baby\"\n79, 2006, 29, \"Reese Witherspoon\", \"Walk the Line\"\n80, 2007, 61, \"Helen Mirren\", \"The Queen\"\n81, 2008, 32, \"Marion Cotillard\", \"La Vie en rose\"\n82, 2009, 33, \"Kate Winslet\", \"The Reader\"\n83, 2010, 45, \"Sandra Bullock\", \"The Blind Side\"\n84, 2011, 29, \"Natalie Portman\", \"Black Swan\"\n85, 2012, 62, \"Meryl Streep\", \"The Iron Lady\"\n86, 2013, 22, \"Jennifer Lawrence\", \"Silver Linings Playbook\"\n87, 2014, 44, \"Cate Blanchett\", \"Blue Jasmine\"\n88, 2015, 54, \"Julianne Moore\", \"Still Alice\"\n89, 2016, 26, \"Brie Larson\", \"Room\"\n\n",
+          "name": "b",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "selectedData",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "name": "out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "chilly-treefrog-38",
+      "id": "great-liger-86",
       "name": "Color array",
       "type": "ColorArray",
-      "x": 5517.123045277909,
-      "y": 153.48178685185292,
+      "x": 1322.6656253430801,
+      "y": 1954.8937764434486,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -703,7 +1198,7 @@
         {
           "socketType": "in",
           "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
@@ -711,9 +1206,9 @@
           "name": "colorA",
           "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
           "data": {
-            "r": 208,
-            "g": 2,
-            "b": 27,
+            "r": 86,
+            "g": 225,
+            "b": 204,
             "a": 1
           },
           "visible": false
@@ -723,9 +1218,9 @@
           "name": "colorB",
           "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
           "data": {
-            "r": 248,
-            "g": 231,
-            "b": 28,
+            "r": 66,
+            "g": 165,
+            "b": 65,
             "a": 1
           },
           "visible": false
@@ -741,11 +1236,640 @@
       ]
     },
     {
-      "id": "jolly-owl-85",
+      "id": "ugly-deer-91",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": 1527.3240295437136,
+      "y": 1546.1831331526405,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"}]}}",
+          "data": "Rectangle",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 236,
+            "g": 9,
+            "b": 9,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":1,\"stepSize\":0.01}}",
+          "data": 0.11,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":1,\"stepSize\":0.01}}",
+          "data": 0.21,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "data": -1.57,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "grumpy-stingray-50",
+      "name": "DRAW_Combine",
+      "type": "DRAW_Combine",
+      "x": 1745.058344959818,
+      "y": 1565.3208592564956,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Foreground",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Background",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "fluffy-pig-38",
+      "name": "JSONGet",
+      "type": "JSONGet",
+      "x": 921.0294830053427,
+      "y": 1793.2526621842467,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Name 1",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "*.title",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "friendly-insect-48",
+      "name": "Map",
+      "type": "Map",
+      "x": 1318.6281792387626,
+      "y": 1679.6559270156172,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return [{\"Text\": a.split(' ').shift()}\n]}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "brave-seahorse-95",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": 2151.879936486802,
+      "y": 1591.516482214974,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num Y",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": "1",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 27,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "fuzzy-impala-41",
+      "name": "Get",
+      "type": "Get",
+      "x": 708.0187275009486,
+      "y": 1703.2673319333921,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://jsonplaceholder.typicode.com/posts",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "sweet-panda-28",
+      "name": "MergeDataArrays",
+      "type": "MergeDataArrays",
+      "x": 1951.8378845523857,
+      "y": 1783.6066697676056,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input 2",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "dull-lion-64",
+      "name": "ArrayLength",
+      "type": "ArrayLength",
+      "x": 1123.5633676922043,
+      "y": 1903.608403241884,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "ArrayLength",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "fat-crab-50",
+      "name": "Map",
+      "type": "Map",
+      "x": 1537.3417500624528,
+      "y": 1965.9299367977837,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return {\"Color\": a}\n}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "lovely-goose-85",
+      "name": "Map",
+      "type": "Map",
+      "x": 1329.9185500301219,
+      "y": 1805.2649995799152,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Array",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Function",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n  return {\"Scale X\": a.split(' ').shift().length/10}\n}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "OutArray",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "tiny-crab-14",
+      "name": "merge2ArraysOfObjects",
+      "type": "merge2ArraysOfObjects",
+      "x": 1753.2918927303253,
+      "y": 1857.3016139067918,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "b",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "hard-stingray-64",
+      "name": "Color array",
+      "type": "ColorArray",
+      "x": -506.5535876865779,
+      "y": 806.0599328408761,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "count",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "colorA",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 86,
+            "g": 225,
+            "b": 204,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "colorB",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 66,
+            "g": 165,
+            "b": 65,
+            "a": 1
+          },
+          "visible": false
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "color-array",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "cowardly-penguin-40",
       "name": "Constant",
       "type": "Constant",
-      "x": 5285.682424812578,
-      "y": 88.14846151786242,
+      "x": -932.7264915697763,
+      "y": 678.467203905483,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -758,6 +1882,7 @@
           "socketType": "in",
           "name": "In",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 3,
           "visible": true
         }
       ],
@@ -771,12 +1896,12 @@
       ]
     },
     {
-      "id": "purple-pug-7",
+      "id": "foolish-wolverine-99",
       "name": "Label",
       "type": "Label",
-      "x": 5541.594319852822,
-      "y": 308.3172128508181,
-      "width": 128,
+      "x": -713.9101264407442,
+      "y": 429.82745845856243,
+      "width": 183.24479166666666,
       "height": 69,
       "minWidth": 128,
       "updateBehaviour": {
@@ -788,8 +1913,8 @@
         {
           "socketType": "in",
           "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
         },
         {
           "socketType": "in",
@@ -828,50 +1953,11 @@
       ]
     },
     {
-      "id": "evil-puma-43",
-      "name": "Table",
-      "type": "Table",
-      "x": 4636.689170357066,
-      "y": 366.3089017869786,
-      "width": 588.6972024556826,
-      "height": 444.28414501555676,
-      "minWidth": 200,
-      "minHeight": 200,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "reload",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "\"Index\", \"Year\", \"Age\", \"Name\", \"Movie\"\n 1, 1928, 22, \"Janet Gaynor\", \"Seventh Heaven, Street Angel and Sunrise: A Song of Two Humans\"\n 2, 1929, 37, \"Mary Pickford\", \"Coquette\"\n 3, 1930, 28, \"Norma Shearer\", \"The Divorcee\"\t\n 4, 1931, 63, \"Marie Dressler\", \"Min and Bill\"\n 5, 1932, 32, \"Helen Hayes\", \"The Sin of Madelon Claudet\"\t\n 6, 1933, 26, \"Katharine Hepburn\", \"Morning Glory\"\n 7, 1934, 31, \"Claudette Colbert\", \"It Happened One Night\"\n 8, 1935, 27, \"Bette Davis\", \"Dangerous\"\n 9, 1936, 27, \"Luise Rainer\", \"The Great Ziegfeld\"\n10, 1937, 28, \"Luise Rainer\", \"The Good Earth\"\n11, 1938, 30, \"Bette Davis\", \"Jezebel\"\n12, 1939, 26, \"Vivien Leigh\", \"Gone with the Wind\"\n13, 1940, 29, \"Ginger Rogers\", \"Kitty Foyle\"\n14, 1941, 24, \"Joan Fontaine\", \"Suspicion\"\t\n15, 1942, 38, \"Greer Garson\", \"Mrs. Miniver\"\n16, 1943, 25, \"Jennifer Jones\", \"The Song of Bernadette\"\n17, 1944, 29, \"Ingrid Bergman\", \"Gaslight\"\n18, 1945, 40, \"Joan Crawford\", \"Mildred Pierce\"\n19, 1946, 30, \"Olivia de Havilland\", \"To Each His Own\"\n20, 1947, 35, \"Loretta Young\", \"The Farmer's Daughter\"\n21, 1948, 32, \"Jane Wyman\", \"Johnny Belinda\"\n22, 1949, 33, \"Olivia de Havilland\", \"The Heiress\"\n23, 1950, 29, \"Judy Holliday\", \"Born Yesterday\"\n24, 1951, 38, \"Vivien Leigh\", \"A Streetcar Named Desire\"\n25, 1952, 54, \"Shirley Booth\", \"Come Back, Little Sheba\"\n26, 1953, 24, \"Audrey Hepburn\", \"Roman Holiday\"\n27, 1954, 25, \"Grace Kelly\", \"The Country Girl\"\n28, 1955, 48, \"Anna Magnani\", \"The Rose Tattoo\"\n29, 1956, 41, \"Ingrid Bergman\", \"Anastasia\"\n30, 1957, 28, \"Joanne Woodward\", \"The Three Faces of Eve\"\n31, 1958, 41, \"Susan Hayward\", \"I Want to Live!\"\n32, 1959, 39, \"Simone Signoret\", \"Room at the Top\"\n33, 1960, 29, \"Elizabeth Taylor\", \"BUtterfield 8\"\n34, 1961, 27, \"Sophia Loren\", \"Two Women\"\n35, 1962, 31, \"Anne Bancroft\", \"The Miracle Worker\"\n36, 1963, 31, \"Patricia Neal\", \"Hud\"\n37, 1964, 29, \"Julie Andrews\", \"Mary Poppins\"\n38, 1965, 25, \"Julie Christie\", \"Darling\"\n39, 1966, 35, \"Elizabeth Taylor\", \"Who's Afraid of Virginia Woolf?\"\n40, 1967, 60, \"Katharine Hepburn\", \"Guess Who's Coming to Dinner\"\n41, 1968, 61, \"Katharine Hepburn\", \"The Lion in Winter\"\n42, 1969, 26, \"Barbra Streisand\", \"Funny Girl\"\n43, 1970, 35, \"Maggie Smith\", \"The Prime of Miss Jean Brodie\"\n44, 1971, 34, \"Glenda Jackson\", \"Women in Love\"\n45, 1972, 34, \"Jane Fonda\", \"Klute\"\n46, 1973, 27, \"Liza Minnelli\", \"Cabaret\"\n47, 1974, 37, \"Glenda Jackson\", \"A Touch of Class\"\n48, 1975, 42, \"Ellen Burstyn\", \"Alice Doesn't Live Here Anymore\"\t\n49, 1976, 41, \"Louise Fletcher\", \"One Flew Over the Cuckoo's Nest\"\n50, 1977, 36, \"Faye Dunaway\", \"Network\"\n51, 1978, 32, \"Diane Keaton\", \"Annie Hall\"\n52, 1979, 41, \"Jane Fonda\", \"Coming Home\"\n53, 1980, 33, \"Sally Field\", \"Norma Rae\"\n54, 1981, 31, \"Sissy Spacek\", \"Coal Miner's Daughter\"\t\n55, 1982, 74, \"Katharine Hepburn\", \"On Golden Pond\"\n56, 1983, 33, \"Meryl Streep\", \"Sophie's Choice\"\n57, 1984, 49, \"Shirley MacLaine\", \"Terms of Endearment\"\t\n58, 1985, 38, \"Sally Field\", \"Places in the Heart\"\n59, 1986, 61, \"Geraldine Page\", \"The Trip to Bountiful\"\t\n60, 1987, 21, \"Marlee Matlin\", \"Children of a Lesser God\"\n61, 1988, 41, \"Cher\", \"Moonstruck\"\n62, 1989, 26, \"Jodie Foster\", \"The Accused\"\n63, 1990, 80, \"Jessica Tandy\", \"Driving Miss Daisy\"\n64, 1991, 42, \"Kathy Bates\", \"Misery\"\n65, 1992, 29, \"Jodie Foster\", \"The Silence of the Lambs\"\n66, 1993, 33, \"Emma Thompson\", \"Howards End\"\n67, 1994, 36, \"Holly Hunter\", \"The Piano\"\n68, 1995, 45, \"Jessica Lange\", \"Blue Sky\"\n69, 1996, 49, \"Susan Sarandon\", \"Dead Man Walking\"\n70, 1997, 39, \"Frances McDormand\", \"Fargo\"\n71, 1998, 34, \"Helen Hunt\", \"As Good as It Gets\"\n72, 1999, 26, \"Gwyneth Paltrow\", \"Shakespeare in Love\"\n73, 2000, 25, \"Hilary Swank\", \"Boys Don't Cry\"\n74, 2001, 33, \"Julia Roberts\", \"Erin Brockovich\"\n75, 2002, 35, \"Halle Berry\", \"Monster's Ball\"\n76, 2003, 35, \"Nicole Kidman\", \"The Hours\"\n77, 2004, 28, \"Charlize Theron\", \"Monster\"\n78, 2005, 30, \"Hilary Swank\", \"Million Dollar Baby\"\n79, 2006, 29, \"Reese Witherspoon\", \"Walk the Line\"\n80, 2007, 61, \"Helen Mirren\", \"The Queen\"\n81, 2008, 32, \"Marion Cotillard\", \"La Vie en rose\"\n82, 2009, 33, \"Kate Winslet\", \"The Reader\"\n83, 2010, 45, \"Sandra Bullock\", \"The Blind Side\"\n84, 2011, 29, \"Natalie Portman\", \"Black Swan\"\n85, 2012, 62, \"Meryl Streep\", \"The Iron Lady\"\n86, 2013, 22, \"Jennifer Lawrence\", \"Silver Linings Playbook\"\n87, 2014, 44, \"Cate Blanchett\", \"Blue Jasmine\"\n88, 2015, 54, \"Julianne Moore\", \"Still Alice\"\n89, 2016, 26, \"Brie Larson\", \"Room\"\n\n",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "selectedData",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "tidy-vampirebat-62",
-      "name": "ArrayGet",
-      "type": "ArrayGet",
-      "x": 5285.636490553285,
-      "y": 403.27709852337836,
+      "id": "hungry-otter-68",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": -465.23169488056374,
+      "y": 524.3085391574042,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -882,33 +1968,91 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"}]}}",
+          "data": "Rounded Rectangle",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "Index",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 0,
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 236,
+            "g": 9,
+            "b": 9,
+            "a": 1
+          },
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 0.02,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "Element",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "bad-seahorse-17",
-      "name": "ArrayGet",
-      "type": "ArrayGet",
-      "x": 5289.9521599656855,
-      "y": 709.9572387069974,
+      "id": "fuzzy-bullfrog-2",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": -110.30705084326223,
+      "y": 561.2715013025476,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -919,33 +2063,110 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "Index",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
+          "name": "Num X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 1,
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Num Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 10,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 3,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "Element",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "witty-rabbit-15",
+      "id": "itchy-fox-52",
       "name": "Map",
       "type": "Map",
-      "x": 5500.7353389616965,
-      "y": 712.5359812483482,
+      "x": -309.0208580737069,
+      "y": 794.8705961075283,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -957,14 +2178,14 @@
         {
           "socketType": "in",
           "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         },
         {
           "socketType": "in",
           "name": "Function",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(a) => a.toString().split('\"').join('')",
+          "data": "(a) => {\n  return {\"Color\": a}\n}",
           "visible": true
         }
       ],
@@ -978,143 +2199,11 @@
       ]
     },
     {
-      "id": "smart-grasshopper-79",
-      "name": "Note",
-      "type": "Note",
-      "x": 5523.37999418775,
-      "y": 836.7855895680153,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Removes quotes",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "dull-snail-55",
-      "name": "Note",
-      "type": "Note",
-      "x": 5288.730921605311,
-      "y": 842.0839474195941,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Gets 2nd selection",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "good-gecko-34",
-      "name": "Note",
-      "type": "Note",
-      "x": 5473.5879578349795,
-      "y": 448.92699127944434,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Gets 1st selection",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "hot-donkey-24",
-      "name": "Note",
-      "type": "Note",
-      "x": 4782.368879743905,
-      "y": 826.3198346808509,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Select age numbers first and with ctrl/cmd select names second",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "data",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "blue-liger-16",
-      "name": "Draw circle",
-      "type": "PIXICircle",
-      "x": 437.07688173970615,
-      "y": 13.896145288807816,
+      "id": "lazy-owl-47",
+      "name": "power",
+      "type": "power",
+      "x": -708.3099959355611,
+      "y": 791.4676542198248,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -1125,52 +2214,33 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "x",
+          "name": "a",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "y",
+          "name": "b",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "radius",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 50,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": "2",
           "visible": true
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "graphics",
+          "name": "out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         }
       ]
     },
     {
-      "id": "cuddly-eagle-87",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 157.5733635996893,
-      "y": 36.041997983410795,
+      "id": "popular-bobcat-28",
+      "name": "DRAW_Text",
+      "type": "DRAW_Text",
+      "x": 1539.0638933220034,
+      "y": 1336.7243083699877,
       "width": 160,
       "minWidth": 160,
       "updateBehaviour": {
@@ -1181,975 +2251,91 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 3,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceWidth",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceHeight",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "ordinary-bat-51",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 2260.8314453719613,
-      "y": -122.9418618796638,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 3,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceWidth",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceHeight",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "big-penguin-89",
-      "name": "Draw circle",
-      "type": "PIXICircle",
-      "x": 2566.15741890768,
-      "y": 6.082587404965409,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "radius",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 50,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "graphics",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "curvy-ladybug-5",
-      "name": "Draw text",
-      "type": "PIXIText",
-      "x": 2566.128072492431,
-      "y": 154.03547452532808,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "text",
+          "name": "Text",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "ExampleText",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 100,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "align",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"left\",\"value\":\"left\"},{\"text\":\"center\",\"value\":\"center\"},{\"text\":\"right\",\"value\":\"right\"}]}}",
-          "data": "center",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": "top left",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "size",
+          "name": "Size",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 12,
-            "g": 12,
-            "b": 12,
-            "a": 1
-          },
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "graphics",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "old-cow-78",
-      "name": "Container",
-      "type": "PIXIContainer",
-      "x": 2793.4571435788275,
-      "y": -34.00461582544068,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "mode",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "scale",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "onClick",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(e) => {\n  console.log(\"Clicked node:\", this);\n  console.log(\"Clicked index:\", e.currentTarget.index);\n  this.executeOnClick(e.currentTarget.index);\n}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "input1",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input2",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input3",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "container",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetArray",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "chilly-goat-57",
-      "name": "ArrayLength",
-      "type": "ArrayLength",
-      "x": 1770.6032885068885,
-      "y": 118.04382942882268,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "ArrayLength",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "jolly-emu-36",
-      "name": "ArrayLength",
-      "type": "ArrayLength",
-      "x": 5274.226573815038,
-      "y": 255.20291864026797,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "ArrayLength",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "popular-puma-63",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 5521.639481258468,
-      "y": -13.96011648696772,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "distanceWidth",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 24,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceHeight",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "cowardly-rat-69",
-      "name": "Draw rectangle",
-      "type": "PIXIRect",
-      "x": 5859.707994282945,
-      "y": -116.30277216997193,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": "bottom left",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 20,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "height",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "graphics",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "witty-rattlesnake-28",
-      "name": "Draw text",
-      "type": "PIXIText",
-      "x": 5848.424852652424,
-      "y": 97.85032615177255,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "text",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 200,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 90,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "align",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"left\",\"value\":\"left\"},{\"text\":\"center\",\"value\":\"center\"},{\"text\":\"right\",\"value\":\"right\"}]}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": "bottom left",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "size",
+          "name": "Line Height",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 14,
+          "data": 18,
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "color",
+          "name": "Width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
           "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
           "data": {
-            "r": 12,
-            "g": 12,
-            "b": 12,
+            "r": 255,
+            "g": 55,
+            "b": 0,
             "a": 1
           },
           "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "graphics",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "curly-mole-82",
-      "name": "Container",
-      "type": "PIXIContainer",
-      "x": 6069.067590691511,
-      "y": 13.501859699431861,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
+        },
         {
           "socketType": "in",
-          "name": "mode",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
+          "data": 27,
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
           "data": 4,
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "scale",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
           "data": 1,
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "onClick",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(e) => {\n  console.log(\"Clicked node:\", this);\n  console.log(\"Clicked index:\", e.currentTarget.index);\n  this.executeOnClick(e.currentTarget.index);\n}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "input1",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input2",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input3",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "container",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetArray",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "tricky-bullfrog-45",
-      "name": "Container",
-      "type": "PIXIContainer",
-      "x": 6268.4494946704135,
-      "y": -151.15137515796974,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "mode",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-360,\"maxValue\":360,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "scale",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
           "data": 1,
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "onClick",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(e) => {\n  console.log(\"Clicked node:\", this);\n  console.log(\"Clicked index:\", e.currentTarget.index);\n  this.executeOnClick(e.currentTarget.index);\n}",
+          "name": "Rotation",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
+          "data": 1.57,
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "input1",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input2",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "input3",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "container",
-          "dataType": "{\"class\":\"PixiType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "clickedTargetArray",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "short-dragonfly-64",
-      "name": "Grid coordinates",
-      "type": "GridCoordinates",
-      "x": 457.90089423382904,
-      "y": 1694.6057819389112,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "count",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "distanceWidth",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "distanceHeight",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 110,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "x-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "y-array",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "good-sheep-38",
-      "name": "Draw circle",
-      "type": "PIXICircle",
-      "x": 713.3129253759464,
-      "y": 1623.9243606026432,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "x",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "pivot",
+          "name": "Pivot",
           "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": 0,
+          "data": "top left",
           "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "radius",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 50,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "visible": true
         }
       ],
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "graphics",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
           "visible": true
         }
       ]
@@ -2158,347 +2344,311 @@
   "links": [
     {
       "id": 1,
+      "sourceNodeId": "heavy-newt-16",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "loud-lionfish-73",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 2,
+      "sourceNodeId": "strange-bear-54",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "curvy-eagle-77",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 3,
+      "sourceNodeId": "curvy-eagle-77",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "loud-lionfish-73",
+      "targetSocketIndex": 5
+    },
+    {
+      "id": 4,
       "sourceNodeId": "weak-treefrog-66",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "loud-lionfish-73",
+      "targetSocketIndex": 1
+    },
+    {
+      "id": 5,
+      "sourceNodeId": "weak-treefrog-66",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "loud-lionfish-73",
+      "targetSocketIndex": 2
+    },
+    {
+      "id": 6,
+      "sourceNodeId": "weak-treefrog-66",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "little-turkey-75",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 7,
+      "sourceNodeId": "little-turkey-75",
       "sourceSocketIndex": 0,
       "targetNodeId": "strange-bear-54",
       "targetSocketIndex": 0
     },
     {
-      "id": 2,
+      "id": 8,
       "sourceNodeId": "weak-treefrog-66",
       "sourceSocketIndex": 0,
       "targetNodeId": "afraid-emu-84",
       "targetSocketIndex": 0
     },
     {
-      "id": 3,
-      "sourceNodeId": "brown-moth-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "tidy-stingray-59",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 4,
-      "sourceNodeId": "brown-moth-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "young-wolverine-87",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 5,
-      "sourceNodeId": "friendly-shrimp-27",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "brown-moth-91",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 6,
-      "sourceNodeId": "brown-moth-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "nasty-zebra-78",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 7,
-      "sourceNodeId": "nasty-zebra-78",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "rude-panda-84",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 8,
-      "sourceNodeId": "perfect-walrus-66",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "sweet-cobra-10",
-      "targetSocketIndex": 2
-    },
-    {
       "id": 9,
-      "sourceNodeId": "perfect-walrus-66",
+      "sourceNodeId": "terrible-sloth-25",
       "sourceSocketIndex": 0,
-      "targetNodeId": "serious-fish-47",
+      "targetNodeId": "mighty-badger-79",
       "targetSocketIndex": 0
     },
     {
       "id": 10,
-      "sourceNodeId": "perfect-walrus-66",
+      "sourceNodeId": "wise-ladybug-23",
       "sourceSocketIndex": 0,
-      "targetNodeId": "sharp-panther-35",
+      "targetNodeId": "ordinary-impala-20",
       "targetSocketIndex": 0
     },
     {
       "id": 11,
-      "sourceNodeId": "jolly-owl-85",
+      "sourceNodeId": "heavy-emu-61",
       "sourceSocketIndex": 0,
-      "targetNodeId": "chilly-treefrog-38",
-      "targetSocketIndex": 0
+      "targetNodeId": "ordinary-impala-20",
+      "targetSocketIndex": 1
     },
     {
       "id": 12,
-      "sourceNodeId": "jolly-owl-85",
+      "sourceNodeId": "ancient-baboon-74",
       "sourceSocketIndex": 0,
-      "targetNodeId": "purple-pug-7",
+      "targetNodeId": "serious-cobra-53",
       "targetSocketIndex": 0
     },
     {
       "id": 13,
-      "sourceNodeId": "evil-puma-43",
+      "sourceNodeId": "ordinary-impala-20",
       "sourceSocketIndex": 0,
-      "targetNodeId": "tidy-vampirebat-62",
+      "targetNodeId": "polite-fly-18",
       "targetSocketIndex": 0
     },
     {
       "id": 14,
-      "sourceNodeId": "evil-puma-43",
+      "sourceNodeId": "serious-cobra-53",
       "sourceSocketIndex": 0,
-      "targetNodeId": "bad-seahorse-17",
+      "targetNodeId": "brown-frog-30",
       "targetSocketIndex": 0
     },
     {
       "id": 15,
-      "sourceNodeId": "bad-seahorse-17",
+      "sourceNodeId": "mighty-badger-79",
       "sourceSocketIndex": 0,
-      "targetNodeId": "witty-rabbit-15",
-      "targetSocketIndex": 0
+      "targetNodeId": "brown-frog-30",
+      "targetSocketIndex": 1
     },
     {
       "id": 16,
-      "sourceNodeId": "weak-treefrog-66",
+      "sourceNodeId": "brown-frog-30",
       "sourceSocketIndex": 0,
-      "targetNodeId": "cuddly-eagle-87",
-      "targetSocketIndex": 2
+      "targetNodeId": "polite-fly-18",
+      "targetSocketIndex": 5
     },
     {
       "id": 17,
-      "sourceNodeId": "cuddly-eagle-87",
+      "sourceNodeId": "shy-pug-84",
       "sourceSocketIndex": 0,
-      "targetNodeId": "blue-liger-16",
+      "targetNodeId": "ancient-baboon-74",
       "targetSocketIndex": 0
     },
     {
       "id": 18,
-      "sourceNodeId": "cuddly-eagle-87",
-      "sourceSocketIndex": 1,
-      "targetNodeId": "blue-liger-16",
-      "targetSocketIndex": 1
-    },
-    {
-      "id": 19,
-      "sourceNodeId": "perfect-walrus-66",
+      "sourceNodeId": "ancient-baboon-74",
       "sourceSocketIndex": 0,
-      "targetNodeId": "ordinary-bat-51",
-      "targetSocketIndex": 2
-    },
-    {
-      "id": 20,
-      "sourceNodeId": "ordinary-bat-51",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "big-penguin-89",
+      "targetNodeId": "lovely-lionfish-92",
       "targetSocketIndex": 0
     },
     {
-      "id": 21,
-      "sourceNodeId": "ordinary-bat-51",
-      "sourceSocketIndex": 1,
-      "targetNodeId": "big-penguin-89",
+      "id": 19,
+      "sourceNodeId": "lovely-lionfish-92",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "wicked-eagle-63",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 20,
+      "sourceNodeId": "wicked-eagle-63",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "polite-fly-18",
       "targetSocketIndex": 1
     },
     {
-      "id": 22,
-      "sourceNodeId": "serious-fish-47",
+      "id": 21,
+      "sourceNodeId": "wicked-eagle-63",
       "sourceSocketIndex": 0,
-      "targetNodeId": "big-penguin-89",
-      "targetSocketIndex": 4
+      "targetNodeId": "polite-fly-18",
+      "targetSocketIndex": 2
+    },
+    {
+      "id": 22,
+      "sourceNodeId": "dull-lion-64",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "great-liger-86",
+      "targetSocketIndex": 0
     },
     {
       "id": 23,
-      "sourceNodeId": "ordinary-bat-51",
+      "sourceNodeId": "ugly-deer-91",
       "sourceSocketIndex": 0,
-      "targetNodeId": "curvy-ladybug-5",
+      "targetNodeId": "grumpy-stingray-50",
       "targetSocketIndex": 1
     },
     {
       "id": 24,
-      "sourceNodeId": "ordinary-bat-51",
-      "sourceSocketIndex": 1,
-      "targetNodeId": "curvy-ladybug-5",
-      "targetSocketIndex": 2
+      "sourceNodeId": "fuzzy-impala-41",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "fluffy-pig-38",
+      "targetSocketIndex": 0
     },
     {
       "id": 25,
-      "sourceNodeId": "honest-vampirebat-20",
+      "sourceNodeId": "fluffy-pig-38",
       "sourceSocketIndex": 0,
-      "targetNodeId": "curvy-ladybug-5",
+      "targetNodeId": "friendly-insect-48",
       "targetSocketIndex": 0
     },
     {
       "id": 26,
-      "sourceNodeId": "big-penguin-89",
+      "sourceNodeId": "grumpy-stingray-50",
       "sourceSocketIndex": 0,
-      "targetNodeId": "old-cow-78",
-      "targetSocketIndex": 6
+      "targetNodeId": "brave-seahorse-95",
+      "targetSocketIndex": 0
     },
     {
       "id": 27,
-      "sourceNodeId": "curvy-ladybug-5",
+      "sourceNodeId": "sweet-panda-28",
       "sourceSocketIndex": 0,
-      "targetNodeId": "old-cow-78",
-      "targetSocketIndex": 7
+      "targetNodeId": "brave-seahorse-95",
+      "targetSocketIndex": 5
     },
     {
       "id": 28,
-      "sourceNodeId": "honest-vampirebat-20",
+      "sourceNodeId": "friendly-insect-48",
       "sourceSocketIndex": 0,
-      "targetNodeId": "chilly-goat-57",
+      "targetNodeId": "sweet-panda-28",
       "targetSocketIndex": 0
     },
     {
       "id": 29,
-      "sourceNodeId": "chilly-goat-57",
+      "sourceNodeId": "fluffy-pig-38",
       "sourceSocketIndex": 0,
-      "targetNodeId": "perfect-walrus-66",
+      "targetNodeId": "dull-lion-64",
       "targetSocketIndex": 0
     },
     {
       "id": 30,
-      "sourceNodeId": "strange-bear-54",
+      "sourceNodeId": "dull-lion-64",
       "sourceSocketIndex": 0,
-      "targetNodeId": "blue-liger-16",
-      "targetSocketIndex": 4
+      "targetNodeId": "brave-seahorse-95",
+      "targetSocketIndex": 1
     },
     {
       "id": 31,
-      "sourceNodeId": "tidy-vampirebat-62",
+      "sourceNodeId": "great-liger-86",
       "sourceSocketIndex": 0,
-      "targetNodeId": "jolly-emu-36",
+      "targetNodeId": "fat-crab-50",
       "targetSocketIndex": 0
     },
     {
       "id": 32,
-      "sourceNodeId": "jolly-emu-36",
+      "sourceNodeId": "fat-crab-50",
       "sourceSocketIndex": 0,
-      "targetNodeId": "jolly-owl-85",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 33,
-      "sourceNodeId": "jolly-owl-85",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "popular-puma-63",
-      "targetSocketIndex": 2
-    },
-    {
-      "id": 34,
-      "sourceNodeId": "jolly-owl-85",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "popular-puma-63",
-      "targetSocketIndex": 3
-    },
-    {
-      "id": 35,
-      "sourceNodeId": "popular-puma-63",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "cowardly-rat-69",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 36,
-      "sourceNodeId": "popular-puma-63",
-      "sourceSocketIndex": 1,
-      "targetNodeId": "cowardly-rat-69",
+      "targetNodeId": "tiny-crab-14",
       "targetSocketIndex": 1
     },
     {
-      "id": 37,
-      "sourceNodeId": "tidy-vampirebat-62",
+      "id": 33,
+      "sourceNodeId": "fluffy-pig-38",
       "sourceSocketIndex": 0,
-      "targetNodeId": "cowardly-rat-69",
+      "targetNodeId": "lovely-goose-85",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 34,
+      "sourceNodeId": "lovely-goose-85",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "tiny-crab-14",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 35,
+      "sourceNodeId": "tiny-crab-14",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "sweet-panda-28",
+      "targetSocketIndex": 1
+    },
+    {
+      "id": 36,
+      "sourceNodeId": "hungry-otter-68",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "fuzzy-bullfrog-2",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 37,
+      "sourceNodeId": "itchy-fox-52",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "fuzzy-bullfrog-2",
       "targetSocketIndex": 5
     },
     {
       "id": 38,
-      "sourceNodeId": "chilly-treefrog-38",
+      "sourceNodeId": "hard-stingray-64",
       "sourceSocketIndex": 0,
-      "targetNodeId": "cowardly-rat-69",
-      "targetSocketIndex": 6
+      "targetNodeId": "itchy-fox-52",
+      "targetSocketIndex": 0
     },
     {
       "id": 39,
-      "sourceNodeId": "witty-rabbit-15",
+      "sourceNodeId": "cowardly-penguin-40",
       "sourceSocketIndex": 0,
-      "targetNodeId": "witty-rattlesnake-28",
+      "targetNodeId": "lazy-owl-47",
       "targetSocketIndex": 0
     },
     {
       "id": 40,
-      "sourceNodeId": "popular-puma-63",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "witty-rattlesnake-28",
-      "targetSocketIndex": 1
+      "sourceNodeId": "friendly-shrimp-27",
+      "sourceSocketIndex": 1,
+      "targetNodeId": "hard-stingray-64",
+      "targetSocketIndex": 0
     },
     {
       "id": 41,
-      "sourceNodeId": "popular-puma-63",
+      "sourceNodeId": "friendly-shrimp-27",
       "sourceSocketIndex": 1,
-      "targetNodeId": "witty-rattlesnake-28",
+      "targetNodeId": "fuzzy-bullfrog-2",
       "targetSocketIndex": 2
     },
     {
       "id": 42,
-      "sourceNodeId": "witty-rattlesnake-28",
+      "sourceNodeId": "lovely-lionfish-92",
       "sourceSocketIndex": 0,
-      "targetNodeId": "curly-mole-82",
-      "targetSocketIndex": 6
-    },
-    {
-      "id": 43,
-      "sourceNodeId": "cowardly-rat-69",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "tricky-bullfrog-45",
-      "targetSocketIndex": 6
-    },
-    {
-      "id": 44,
-      "sourceNodeId": "curly-mole-82",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "tricky-bullfrog-45",
-      "targetSocketIndex": 7
-    },
-    {
-      "id": 45,
-      "sourceNodeId": "brown-moth-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "short-dragonfly-64",
-      "targetSocketIndex": 2
-    },
-    {
-      "id": 46,
-      "sourceNodeId": "nasty-zebra-78",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "short-dragonfly-64",
-      "targetSocketIndex": 3
-    },
-    {
-      "id": 47,
-      "sourceNodeId": "short-dragonfly-64",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "good-sheep-38",
+      "targetNodeId": "terrible-sloth-25",
       "targetSocketIndex": 0
     },
     {
-      "id": 48,
-      "sourceNodeId": "short-dragonfly-64",
-      "sourceSocketIndex": 1,
-      "targetNodeId": "good-sheep-38",
-      "targetSocketIndex": 1
-    },
-    {
-      "id": 49,
-      "sourceNodeId": "tidy-stingray-59",
+      "id": 43,
+      "sourceNodeId": "popular-bobcat-28",
       "sourceSocketIndex": 0,
-      "targetNodeId": "good-sheep-38",
-      "targetSocketIndex": 4
+      "targetNodeId": "grumpy-stingray-50",
+      "targetSocketIndex": 0
     }
   ],
-  "version": 0.1
+  "customNodeTypes": {
+    "labb": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction labb(a, b) {\n  return a * b;\n}",
+    "squareRoot": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction squareRoot(a, b) {\n  return Math.sqrt(a);\n}",
+    "arrayLength": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction arrayLength(a) {\n  return a?.length;\n}",
+    "power": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction power(a, b) {\n  return Math.pow(a, b);\n}",
+    "merge2ArraysOfObjects": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction merge2ArraysOfObjects(a, b) {\n  return a.map((item, index)=> {\n    return [[],{...item, ...b?.[index]}]\n  });\n}"
+  }
 }

@@ -1,4 +1,11 @@
 {
+  "graphSettings": {
+    "viewportCenterPosition": {
+      "x": 400,
+      "y": 600
+    },
+    "viewportScale": 1
+  },
   "customNodeTypes": {
     "CustomNode": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction CustomNode(a, b) {\n  return `We predict a person with the name of ${a} to be ${b} years old`;\n}"
   },

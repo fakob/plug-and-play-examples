@@ -1,4 +1,11 @@
 {
+  "graphSettings": {
+    "viewportCenterPosition": {
+      "x": 400,
+      "y": 600
+    },
+    "viewportScale": 1
+  },
   "customNodeTypes": {
     "asdasd": "// Cmd/Ctrl-Enter to update node\n// Change function name to create new node\nfunction asdasd(a, b) {\n  return a * b;\n}"
   },
