@@ -78,7 +78,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -112,7 +112,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -135,7 +135,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -169,7 +169,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -192,7 +192,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -226,7 +226,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -249,7 +249,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -283,7 +283,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -306,7 +306,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -340,7 +340,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -363,7 +363,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -397,7 +397,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -506,7 +506,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -540,7 +540,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -563,7 +563,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -597,7 +597,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -620,7 +620,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":407.3828125,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -654,7 +654,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -677,7 +677,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":383.4140625,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -711,7 +711,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -734,7 +734,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -768,7 +768,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }
@@ -791,7 +791,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01,\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         },
@@ -825,7 +825,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{\"inputWidgets\":[null],\"outputWidgets\":[null],\"possibleConversions\":[]}}",
           "visible": false
         }

@@ -177,7 +177,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "https://api.agify.io/?name=",
           "visible": false
@@ -212,7 +212,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": true
         }
@@ -310,7 +310,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": false
         },
@@ -344,7 +344,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }
@@ -440,7 +440,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "https://randomuser.me/api/",
           "visible": false
@@ -475,7 +475,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": true
         }
@@ -498,7 +498,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "text",
+          "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "https://catfact.ninja/fact",
           "visible": false
@@ -533,7 +533,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "text",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": true
         }
