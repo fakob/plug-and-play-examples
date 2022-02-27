@@ -2,10 +2,10 @@
   "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 788.2716303424872,
-      "y": 430.72830252512625
+      "x": 781.2936287111958,
+      "y": 438.3844242809041
     },
-    "viewportScale": 0.868448262767316
+    "viewportScale": 0.6041219909868338
   },
   "nodes": [
     {
@@ -258,48 +258,12 @@
       ]
     },
     {
-      "id": "black-dingo-14",
-      "name": "Add",
-      "type": "MathAdd",
-      "x": 631.5176887002967,
-      "y": 127.26831159322126,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "in",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "in2",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "out",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ]
-    },
-    {
       "id": "curvy-bobcat-78",
       "name": "Label",
       "type": "Label",
       "x": 827.3575144795996,
       "y": 127.61062111064649,
-      "width": 242.95052083333334,
+      "width": 255.39583333333334,
       "height": 35,
       "minWidth": 128,
       "updateBehaviour": {
@@ -312,7 +276,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -602,6 +566,42 @@
           "visible": false
         }
       ]
+    },
+    {
+      "id": "moody-kangaroo-91",
+      "name": "Add",
+      "type": "Add",
+      "x": 629.7589265975471,
+      "y": 144.23051325374433,
+      "width": 160,
+      "minWidth": 160,
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      },
+      "inputSocketArray": [
+        {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input 2",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "outputSocketArray": [
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ]
     }
   ],
   "links": [
@@ -617,34 +617,6 @@
       "sourceNodeId": "red-kangaroo-95",
       "sourceSocketIndex": 0,
       "targetNodeId": "fresh-fox-92",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 3,
-      "sourceNodeId": "evil-husky-9",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "black-dingo-14",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 4,
-      "sourceNodeId": "odd-fly-35",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "black-dingo-14",
-      "targetSocketIndex": 1
-    },
-    {
-      "id": 5,
-      "sourceNodeId": "black-dingo-14",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "curvy-bobcat-78",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 6,
-      "sourceNodeId": "black-dingo-14",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "dry-quail-5",
       "targetSocketIndex": 0
     },
     {
@@ -694,6 +666,34 @@
       "sourceNodeId": "weak-wasp-38",
       "sourceSocketIndex": 0,
       "targetNodeId": "green-deer-94",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 16,
+      "sourceNodeId": "evil-husky-9",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "moody-kangaroo-91",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 18,
+      "sourceNodeId": "odd-fly-35",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "moody-kangaroo-91",
+      "targetSocketIndex": 1
+    },
+    {
+      "id": 20,
+      "sourceNodeId": "moody-kangaroo-91",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "dry-quail-5",
+      "targetSocketIndex": 0
+    },
+    {
+      "id": 22,
+      "sourceNodeId": "moody-kangaroo-91",
+      "sourceSocketIndex": 0,
+      "targetNodeId": "curvy-bobcat-78",
       "targetSocketIndex": 0
     }
   ],
