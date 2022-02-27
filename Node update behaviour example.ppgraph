@@ -421,7 +421,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "data",
+          "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Node updated every 1000ms",
           "visible": false
@@ -430,7 +430,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "data",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }
@@ -849,7 +849,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "data",
+          "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Node updated every 10ms",
           "visible": false
@@ -858,7 +858,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "data",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }

@@ -557,7 +557,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "data",
+          "name": "Input",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "visible": false
         }
@@ -565,7 +565,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "data",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }
@@ -589,7 +589,7 @@
       "inputSocketArray": [
         {
           "socketType": "in",
-          "name": "data",
+          "name": "Input",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": false
         }
@@ -597,7 +597,7 @@
       "outputSocketArray": [
         {
           "socketType": "out",
-          "name": "data",
+          "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
         }
