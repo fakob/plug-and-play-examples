@@ -69,7 +69,7 @@
         },
         {
           "socketType": "in",
-          "name": "Name 1",
+          "name": "Path",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "results.[0].name.first",
           "visible": true
@@ -106,7 +106,7 @@
         },
         {
           "socketType": "in",
-          "name": "Name 1",
+          "name": "Path",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "fact",
           "visible": true
@@ -336,7 +336,7 @@
         },
         {
           "socketType": "in",
-          "name": "Name 1",
+          "name": "Path",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "age",
           "visible": true
