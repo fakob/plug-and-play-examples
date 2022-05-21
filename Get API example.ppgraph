@@ -2,31 +2,125 @@
   "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 781.2936287111958,
-      "y": 438.3844242809041
+      "x": 1037.2834045704924,
+      "y": 688.7539631762155
     },
-    "viewportScale": 0.6041219909868338
+    "viewportScale": 0.6850471179579953
   },
   "nodes": [
     {
-      "id": "sweet-donkey-76",
-      "name": "Get",
-      "type": "Get",
-      "x": 247.78426093906614,
-      "y": 212.38182030982205,
+      "id": "weak-wasp-38",
+      "name": "Build text",
+      "type": "CustomNode",
+      "x": 1599.3894844219913,
+      "y": 493.9855465785309,
       "width": 160,
       "minWidth": 160,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "b",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": true
+        }
+      ],
       "updateBehaviour": {
         "update": true,
-        "interval": true,
-        "intervalFrequency": 10000
-      },
-      "inputSocketArray": [
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "brown-cougar-55",
+      "name": "Label",
+      "type": "Label",
+      "x": -34.30477278788098,
+      "y": 733.3045707863756,
+      "width": 369.9479166666667,
+      "height": 69,
+      "minWidth": 128,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://catfact.ninja/fact",
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 32,
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 86,
+            "g": 225,
+            "b": 204,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "curvy-lion-99",
+      "name": "Get catfact",
+      "type": "Get",
+      "x": 382.06450695177904,
+      "y": 715.3180217503623,
+      "width": 160,
+      "minWidth": 160,
+      "socketArray": [
         {
           "socketType": "in",
           "name": "URL",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         },
         {
           "socketType": "in",
@@ -35,111 +129,169 @@
           "data": {
             "Content-Type": "application/json"
           },
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
+          "visible": true,
+          "isCustom": false
+        },
         {
           "socketType": "out",
           "name": "Content",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "odd-fly-35",
-      "name": "JSONGet",
-      "type": "JSONGet",
-      "x": 439.6386606441217,
-      "y": 240.45163301010615,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Path",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "results.[0].name.first",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         }
       ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Value",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      }
     },
     {
-      "id": "fresh-fox-92",
-      "name": "JSONGet",
+      "id": "short-elephant-91",
+      "name": "Extract fact",
       "type": "JSONGet",
-      "x": 609.4578164619934,
-      "y": 522.9227409988714,
+      "x": 606.6130419889428,
+      "y": 728.1950704203476,
       "width": 160,
       "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
+      "socketArray": [
         {
           "socketType": "in",
           "name": "JSON",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         },
         {
           "socketType": "in",
           "name": "Path",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "fact",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
+          "visible": true,
+          "isCustom": false
+        },
         {
           "socketType": "out",
           "name": "Value",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         }
-      ]
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     },
     {
-      "id": "red-kangaroo-95",
-      "name": "Get",
+      "id": "black-insect-40",
+      "name": "Note",
+      "type": "Note",
+      "x": 853.0321200052874,
+      "y": 729.9502237069743,
+      "width": 160,
+      "height": 160,
+      "minWidth": 160,
+      "minHeight": 160,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "loud-earwig-33",
+      "name": "Label",
+      "type": "Label",
+      "x": -74.03104392874485,
+      "y": 523.2195389097113,
+      "width": 421.5260416666667,
+      "height": 69,
+      "minWidth": 128,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://randomuser.me/api/",
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "fontSize",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 32,
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "backgroundColor",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 86,
+            "g": 225,
+            "b": 204,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "in",
+          "name": "min-width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 128,
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "evil-pig-65",
+      "name": "Get random user",
       "type": "Get",
-      "x": 401.47208056391014,
-      "y": 473.71978954441147,
+      "x": 387.3168937634465,
+      "y": 505.31282014896897,
       "width": 160,
       "minWidth": 160,
-      "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 10000
-      },
-      "inputSocketArray": [
+      "socketArray": [
         {
           "socketType": "in",
           "name": "URL",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         },
         {
           "socketType": "in",
@@ -148,46 +300,86 @@
           "data": {
             "Content-Type": "application/json"
           },
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
+          "visible": true,
+          "isCustom": false
+        },
         {
           "socketType": "out",
           "name": "Content",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         }
-      ]
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      }
     },
     {
-      "id": "evil-husky-9",
-      "name": "Label",
-      "type": "Label",
-      "x": 386.8260129744203,
-      "y": 130.2659370571199,
-      "width": 207.37239583333334,
-      "height": 35,
-      "minWidth": 128,
+      "id": "nice-squid-38",
+      "name": "Extract first name",
+      "type": "JSONGet",
+      "x": 611.8654288006106,
+      "y": 518.1898688189542,
+      "width": 160,
+      "minWidth": 160,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Path",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "results.[0].name.first",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
       "updateBehaviour": {
         "update": true,
         "interval": false,
         "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
+      }
+    },
+    {
+      "id": "kind-goose-25",
+      "name": "Label",
+      "type": "Label",
+      "x": 407.84949414659883,
+      "y": 379.1113073208639,
+      "width": 414.7447916666667,
+      "height": 69,
+      "minWidth": 128,
+      "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "https://api.agify.io/?name=",
-          "visible": false
+          "visible": false,
+          "isCustom": true
         },
         {
           "socketType": "in",
           "name": "fontSize",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": false
+          "data": 32,
+          "visible": false,
+          "isCustom": true
         },
         {
           "socketType": "in",
@@ -199,44 +391,83 @@
             "b": 204,
             "a": 1
           },
-          "visible": false
+          "visible": false,
+          "isCustom": true
         },
         {
           "socketType": "in",
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
+          "visible": false,
+          "isCustom": true
+        },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": true
         }
-      ]
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     },
     {
-      "id": "dry-quail-5",
-      "name": "Get",
-      "type": "Get",
-      "x": 823.7943909973274,
-      "y": 190.34789119887512,
+      "id": "nasty-treefrog-99",
+      "name": "Build query URL",
+      "type": "Add",
+      "x": 885.8197612022877,
+      "y": 399.1283250789981,
       "width": 160,
       "minWidth": 160,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 2",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
       "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 10000
-      },
-      "inputSocketArray": [
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "stupid-rattlesnake-19",
+      "name": "Get prediction",
+      "type": "Get",
+      "x": 1100.979573895933,
+      "y": 411.98369069718177,
+      "width": 160,
+      "minWidth": 160,
+      "socketArray": [
         {
           "socketType": "in",
           "name": "URL",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
         },
         {
           "socketType": "in",
@@ -245,459 +476,182 @@
           "data": {
             "Content-Type": "application/json"
           },
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
+          "visible": true,
+          "isCustom": false
+        },
         {
           "socketType": "out",
           "name": "Content",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "curvy-bobcat-78",
-      "name": "Label",
-      "type": "Label",
-      "x": 827.3575144795996,
-      "y": 127.61062111064649,
-      "width": 255.39583333333334,
-      "height": 35,
-      "minWidth": 128,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
+          "visible": true,
+          "isCustom": false
         }
       ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      }
     },
     {
-      "id": "dull-cat-83",
-      "name": "JSONGet",
+      "id": "bright-monkey-84",
+      "name": "Extract age",
       "type": "JSONGet",
-      "x": 1015.8105143736816,
-      "y": 230.0152093058336,
+      "x": 1320.9663789176273,
+      "y": 420.09373150100146,
       "width": 160,
       "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
+      "socketArray": [
         {
           "socketType": "in",
           "name": "JSON",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         },
         {
           "socketType": "in",
           "name": "Path",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "age",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
+          "visible": true,
+          "isCustom": false
+        },
         {
           "socketType": "out",
           "name": "Value",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": false
         }
-      ]
-    },
-    {
-      "id": "weak-wasp-38",
-      "name": "CustomNode",
-      "type": "CustomNode",
-      "x": 1191.5096343141179,
-      "y": 303.5625235446406,
-      "width": 160,
-      "minWidth": 160,
+      ],
       "updateBehaviour": {
         "update": true,
         "interval": false,
         "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "a",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "b",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "out",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
+      }
     },
     {
-      "id": "strong-bear-52",
-      "name": "Label",
-      "type": "Label",
-      "x": 8.477693719633578,
-      "y": 230.48407159503648,
-      "width": 210.76302083333334,
-      "height": 35,
-      "minWidth": 128,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "https://randomuser.me/api/",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "tender-rabbit-87",
-      "name": "Label",
-      "type": "Label",
-      "x": 162.22059420440166,
-      "y": 498.0433909450287,
-      "width": 184.97395833333334,
-      "height": 35,
-      "minWidth": 128,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "https://catfact.ninja/fact",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 86,
-            "g": 225,
-            "b": 204,
-            "a": 1
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 128,
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        }
-      ]
-    },
-    {
-      "id": "brown-bullfrog-61",
+      "id": "hot-ladybug-80",
       "name": "Note",
       "type": "Note",
-      "x": 824.0052326189791,
-      "y": 574.188272626769,
+      "x": 1832.642933149303,
+      "y": 465.73078096600557,
       "width": 160,
       "height": 160,
       "minWidth": 160,
       "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "green-deer-94",
-      "name": "Note",
-      "type": "Note",
-      "x": 1396.065566965341,
-      "y": 352.433427981686,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": false
-        }
-      ],
-      "outputSocketArray": [
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
-        }
-      ]
-    },
-    {
-      "id": "moody-kangaroo-91",
-      "name": "Add",
-      "type": "Add",
-      "x": 629.7589265975471,
-      "y": 144.23051325374433,
-      "width": 160,
-      "minWidth": 160,
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      },
-      "inputSocketArray": [
+      "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
+          "visible": true,
+          "isCustom": true
         },
         {
-          "socketType": "in",
-          "name": "Input 2",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "outputSocketArray": [
-        {
           "socketType": "out",
           "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": true
         }
-      ]
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     }
   ],
   "links": [
     {
       "id": 1,
-      "sourceNodeId": "sweet-donkey-76",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "odd-fly-35",
-      "targetSocketIndex": 0
+      "sourceNodeId": "brown-cougar-55",
+      "sourceSocketName": "Output",
+      "targetNodeId": "curvy-lion-99",
+      "targetSocketName": "URL"
     },
     {
       "id": 2,
-      "sourceNodeId": "red-kangaroo-95",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "fresh-fox-92",
-      "targetSocketIndex": 0
+      "sourceNodeId": "curvy-lion-99",
+      "sourceSocketName": "Content",
+      "targetNodeId": "short-elephant-91",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": 3,
+      "sourceNodeId": "short-elephant-91",
+      "sourceSocketName": "Value",
+      "targetNodeId": "black-insect-40",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": 4,
+      "sourceNodeId": "loud-earwig-33",
+      "sourceSocketName": "Output",
+      "targetNodeId": "evil-pig-65",
+      "targetSocketName": "URL"
+    },
+    {
+      "id": 5,
+      "sourceNodeId": "evil-pig-65",
+      "sourceSocketName": "Content",
+      "targetNodeId": "nice-squid-38",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": 6,
+      "sourceNodeId": "nice-squid-38",
+      "sourceSocketName": "Value",
+      "targetNodeId": "nasty-treefrog-99",
+      "targetSocketName": "Input 2"
     },
     {
       "id": 7,
-      "sourceNodeId": "dry-quail-5",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "dull-cat-83",
-      "targetSocketIndex": 0
+      "sourceNodeId": "kind-goose-25",
+      "sourceSocketName": "Output",
+      "targetNodeId": "nasty-treefrog-99",
+      "targetSocketName": "Input"
     },
     {
       "id": 8,
-      "sourceNodeId": "odd-fly-35",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "weak-wasp-38",
-      "targetSocketIndex": 0
+      "sourceNodeId": "stupid-rattlesnake-19",
+      "sourceSocketName": "Content",
+      "targetNodeId": "bright-monkey-84",
+      "targetSocketName": "JSON"
     },
     {
       "id": 9,
-      "sourceNodeId": "dull-cat-83",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "weak-wasp-38",
-      "targetSocketIndex": 1
+      "sourceNodeId": "nasty-treefrog-99",
+      "sourceSocketName": "Output",
+      "targetNodeId": "stupid-rattlesnake-19",
+      "targetSocketName": "URL"
     },
     {
       "id": 10,
-      "sourceNodeId": "strong-bear-52",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "sweet-donkey-76",
-      "targetSocketIndex": 0
+      "sourceNodeId": "bright-monkey-84",
+      "sourceSocketName": "Value",
+      "targetNodeId": "weak-wasp-38",
+      "targetSocketName": "b"
     },
     {
       "id": 11,
-      "sourceNodeId": "tender-rabbit-87",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "red-kangaroo-95",
-      "targetSocketIndex": 0
+      "sourceNodeId": "weak-wasp-38",
+      "sourceSocketName": "out",
+      "targetNodeId": "hot-ladybug-80",
+      "targetSocketName": "Input"
     },
     {
       "id": 12,
-      "sourceNodeId": "fresh-fox-92",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "brown-bullfrog-61",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 13,
-      "sourceNodeId": "weak-wasp-38",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "green-deer-94",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 16,
-      "sourceNodeId": "evil-husky-9",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "moody-kangaroo-91",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 18,
-      "sourceNodeId": "odd-fly-35",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "moody-kangaroo-91",
-      "targetSocketIndex": 1
-    },
-    {
-      "id": 20,
-      "sourceNodeId": "moody-kangaroo-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "dry-quail-5",
-      "targetSocketIndex": 0
-    },
-    {
-      "id": 22,
-      "sourceNodeId": "moody-kangaroo-91",
-      "sourceSocketIndex": 0,
-      "targetNodeId": "curvy-bobcat-78",
-      "targetSocketIndex": 0
+      "sourceNodeId": "nice-squid-38",
+      "sourceSocketName": "Value",
+      "targetNodeId": "weak-wasp-38",
+      "targetSocketName": "a"
     }
   ],
   "customNodeTypes": {
-    "CustomNode": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction CustomNode(a, b) {\n  return `We predict a person with the name of ${a} to be ${b} years old`;\n}"
+    "CustomNode": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction CustomNode(a, b) {\n  return `We predict a person with the name of ${a} to be ${b} years old`;\n}",
+    "note": "// Ctrl-Enter to update node\n// Change function name to create new node\nfunction note(a, b) {\n  return a * b;\n}"
   }
 }
