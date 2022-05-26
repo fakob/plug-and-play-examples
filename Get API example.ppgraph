@@ -2,10 +2,10 @@
   "version": 0.1,
   "graphSettings": {
     "viewportCenterPosition": {
-      "x": 1037.2834045704924,
-      "y": 688.7539631762155
+      "x": 1310.8498514051505,
+      "y": 698.6270050311671
     },
-    "viewportScale": 0.6850471179579953
+    "viewportScale": 0.6027247797028378
   },
   "nodes": [
     {
@@ -488,8 +488,8 @@
         }
       ],
       "updateBehaviour": {
-        "update": false,
-        "interval": true,
+        "update": true,
+        "interval": false,
         "intervalFrequency": 10000
       }
     },
@@ -537,8 +537,8 @@
       "type": "Note",
       "x": 1832.642933149303,
       "y": 465.73078096600557,
-      "width": 160,
-      "height": 160,
+      "width": 287.41007557666376,
+      "height": 269.88046904963255,
       "minWidth": 160,
       "minHeight": 160,
       "socketArray": [
