@@ -1,6 +1,7 @@
 {
   "version": 0.1,
   "graphSettings": {
+    "showExecutionVisualisation": false,
     "viewportCenterPosition": {
       "x": -528.0255092990371,
       "y": 629.9335750055849
