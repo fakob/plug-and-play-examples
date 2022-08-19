@@ -478,7 +478,7 @@
         },
         {
           "socketType": "in",
-          "name": "Function",
+          "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(a) => {return {Color: a}}",
           "visible": true,
@@ -486,7 +486,7 @@
         },
         {
           "socketType": "out",
-          "name": "OutArray",
+          "name": "OutData",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3484,7 +3484,7 @@
         },
         {
           "socketType": "in",
-          "name": "Function",
+          "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(a) => {\n  return {Text: a.replace(/['\"]+/g, '')}}",
           "visible": true,
@@ -3492,7 +3492,7 @@
         },
         {
           "socketType": "out",
-          "name": "OutArray",
+          "name": "OutData",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3560,7 +3560,7 @@
         },
         {
           "socketType": "in",
-          "name": "Function",
+          "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(a) => {\n  return {Height: a}\n}",
           "visible": true,
@@ -3568,7 +3568,7 @@
         },
         {
           "socketType": "out",
-          "name": "OutArray",
+          "name": "OutData",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3720,7 +3720,7 @@
         },
         {
           "socketType": "in",
-          "name": "Function",
+          "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(a) => {\n  return {Text: a}\n}",
           "visible": true,
@@ -3728,7 +3728,7 @@
         },
         {
           "socketType": "out",
-          "name": "OutArray",
+          "name": "OutData",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -4201,7 +4201,7 @@
         },
         {
           "socketType": "in",
-          "name": "Function",
+          "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "(a) => {return {Color: a}}",
           "visible": true,
@@ -4209,7 +4209,7 @@
         },
         {
           "socketType": "out",
-          "name": "OutArray",
+          "name": "OutData",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -4412,7 +4412,7 @@
     {
       "id": 7,
       "sourceNodeId": "good-insect-66",
-      "sourceSocketName": "OutArray",
+      "sourceSocketName": "OutData",
       "targetNodeId": "grumpy-mouse-36",
       "targetSocketName": "Injected Data"
     },
@@ -4475,7 +4475,7 @@
     {
       "id": 16,
       "sourceNodeId": "angry-pig-11",
-      "sourceSocketName": "OutArray",
+      "sourceSocketName": "OutData",
       "targetNodeId": "gentle-frog-79",
       "targetSocketName": "Injected Data"
     },
@@ -4496,7 +4496,7 @@
     {
       "id": 19,
       "sourceNodeId": "nice-jellyfish-25",
-      "sourceSocketName": "OutArray",
+      "sourceSocketName": "OutData",
       "targetNodeId": "tasty-lion-12",
       "targetSocketName": "Injected Data"
     },
@@ -4510,7 +4510,7 @@
     {
       "id": 21,
       "sourceNodeId": "lovely-warthog-78",
-      "sourceSocketName": "OutArray",
+      "sourceSocketName": "OutData",
       "targetNodeId": "foolish-wombat-30",
       "targetSocketName": "Injected Data"
     },
@@ -4538,7 +4538,7 @@
     {
       "id": 25,
       "sourceNodeId": "lucky-yak-63",
-      "sourceSocketName": "OutArray",
+      "sourceSocketName": "OutData",
       "targetNodeId": "funny-lionfish-6",
       "targetSocketName": "Injected Data"
     },
