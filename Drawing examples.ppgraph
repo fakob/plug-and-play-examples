@@ -471,7 +471,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -2885,7 +2885,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3477,7 +3477,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3553,7 +3553,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -3713,7 +3713,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -4194,7 +4194,7 @@
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
@@ -4407,7 +4407,7 @@
       "sourceNodeId": "spicy-moose-59",
       "sourceSocketName": "color-array",
       "targetNodeId": "good-insect-66",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 7,
@@ -4428,7 +4428,7 @@
       "sourceNodeId": "tender-bird-15",
       "sourceSocketName": "Value",
       "targetNodeId": "tiny-mole-10",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 10,
@@ -4470,7 +4470,7 @@
       "sourceNodeId": "tender-bird-15",
       "sourceSocketName": "Value",
       "targetNodeId": "angry-pig-11",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 16,
@@ -4491,7 +4491,7 @@
       "sourceNodeId": "fat-mayfly-13",
       "sourceSocketName": "Value",
       "targetNodeId": "nice-jellyfish-25",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 19,
@@ -4505,7 +4505,7 @@
       "sourceNodeId": "fat-mayfly-13",
       "sourceSocketName": "Value",
       "targetNodeId": "lovely-warthog-78",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 21,
@@ -4554,7 +4554,7 @@
       "sourceNodeId": "blue-ladybug-41",
       "sourceSocketName": "color-array",
       "targetNodeId": "lucky-yak-63",
-      "targetSocketName": "Array"
+      "targetSocketName": "ArrayIn"
     },
     {
       "id": 32,
