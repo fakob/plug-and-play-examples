@@ -3,10 +3,10 @@
   "graphSettings": {
     "showExecutionVisualisation": true,
     "viewportCenterPosition": {
-      "x": 1029.0109823598095,
-      "y": 622.530760657198
+      "x": 989.9135895616303,
+      "y": 724.2222628516383
     },
-    "viewportScale": 0.6563103169209739
+    "viewportScale": 0.635193921002881
   },
   "nodes": [
     {
@@ -139,38 +139,6 @@
           "name": "Value",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "black-insect-40",
-      "name": "Note",
-      "type": "Note",
-      "x": 853.0321200052874,
-      "y": 729.9502237069743,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false,
           "isCustom": false
         }
       ],
@@ -496,28 +464,91 @@
       }
     },
     {
-      "id": "hot-ladybug-80",
-      "name": "Note",
-      "type": "Note",
-      "x": 1832.642933149303,
-      "y": 465.73078096600557,
-      "width": 287.41007557666376,
-      "height": 269.88046904963255,
-      "minWidth": 160,
-      "minHeight": 160,
+      "id": "moody-chicken-69",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": 829.6508005495554,
+      "y": 663.3352475080388,
+      "width": 565.7021690357302,
+      "height": 491.4583687714097,
+      "minWidth": 200,
+      "minHeight": 150,
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A fact from "
+                },
+                {
+                  "type": "link",
+                  "url": "https://catfact.ninja/fact",
+                  "children": [
+                    {
+                      "text": "catfact.ninja"
+                    }
+                  ]
+                },
+                {
+                  "text": " updated every 10 seconds"
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "Florence Nightingale owned more than 60 cats in her lifetime."
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
         },
         {
           "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false,
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true,
           "isCustom": false
         }
       ],
@@ -528,40 +559,127 @@
       }
     },
     {
-      "id": "pink-treefrog-100",
-      "name": "Build text",
-      "type": "CustomFunction",
-      "x": 1551.7739719823626,
-      "y": 434.8120469363698,
-      "width": 160,
-      "minWidth": 160,
+      "id": "lovely-turtle-25",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": 1534.261197584444,
+      "y": 317.65092149497787,
+      "width": 501.5970255451641,
+      "height": 244.2592836543028,
+      "minWidth": 200,
+      "minHeight": 150,
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Code",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "//define your function here, node will adapt to inputs automatically\n(age, name) => {\n\treturn `${name} is ${age} years old`;\n}",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Someone with the name of "
+                }
+              ],
+              "align": "left"
+            },
+            {
+              "type": "heading-four",
+              "align": "left",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "Luis"
+                },
+                {
+                  "text": " "
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "align": "left",
+              "children": [
+                {
+                  "text": "is estimated to be "
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "align": "left",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "59"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "align": "left",
+              "children": [
+                {
+                  "text": "years old."
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
         },
         {
           "socketType": "in",
-          "name": "age",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
-        },
-        {
-          "socketType": "in",
-          "name": "name",
+          "name": "Input 2",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true,
           "isCustom": true
         },
         {
           "socketType": "out",
-          "name": "OutData",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
         }
@@ -590,73 +708,66 @@
     },
     {
       "id": 2,
-      "sourceNodeId": "short-elephant-91",
-      "sourceSocketName": "Value",
-      "targetNodeId": "black-insect-40",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 3,
       "sourceNodeId": "loud-earwig-33",
       "sourceSocketName": "Output",
       "targetNodeId": "evil-pig-65",
       "targetSocketName": "URL"
     },
     {
-      "id": 4,
+      "id": 3,
       "sourceNodeId": "evil-pig-65",
       "sourceSocketName": "Content",
       "targetNodeId": "nice-squid-38",
       "targetSocketName": "JSON"
     },
     {
-      "id": 5,
+      "id": 4,
       "sourceNodeId": "nice-squid-38",
       "sourceSocketName": "Value",
       "targetNodeId": "nasty-treefrog-99",
       "targetSocketName": "Input 2"
     },
     {
-      "id": 6,
+      "id": 5,
       "sourceNodeId": "kind-goose-25",
       "sourceSocketName": "Output",
       "targetNodeId": "nasty-treefrog-99",
       "targetSocketName": "Input"
     },
     {
-      "id": 7,
+      "id": 6,
       "sourceNodeId": "stupid-rattlesnake-19",
       "sourceSocketName": "Content",
       "targetNodeId": "bright-monkey-84",
       "targetSocketName": "JSON"
     },
     {
-      "id": 8,
+      "id": 7,
       "sourceNodeId": "nasty-treefrog-99",
       "sourceSocketName": "Output",
       "targetNodeId": "stupid-rattlesnake-19",
       "targetSocketName": "URL"
     },
     {
+      "id": 11,
+      "sourceNodeId": "short-elephant-91",
+      "sourceSocketName": "Value",
+      "targetNodeId": "moody-chicken-69",
+      "targetSocketName": "Input 1"
+    },
+    {
       "id": 12,
       "sourceNodeId": "bright-monkey-84",
       "sourceSocketName": "Value",
-      "targetNodeId": "pink-treefrog-100",
-      "targetSocketName": "age"
+      "targetNodeId": "lovely-turtle-25",
+      "targetSocketName": "Input 2"
     },
     {
       "id": 13,
       "sourceNodeId": "nice-squid-38",
       "sourceSocketName": "Value",
-      "targetNodeId": "pink-treefrog-100",
-      "targetSocketName": "name"
-    },
-    {
-      "id": 14,
-      "sourceNodeId": "pink-treefrog-100",
-      "sourceSocketName": "OutData",
-      "targetNodeId": "hot-ladybug-80",
-      "targetSocketName": "Input"
+      "targetNodeId": "lovely-turtle-25",
+      "targetSocketName": "Input 1"
     }
   ]
 }

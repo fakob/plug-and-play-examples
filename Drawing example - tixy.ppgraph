@@ -3,10 +3,10 @@
   "graphSettings": {
     "showExecutionVisualisation": false,
     "viewportCenterPosition": {
-      "x": -528.0255092990371,
-      "y": 629.9335750055849
+      "x": -969.3901868740942,
+      "y": 590.147501702635
     },
-    "viewportScale": 0.574929865350318
+    "viewportScale": 0.5381059331785571
   },
   "nodes": [
     {
@@ -663,72 +663,6 @@
       }
     },
     {
-      "id": "odd-snail-65",
-      "name": "Note",
-      "type": "Note",
-      "x": -1115.1235298399417,
-      "y": 1120.011975068459,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Size",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "tall-moth-53",
-      "name": "Note",
-      "type": "Note",
-      "x": -1350.7509177439867,
-      "y": 1001.7003970508772,
-      "width": 160,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Grid count",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "terrible-tiger-13",
       "name": "tixy",
       "type": "CustomFunction",
@@ -916,39 +850,6 @@
       }
     },
     {
-      "id": "proud-moth-94",
-      "name": "Note",
-      "type": "Note",
-      "x": -1650.2552884524237,
-      "y": 531.8104672272323,
-      "width": 285.62162999030807,
-      "height": 160,
-      "minWidth": 160,
-      "minHeight": 160,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Slide through examples",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "strong-fox-44",
       "name": "Reroute",
       "type": "Reroute",
@@ -985,7 +886,7 @@
       "x": -1063.1547059122368,
       "y": 159.81291174567548,
       "width": 600,
-      "height": 69,
+      "height": 105.8,
       "minWidth": 128,
       "socketArray": [
         {
@@ -1267,67 +1168,6 @@
       }
     },
     {
-      "id": "chatty-dragon-42",
-      "name": "Label",
-      "type": "Label",
-      "x": -1063.0254094331235,
-      "y": 59.934865570445254,
-      "width": 600,
-      "height": 69,
-      "minWidth": 128,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "© https://tixy.land",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "fontSize",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 32,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "backgroundColor",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 212,
-            "g": 226,
-            "b": 90,
-            "a": 1
-          },
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "min-width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 600,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "quick-chipmunk-21",
       "name": "Get",
       "type": "Get",
@@ -1387,7 +1227,6 @@
           "socketType": "in",
           "name": "str",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "defaultData": "Math.sin",
           "visible": true,
           "isCustom": true
         },
@@ -1456,6 +1295,360 @@
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "gentle-vampirebat-87",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": -1631.6254208403511,
+      "y": 529.5105134678272,
+      "width": 227.0515187715332,
+      "height": 201.14102193050985,
+      "minWidth": 200,
+      "minHeight": 150,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Slide through the examples:"
+                }
+              ],
+              "align": "center"
+            },
+            {
+              "type": "heading-four",
+              "align": "center",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "0"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "moody-snail-11",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": -1386.540815544881,
+      "y": 1012.5172007478341,
+      "width": 222.9648781654871,
+      "height": 175.17563755497508,
+      "minWidth": 200,
+      "minHeight": 150,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Change the grid count:"
+                }
+              ],
+              "align": "center"
+            },
+            {
+              "type": "heading-four",
+              "align": "center",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "16"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "honest-ladybug-74",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": -1135.9216944247655,
+      "y": 1128.655748854309,
+      "width": 206.6197164289065,
+      "height": 164.100442747751,
+      "minWidth": 200,
+      "minHeight": 150,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Change the size:"
+                }
+              ],
+              "align": "center"
+            },
+            {
+              "type": "heading-four",
+              "align": "center",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "16"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "mighty-rattlesnake-94",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": -1073.698605229281,
+      "y": -30.227290489637227,
+      "width": 629.1351618928554,
+      "height": 159.8661536475194,
+      "minWidth": 200,
+      "minHeight": 150,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "align": "center",
+              "children": [
+                {
+                  "text": "Implementation of "
+                },
+                {
+                  "type": "link",
+                  "url": "https://twitter.com/aemkei?lang=en",
+                  "children": [
+                    {
+                      "text": "Martin Kleppe's"
+                    }
+                  ]
+                },
+                {
+                  "text": " most minimalist coding environment"
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "align": "center",
+              "children": [
+                {
+                  "text": "© "
+                },
+                {
+                  "type": "link",
+                  "url": "https://tixy.land/",
+                  "children": [
+                    {
+                      "text": "https://tixy.land"
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "visible": true,
           "isCustom": false
         }
@@ -1672,39 +1865,60 @@
       "targetSocketName": "Input"
     },
     {
-      "id": 33,
+      "id": 29,
       "sourceNodeId": "quick-chipmunk-21",
       "sourceSocketName": "Content",
       "targetNodeId": "odd-bobcat-66",
       "targetSocketName": "JSON"
     },
     {
-      "id": 34,
+      "id": 30,
       "sourceNodeId": "quick-chipmunk-21",
       "sourceSocketName": "Content",
       "targetNodeId": "warm-seahorse-93",
       "targetSocketName": "JSON"
     },
     {
-      "id": 35,
+      "id": 31,
       "sourceNodeId": "little-rattlesnake-83",
       "sourceSocketName": "Element",
       "targetNodeId": "brave-cobra-77",
       "targetSocketName": "str"
     },
     {
-      "id": 36,
+      "id": 32,
       "sourceNodeId": "brave-cobra-77",
       "sourceSocketName": "OutData",
       "targetNodeId": "moody-catfish-7",
       "targetSocketName": "Input"
     },
     {
-      "id": 37,
+      "id": 33,
       "sourceNodeId": "moody-catfish-7",
       "sourceSocketName": "Output",
       "targetNodeId": "strong-fox-44",
       "targetSocketName": "In"
+    },
+    {
+      "id": 34,
+      "sourceNodeId": "neat-termite-45",
+      "sourceSocketName": "Out",
+      "targetNodeId": "honest-ladybug-74",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": 35,
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "moody-snail-11",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": 36,
+      "sourceNodeId": "friendly-treefrog-7",
+      "sourceSocketName": "Out",
+      "targetNodeId": "gentle-vampirebat-87",
+      "targetSocketName": "Input 1"
     }
   ]
 }
