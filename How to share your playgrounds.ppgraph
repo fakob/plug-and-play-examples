@@ -19,6 +19,7 @@
       "height": 418.6927628791393,
       "minWidth": 160,
       "minHeight": 333.28719723183394,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -73,6 +74,7 @@
       "y": 1311.381293808573,
       "width": 160,
       "minWidth": 160,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -113,6 +115,7 @@
       "height": 150,
       "minWidth": 200,
       "minHeight": 150,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -144,6 +147,7 @@
       "width": 128,
       "height": 35,
       "minWidth": 128,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -206,6 +210,7 @@
       "height": 424.1310885847664,
       "minWidth": 200,
       "minHeight": 150,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -385,6 +390,7 @@
       "height": 293.6111885369987,
       "minWidth": 200,
       "minHeight": 150,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -511,6 +517,7 @@
       "height": 150,
       "minWidth": 200,
       "minHeight": 150,
+      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
