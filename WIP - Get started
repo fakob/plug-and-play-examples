@@ -1,0 +1,785 @@
+{
+  "version": 0.1,
+  "graphSettings": {
+    "showExecutionVisualisation": true,
+    "viewportCenterPosition": {
+      "x": 1192.7525381960002,
+      "y": -6739.033171440337
+    },
+    "viewportScale": 0.6673001537384633
+  },
+  "nodes": [
+    {
+      "id": "slimy-swan-80",
+      "name": "Get build info",
+      "type": "Get",
+      "x": 388.0646360537353,
+      "y": -6956.731203465924,
+      "width": 160,
+      "height": 112,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "https://plugandplayground.dev/buildInfo",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": false,
+        "intervalFrequency": 10000
+      }
+    },
+    {
+      "id": "neat-bird-4",
+      "name": "Get build version",
+      "type": "JSONGet",
+      "x": 594.0214110973224,
+      "y": -7040.077864316361,
+      "width": 160,
+      "height": 112,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "defaultData": {},
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Path",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "buildVersion",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "blue-dodo-19",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": 1068.7542888865255,
+      "y": -6744.545923512931,
+      "width": 500,
+      "height": 176,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "What data you ask?"
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Tabular data"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Images"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "And whatever you can GET via an API call"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": true,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[null]}}",
+          "data": 0,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[null]}}",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[null]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "curvy-crab-49",
+      "name": "Button",
+      "type": "JumpToNode",
+      "x": 1228.926281112877,
+      "y": -7177.316842518833,
+      "width": 241,
+      "height": 104,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Select Node",
+          "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "curvy-crab-49",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 0,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 1,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Button text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "Github",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "wicked-elephant-2",
+      "name": "Button",
+      "type": "JumpToNode",
+      "x": 967.1857647359593,
+      "y": -7179.787900505728,
+      "width": 241,
+      "height": 104,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Select Node",
+          "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "curvy-crab-49",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 0,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 1,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Button text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "Examples",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "lucky-sheep-13",
+      "name": "Button",
+      "type": "JumpToNode",
+      "x": 1510.1165167427557,
+      "y": -7177.316842518833,
+      "width": 241,
+      "height": 104,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Select Node",
+          "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "curvy-crab-49",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 0,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": 1,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Button text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "New playground",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": false,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "great-goat-84",
+      "name": "Get build version",
+      "type": "JSONGet",
+      "x": 591.3448599346991,
+      "y": -6900.926886709374,
+      "width": 160,
+      "height": 112,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "defaultData": {},
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Path",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": "buildTime",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "hard-falcon-27",
+      "name": "DateAndTime",
+      "type": "DateAndTime",
+      "x": 809.9717369793543,
+      "y": -6874.970405969361,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Date string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "defaultData": "",
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Date method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"valueChangedListeners\":[],\"options\":[{\"text\":\"getDate\",\"value\":\"getDate\"},{\"text\":\"getDay\",\"value\":\"getDay\"},{\"text\":\"getFullYear\",\"value\":\"getFullYear\"},{\"text\":\"getHours\",\"value\":\"getHours\"},{\"text\":\"getMilliseconds\",\"value\":\"getMilliseconds\"},{\"text\":\"getMinutes\",\"value\":\"getMinutes\"},{\"text\":\"getMonth\",\"value\":\"getMonth\"},{\"text\":\"getSeconds\",\"value\":\"getSeconds\"},{\"text\":\"getTime\",\"value\":\"getTime\"},{\"text\":\"getTimezoneOffset\",\"value\":\"getTimezoneOffset\"},{\"text\":\"getUTCDate\",\"value\":\"getUTCDate\"},{\"text\":\"getUTCDay\",\"value\":\"getUTCDay\"},{\"text\":\"getUTCFullYear\",\"value\":\"getUTCFullYear\"},{\"text\":\"getUTCHours\",\"value\":\"getUTCHours\"},{\"text\":\"getUTCMilliseconds\",\"value\":\"getUTCMilliseconds\"},{\"text\":\"getUTCMinutes\",\"value\":\"getUTCMinutes\"},{\"text\":\"getUTCMonth\",\"value\":\"getUTCMonth\"},{\"text\":\"getUTCSeconds\",\"value\":\"getUTCSeconds\"},{\"text\":\"getYear\",\"value\":\"getYear\"},{\"text\":\"toDateString\",\"value\":\"toDateString\"},{\"text\":\"toGMTString\",\"value\":\"toGMTString\"},{\"text\":\"toISOString\",\"value\":\"toISOString\"},{\"text\":\"toJSON\",\"value\":\"toJSON\"},{\"text\":\"toLocaleDateString\",\"value\":\"toLocaleDateString\"},{\"text\":\"toLocaleString\",\"value\":\"toLocaleString\"},{\"text\":\"toLocaleTimeString\",\"value\":\"toLocaleTimeString\"},{\"text\":\"toString\",\"value\":\"toString\"},{\"text\":\"toTimeString\",\"value\":\"toTimeString\"},{\"text\":\"toUTCString\",\"value\":\"toUTCString\"},{\"text\":\"valueOf\",\"value\":\"valueOf\"}]}}",
+          "data": "toUTCString",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Date and time",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "wicked-kangaroo-87",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": 1070.811769421815,
+      "y": -7032.707238353269,
+      "width": 503,
+      "height": 256,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": [
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Welcome to"
+                }
+              ]
+            },
+            {
+              "type": "heading-four",
+              "children": [
+                {
+                  "text": "Plug and Playground"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A visual toolkit for creative prototyping \nto explore, transform or visualise data."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Open source project: ",
+                  "italic": true
+                },
+                {
+                  "type": "link",
+                  "url": "https://github.com/fakob/plug-and-play",
+                  "children": [
+                    {
+                      "text": "github.com/fakob/plug-and-play",
+                      "italic": true
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "type": "link",
+                  "url": "https://github.com/fakob/plug-and-play",
+                  "children": [
+                    {
+                      "italic": true,
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "text": "Latest version: ",
+                  "italic": true
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "v223"
+                },
+                {
+                  "text": " from: ",
+                  "italic": true
+                },
+                {
+                  "type": "mention",
+                  "inputName": "Input 2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "reactiveText": "Sun, 23 Oct 2022 12:33:39 GMT"
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": true,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "defaultData": 0,
+          "visible": true,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 2",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "defaultData": 0,
+          "visible": true,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "swift-jellyfish-72",
+      "name": "TextEditor",
+      "type": "TextEditor",
+      "x": 1066.9663779673597,
+      "y": -6495.3374165639325,
+      "width": 497.2281265782326,
+      "height": 175,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "textJSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "text": "Let's create a ..."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "text": "How to "
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "text": "Reference"
+                }
+              ]
+            }
+          ],
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": true,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":[null]}}",
+          "data": 0,
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "in",
+          "name": "background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{\"valueChangedListeners\":[]}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false,
+          "isCustom": true
+        },
+        {
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":[null,null,null,null,null]}}",
+          "visible": false,
+          "isCustom": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[null,null,null,null,null]}}",
+          "visible": true,
+          "isCustom": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "sourceNodeId": "slimy-swan-80",
+      "sourceSocketName": "Content",
+      "targetNodeId": "neat-bird-4",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": 1,
+      "sourceNodeId": "slimy-swan-80",
+      "sourceSocketName": "Content",
+      "targetNodeId": "great-goat-84",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": 2,
+      "sourceNodeId": "great-goat-84",
+      "sourceSocketName": "Value",
+      "targetNodeId": "hard-falcon-27",
+      "targetSocketName": "Date string"
+    },
+    {
+      "id": 3,
+      "sourceNodeId": "neat-bird-4",
+      "sourceSocketName": "Value",
+      "targetNodeId": "wicked-kangaroo-87",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": 4,
+      "sourceNodeId": "hard-falcon-27",
+      "sourceSocketName": "Date and time",
+      "targetNodeId": "wicked-kangaroo-87",
+      "targetSocketName": "Input 2"
+    }
+  ]
+}
