@@ -3,199 +3,40 @@
   "graphSettings": {
     "showExecutionVisualisation": false,
     "viewportCenterPosition": {
-      "x": -969.3901868740942,
-      "y": 590.147501702635
+      "x": -557.2195148410949,
+      "y": 616.1907913735656
     },
-    "viewportScale": 0.5381059331785571
+    "viewportScale": 0.5560709201346878
   },
   "nodes": [
-    {
-      "id": "polite-dodo-94",
-      "name": "Draw shape",
-      "type": "DRAW_Shape",
-      "x": -172.7727723510577,
-      "y": 523.6587644481347,
-      "width": 160,
-      "minWidth": 160,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Shape",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"},{\"text\":\"Ellipse\",\"value\":\"Ellipse\"}]}}",
-          "data": "Circle",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 255,
-            "g": 55,
-            "b": 0,
-            "a": 1
-          },
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 20,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Height",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 20,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Border",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Rotation",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": "center center",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Injected Data",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "giant-lion-8",
-      "name": "Date and time",
-      "type": "DateAndTime",
-      "x": -927.1935151685204,
-      "y": 524.2187476263326,
-      "width": 160,
-      "minWidth": 160,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Date method",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"getDate\",\"value\":\"getDate\"},{\"text\":\"getDay\",\"value\":\"getDay\"},{\"text\":\"getFullYear\",\"value\":\"getFullYear\"},{\"text\":\"getHours\",\"value\":\"getHours\"},{\"text\":\"getMilliseconds\",\"value\":\"getMilliseconds\"},{\"text\":\"getMinutes\",\"value\":\"getMinutes\"},{\"text\":\"getMonth\",\"value\":\"getMonth\"},{\"text\":\"getSeconds\",\"value\":\"getSeconds\"},{\"text\":\"getTime\",\"value\":\"getTime\"},{\"text\":\"getTimezoneOffset\",\"value\":\"getTimezoneOffset\"},{\"text\":\"getUTCDate\",\"value\":\"getUTCDate\"},{\"text\":\"getUTCDay\",\"value\":\"getUTCDay\"},{\"text\":\"getUTCFullYear\",\"value\":\"getUTCFullYear\"},{\"text\":\"getUTCHours\",\"value\":\"getUTCHours\"},{\"text\":\"getUTCMilliseconds\",\"value\":\"getUTCMilliseconds\"},{\"text\":\"getUTCMinutes\",\"value\":\"getUTCMinutes\"},{\"text\":\"getUTCMonth\",\"value\":\"getUTCMonth\"},{\"text\":\"getUTCSeconds\",\"value\":\"getUTCSeconds\"},{\"text\":\"getYear\",\"value\":\"getYear\"},{\"text\":\"toDateString\",\"value\":\"toDateString\"},{\"text\":\"toGMTString\",\"value\":\"toGMTString\"},{\"text\":\"toISOString\",\"value\":\"toISOString\"},{\"text\":\"toJSON\",\"value\":\"toJSON\"},{\"text\":\"toLocaleDateString\",\"value\":\"toLocaleDateString\"},{\"text\":\"toLocaleString\",\"value\":\"toLocaleString\"},{\"text\":\"toLocaleTimeString\",\"value\":\"toLocaleTimeString\"},{\"text\":\"toString\",\"value\":\"toString\"},{\"text\":\"toTimeString\",\"value\":\"toTimeString\"},{\"text\":\"toUTCString\",\"value\":\"toUTCString\"},{\"text\":\"valueOf\",\"value\":\"valueOf\"}]}}",
-          "data": "getTime",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "date and time",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 100
-      }
-    },
     {
       "id": "heavy-mayfly-10",
       "name": "Divide",
       "type": "Divide",
-      "x": -731.2436840958901,
-      "y": 502.3642774731695,
+      "x": -731.2436840958906,
+      "y": 502.36427747316964,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Input 2",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0.1,\"maxValue\":10,\"stepSize\":0.01}}",
           "data": 1000,
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -208,27 +49,24 @@
       "id": "clever-cougar-42",
       "name": "Label",
       "type": "Label",
-      "x": -506.69950037414924,
-      "y": 535.5711414499895,
-      "width": 141.45833333333334,
+      "x": -506.6995003741497,
+      "y": 535.5711414499896,
+      "width": 160,
       "height": 35,
-      "minWidth": 128,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "fontSize",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
@@ -240,176 +78,20 @@
             "b": 204,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "yellow-dog-70",
-      "name": "Multiply object",
-      "type": "DRAW_Multiplier",
-      "x": 57.80909423257583,
-      "y": 434.6475097357616,
-      "width": 160,
-      "minWidth": 160,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Total Number",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Number Per Column/Row",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Change Column/Row drawing order",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": true,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Spacing X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "defaultData": 32,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Spacing Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "defaultData": 32,
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
-          "data": -200,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-500,\"maxValue\":500,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Rotation",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-3.14159,\"maxValue\":3.14159,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": "top left",
-          "visible": false,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Injected Data",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "data": {},
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "in",
-          "name": "Number Per Column",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": true
-        },
-        {
-          "socketType": "out",
-          "name": "LatestPressedIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "LastPressedInjected",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "PointerDown",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": false
         }
       ],
       "updateBehaviour": {
@@ -422,10 +104,10 @@
       "id": "red-mouse-92",
       "name": "Range array",
       "type": "RangeArray",
-      "x": -731.5595096385941,
-      "y": 651.2247341560978,
+      "x": -731.9946417746112,
+      "y": 633.8563243201711,
       "width": 160,
-      "minWidth": 160,
+      "height": 136,
       "triggerArray": [],
       "socketArray": [
         {
@@ -433,30 +115,26 @@
           "name": "start",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "stop",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "step",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 1,
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "output array",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -469,11 +147,10 @@
       "id": "neat-termite-45",
       "name": "Slider",
       "type": "WidgetSlider",
-      "x": -1129.4564807861548,
+      "x": -1129.456480786155,
       "y": 1005.6015364235105,
       "width": 200,
       "height": 104,
-      "minWidth": 200,
       "triggerArray": [],
       "socketArray": [
         {
@@ -481,47 +158,48 @@
           "name": "Initial value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Min",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Max",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 32,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Round",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Step size",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0.01,
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Slider",
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -534,11 +212,10 @@
       "id": "jolly-parrot-51",
       "name": "Slider",
       "type": "WidgetSlider",
-      "x": -1367.4542679678875,
+      "x": -1367.4542679678864,
       "y": 891.9973726275704,
       "width": 200,
       "height": 104,
-      "minWidth": 200,
       "triggerArray": [],
       "socketArray": [
         {
@@ -546,47 +223,48 @@
           "name": "Initial value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 16,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Min",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Max",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 100,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Round",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Step size",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0.01,
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Slider",
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -599,32 +277,29 @@
       "id": "nasty-baboon-32",
       "name": "Multiply",
       "type": "Multiply",
-      "x": -1115.2785354149416,
-      "y": 775.9044435947856,
+      "x": -1115.278535414942,
+      "y": 775.9044435947857,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Input 2",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -637,33 +312,30 @@
       "id": "yellow-goat-84",
       "name": "Subtract",
       "type": "Subtract",
-      "x": -922.3054908268305,
-      "y": 672.7974030038613,
+      "x": -922.8069990513927,
+      "y": 681.979428585912,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Input 2",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
           "data": 1,
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -676,10 +348,10 @@
       "id": "terrible-tiger-13",
       "name": "tixy",
       "type": "CustomFunction",
-      "x": -422.32268320645323,
-      "y": 668.6318540430667,
+      "x": -421.9170515542345,
+      "y": 676.0217252344039,
       "width": 160,
-      "minWidth": 160,
+      "height": 232,
       "triggerArray": [],
       "socketArray": [
         {
@@ -687,57 +359,55 @@
           "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "// define your function here, node will adapt to inputs automatically\n(c, t, j, x, y, size) => {\n  let codeString = c ?? \"Math.sin(i ** 2)\";\n\n  // console.log(codeString);\n\n  const callback = eval(`\n    (function f(t,i,x,y) {\n      try {\n          // console.log(i)\n          return ${codeString.replace(/\\\\/g, ';')};\n          return ${codeString}\n      } catch (error) {\n        return error;\n      }\n    })\n  `);\n\n  if (!j) {\n    return {}\n  }\n  return j.map((i) => {\n    const colorA = {\n    \"r\": 86,\n    \"g\": 225,\n    \"b\": 204,\n    \"a\": 1\n  };\n    const colorB = {\n    \"r\": 255,\n    \"g\": 22,\n    \"b\": 204,\n    \"a\": 1\n  };\n    const value = callback(t, i, x[i], y[i]);\n    // console.log(value)\n    const abs = Math.abs(value);\n   return {\n     \"Width\": Math.min(abs * size * 2, size * 2), \n     \"Height\": Math.min(abs * size * 2, size * 2), \n     \"Color\": value < 0 ? colorA : colorB};\n    }\n  )\n}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "c",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "t",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
-          "name": " j",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "name": "j",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
-          "name": " x",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "name": "x",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
-          "name": " y",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "name": "y",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
-          "name": " size",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "name": "size",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "OutData",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -750,10 +420,10 @@
       "id": "dull-bird-21",
       "name": "Grid coordinates",
       "type": "GridCoordinates",
-      "x": -727.15029281297,
-      "y": 825.4003407749598,
+      "x": -729.3407037349535,
+      "y": 798.6950278170443,
       "width": 160,
-      "minWidth": 160,
+      "height": 136,
       "triggerArray": [],
       "socketArray": [
         {
@@ -761,60 +431,52 @@
           "name": "x",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "y",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "count",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "column",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "distanceWidth",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 1,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "distanceHeight",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 1,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "x-array",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "y-array",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -830,30 +492,27 @@
       "x": -866.9806087917145,
       "y": 1087.2877866882218,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Input 2",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
           "data": 2,
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -866,25 +525,23 @@
       "id": "strong-fox-44",
       "name": "Reroute",
       "type": "Reroute",
-      "x": -975.5231014672174,
-      "y": 629.8301894639849,
+      "x": -975.5231014672179,
+      "y": 629.830189463985,
       "width": 20,
-      "minWidth": 20,
+      "height": 3,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
           "name": "In",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Out",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -901,7 +558,6 @@
       "y": 159.81291174567548,
       "width": 600,
       "height": 105.8,
-      "minWidth": 128,
       "triggerArray": [],
       "socketArray": [
         {
@@ -909,16 +565,14 @@
           "name": "Input",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "defaultData": "Math.random() < 0.1",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "fontSize",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 32,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
@@ -930,23 +584,20 @@
             "b": 12,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 600,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -962,22 +613,28 @@
       "x": -1566.0929199905497,
       "y": 139.46594527118444,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n\treturn Object.keys(a);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Value",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -993,22 +650,28 @@
       "x": -1566.289066978325,
       "y": 270.4921331051468,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n\treturn Object.values(a);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Value",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1024,29 +687,34 @@
       "x": -1334.715229689245,
       "y": 291.1281247272832,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(ArrayIn, Index) => {\n\treturn ArrayIn[Index];\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "defaultData": [],
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Index",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Element",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1063,7 +731,6 @@
       "y": 410.37388732030286,
       "width": 200,
       "height": 104,
-      "minWidth": 200,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1071,77 +738,47 @@
           "name": "Initial value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Min",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Max",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Round",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "Step size",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 0.01,
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Slider",
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "sour-pug-80",
-      "name": "ArrayLength",
-      "type": "ArrayLength",
-      "x": -1814.261271991034,
-      "y": 420.5316242918168,
-      "width": 160,
-      "minWidth": 160,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Array",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
-        },
-        {
-          "socketType": "out",
-          "name": "ArrayLength",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1157,29 +794,34 @@
       "x": -1333.944428694163,
       "y": 154.2946575470041,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Array",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(ArrayIn, Index) => {\n\treturn ArrayIn[Index];\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "ArrayIn",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "defaultData": [],
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Index",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Element",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1192,10 +834,10 @@
       "id": "quick-chipmunk-21",
       "name": "Get",
       "type": "Get",
-      "x": -1833.4536380426323,
-      "y": 217.00747818279973,
+      "x": -1812.2178726878528,
+      "y": 253.13289027226307,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1203,23 +845,20 @@
           "name": "URL",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "https://raw.githubusercontent.com/aemkei/tixy/main/src/examples.json",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "Headers",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "data": {},
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "Content",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1235,7 +874,7 @@
       "x": -1331.469397171701,
       "y": 434.8779976761873,
       "width": 160,
-      "minWidth": 160,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1243,22 +882,20 @@
           "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "// define your function here, node will adapt to inputs automatically\n(str) => {\n  const newStr = str.replaceAll(/Math./g, '')\n  const regex = /E|LN10|LN2|LOG10E|LOG2E|PI|SQRT1_2|SQRT2|abs|acos|acosh|asin|asinh|atan|atan2|atanh|cbrt|ceil|clz32|cos|cosh|exp|expm1|floor|fround|hypot|imul|log|log10|log1p|log2|max|min|pow|random|round|sign|sin|sinh|sqrt|tan|tanh|trunc/gm\nreturn newStr.replace(regex, 'Math.$&');\n}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "str",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": true
+          "defaultData": "",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "OutData",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1275,7 +912,6 @@
       "y": 304.74718667859014,
       "width": 600,
       "height": 69,
-      "minWidth": 128,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1283,16 +919,14 @@
           "name": "Input",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "defaultData": "Math.random() < 0.1",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         },
         {
           "socketType": "in",
           "name": "fontSize",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 32,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
@@ -1304,23 +938,20 @@
             "b": 12,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "in",
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 600,
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1333,12 +964,10 @@
       "id": "gentle-vampirebat-87",
       "name": "TextEditor",
       "type": "TextEditor",
-      "x": -1631.6254208403511,
-      "y": 529.5105134678272,
+      "x": -1626.1033913036351,
+      "y": 523.7317082062027,
       "width": 227.0515187715332,
-      "height": 201.14102193050985,
-      "minWidth": 200,
-      "minHeight": 150,
+      "height": 199.9375,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1370,7 +999,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "0"
+                  "reactiveText": "2"
                 },
                 {
                   "text": ""
@@ -1378,8 +1007,32 @@
               ]
             }
           ],
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "in",
@@ -1391,22 +1044,25 @@
             "b": 90,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
-          "socketType": "in",
-          "name": "Input 1",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
+          "visible": false
         }
       ],
       "updateBehaviour": {
@@ -1419,12 +1075,10 @@
       "id": "moody-snail-11",
       "name": "TextEditor",
       "type": "TextEditor",
-      "x": -1386.540815544881,
+      "x": -1386.5408155448797,
       "y": 1012.5172007478341,
       "width": 222.9648781654871,
-      "height": 175.17563755497508,
-      "minWidth": 200,
-      "minHeight": 150,
+      "height": 157.953125,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1464,8 +1118,33 @@
               ]
             }
           ],
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
@@ -1477,23 +1156,25 @@
             "b": 90,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
-          "socketType": "in",
-          "name": "Input 1",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
-          "visible": true,
-          "isCustom": false
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
+          "visible": false
         }
       ],
       "updateBehaviour": {
@@ -1506,12 +1187,10 @@
       "id": "honest-ladybug-74",
       "name": "TextEditor",
       "type": "TextEditor",
-      "x": -1135.9216944247655,
+      "x": -1135.9216944247657,
       "y": 1128.655748854309,
       "width": 206.6197164289065,
-      "height": 164.100442747751,
-      "minWidth": 200,
-      "minHeight": 150,
+      "height": 157.953125,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1551,8 +1230,33 @@
               ]
             }
           ],
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
         },
         {
           "socketType": "in",
@@ -1564,23 +1268,25 @@
             "b": 90,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
-          "socketType": "in",
-          "name": "Input 1",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
-          "visible": true,
-          "isCustom": false
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": false,
-          "isCustom": false
+          "visible": false
         }
       ],
       "updateBehaviour": {
@@ -1596,9 +1302,7 @@
       "x": -1073.698605229281,
       "y": -30.227290489637227,
       "width": 629.1351618928554,
-      "height": 159.8661536475194,
-      "minWidth": 200,
-      "minHeight": 150,
+      "height": 157.953125,
       "triggerArray": [],
       "socketArray": [
         {
@@ -1649,8 +1353,33 @@
               ]
             }
           ],
-          "visible": false,
-          "isCustom": false
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Background Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 212,
+            "g": 226,
+            "b": 90,
+            "a": 1
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Auto height",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input 1",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": true
         },
         {
           "socketType": "in",
@@ -1662,23 +1391,25 @@
             "b": 90,
             "a": 1
           },
-          "visible": false,
-          "isCustom": false
+          "visible": false
         },
         {
-          "socketType": "in",
-          "name": "Input 1",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": 0,
-          "visible": true,
-          "isCustom": false
+          "socketType": "out",
+          "name": "Output",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Plain text",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
         },
         {
           "socketType": "out",
           "name": "output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true,
-          "isCustom": false
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -1686,23 +1417,435 @@
         "interval": false,
         "intervalFrequency": 1000
       }
+    },
+    {
+      "id": "fluffy-bat-58",
+      "name": "JSONKeys",
+      "type": "JSONKeys",
+      "x": -1578.7495151890826,
+      "y": 180.87400681141833,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n\treturn Object.keys(a);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "tough-quail-37",
+      "name": "JSONValues",
+      "type": "JSONValues",
+      "x": -1578.7348657924526,
+      "y": 292.5199884076137,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(a) => {\n\treturn Object.values(a);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "a",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Value",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "fresh-rat-44",
+      "name": "ArrayLength",
+      "type": "ArrayLength",
+      "x": -1812.647641541559,
+      "y": 433.2860406248291,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(ArrayIn) => {\n\treturn ArrayIn.length;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "ArrayIn",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Length",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "breezy-eel-76",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": -214.49100220968967,
+      "y": 683.2651546273589,
+      "width": 160,
+      "height": 208,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"},{\"text\":\"Ellipse\",\"value\":\"Ellipse\"}]}}",
+          "data": "Circle",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 255,
+            "g": 55,
+            "b": 0,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 20,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Height",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 20,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Angle",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": {
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Always Draw",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Absolute Positions",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "tricky-mule-63",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": -13.410102914215827,
+      "y": 805.0819594409836,
+      "width": 160,
+      "height": 304,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Total Number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 2,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Number Per Column/Row",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 2,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Change Column/Row drawing order",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "defaultData": 400,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "defaultData": 300,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 200,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": -200,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Angle",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": {
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Always Draw",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Absolute Positions",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "data": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "PointerDown",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "loud-dodo-98",
+      "name": "DateAndTime",
+      "type": "DateAndTime",
+      "x": -923.1497410163275,
+      "y": 523.9775837175084,
+      "width": 160,
+      "height": 64,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Date string",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Date method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"getDate\",\"value\":\"getDate\"},{\"text\":\"getDay\",\"value\":\"getDay\"},{\"text\":\"getFullYear\",\"value\":\"getFullYear\"},{\"text\":\"getHours\",\"value\":\"getHours\"},{\"text\":\"getMilliseconds\",\"value\":\"getMilliseconds\"},{\"text\":\"getMinutes\",\"value\":\"getMinutes\"},{\"text\":\"getMonth\",\"value\":\"getMonth\"},{\"text\":\"getSeconds\",\"value\":\"getSeconds\"},{\"text\":\"getTime\",\"value\":\"getTime\"},{\"text\":\"getTimezoneOffset\",\"value\":\"getTimezoneOffset\"},{\"text\":\"getUTCDate\",\"value\":\"getUTCDate\"},{\"text\":\"getUTCDay\",\"value\":\"getUTCDay\"},{\"text\":\"getUTCFullYear\",\"value\":\"getUTCFullYear\"},{\"text\":\"getUTCHours\",\"value\":\"getUTCHours\"},{\"text\":\"getUTCMilliseconds\",\"value\":\"getUTCMilliseconds\"},{\"text\":\"getUTCMinutes\",\"value\":\"getUTCMinutes\"},{\"text\":\"getUTCMonth\",\"value\":\"getUTCMonth\"},{\"text\":\"getUTCSeconds\",\"value\":\"getUTCSeconds\"},{\"text\":\"getYear\",\"value\":\"getYear\"},{\"text\":\"toDateString\",\"value\":\"toDateString\"},{\"text\":\"toGMTString\",\"value\":\"toGMTString\"},{\"text\":\"toISOString\",\"value\":\"toISOString\"},{\"text\":\"toJSON\",\"value\":\"toJSON\"},{\"text\":\"toLocaleDateString\",\"value\":\"toLocaleDateString\"},{\"text\":\"toLocaleString\",\"value\":\"toLocaleString\"},{\"text\":\"toLocaleTimeString\",\"value\":\"toLocaleTimeString\"},{\"text\":\"toString\",\"value\":\"toString\"},{\"text\":\"toTimeString\",\"value\":\"toTimeString\"},{\"text\":\"toUTCString\",\"value\":\"toUTCString\"},{\"text\":\"valueOf\",\"value\":\"valueOf\"}]}}",
+          "data": "getTime",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Date and time",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": true,
+        "intervalFrequency": 100
+      }
     }
   ],
   "links": [
-    {
-      "id": 0,
-      "sourceNodeId": "giant-lion-8",
-      "sourceSocketName": "date and time",
-      "targetNodeId": "heavy-mayfly-10",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 1,
-      "sourceNodeId": "polite-dodo-94",
-      "sourceSocketName": "Graphics",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Graphics"
-    },
     {
       "id": 2,
       "sourceNodeId": "heavy-mayfly-10",
@@ -1739,54 +1882,14 @@
       "targetSocketName": "stop"
     },
     {
-      "id": 7,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Number Per Column"
-    },
-    {
-      "id": 8,
-      "sourceNodeId": "nasty-baboon-32",
-      "sourceSocketName": "Output",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Total Number"
-    },
-    {
-      "id": 9,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Number Per Column/Row"
-    },
-    {
       "id": 10,
       "sourceNodeId": "heavy-mayfly-10",
       "sourceSocketName": "Output",
       "targetNodeId": "terrible-tiger-13",
       "targetSocketName": "t"
     },
-    {
-      "id": 11,
-      "sourceNodeId": "red-mouse-92",
-      "sourceSocketName": "output array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": " j"
-    },
-    {
-      "id": 12,
-      "sourceNodeId": "neat-termite-45",
-      "sourceSocketName": "Out",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": " size"
-    },
-    {
-      "id": 13,
-      "sourceNodeId": "terrible-tiger-13",
-      "sourceSocketName": "OutData",
-      "targetNodeId": "polite-dodo-94",
-      "targetSocketName": "Injected Data"
-    },
+    null,
+    null,
     {
       "id": 14,
       "sourceNodeId": "nasty-baboon-32",
@@ -1801,20 +1904,8 @@
       "targetNodeId": "dull-bird-21",
       "targetSocketName": "column"
     },
-    {
-      "id": 16,
-      "sourceNodeId": "dull-bird-21",
-      "sourceSocketName": "x-array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": " x"
-    },
-    {
-      "id": 17,
-      "sourceNodeId": "dull-bird-21",
-      "sourceSocketName": "y-array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": " y"
-    },
+    null,
+    null,
     {
       "id": 18,
       "sourceNodeId": "neat-termite-45",
@@ -1823,47 +1914,14 @@
       "targetSocketName": "Input"
     },
     {
-      "id": 19,
-      "sourceNodeId": "witty-mole-15",
-      "sourceSocketName": "Output",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Spacing X"
-    },
-    {
-      "id": 20,
-      "sourceNodeId": "witty-mole-15",
-      "sourceSocketName": "Output",
-      "targetNodeId": "yellow-dog-70",
-      "targetSocketName": "Spacing Y"
-    },
-    {
       "id": 21,
       "sourceNodeId": "strong-fox-44",
       "sourceSocketName": "Out",
       "targetNodeId": "terrible-tiger-13",
       "targetSocketName": "c"
     },
-    {
-      "id": 22,
-      "sourceNodeId": "warm-seahorse-93",
-      "sourceSocketName": "Value",
-      "targetNodeId": "little-rattlesnake-83",
-      "targetSocketName": "Array"
-    },
-    {
-      "id": 23,
-      "sourceNodeId": "odd-bobcat-66",
-      "sourceSocketName": "Value",
-      "targetNodeId": "sour-pug-80",
-      "targetSocketName": "Array"
-    },
-    {
-      "id": 24,
-      "sourceNodeId": "sour-pug-80",
-      "sourceSocketName": "ArrayLength",
-      "targetNodeId": "friendly-treefrog-7",
-      "targetSocketName": "Max"
-    },
+    null,
+    null,
     {
       "id": 25,
       "sourceNodeId": "friendly-treefrog-7",
@@ -1878,13 +1936,7 @@
       "targetNodeId": "chilly-fireant-49",
       "targetSocketName": "Index"
     },
-    {
-      "id": 27,
-      "sourceNodeId": "odd-bobcat-66",
-      "sourceSocketName": "Value",
-      "targetNodeId": "chilly-fireant-49",
-      "targetSocketName": "Array"
-    },
+    null,
     {
       "id": 28,
       "sourceNodeId": "chilly-fireant-49",
@@ -1892,20 +1944,8 @@
       "targetNodeId": "tiny-lion-33",
       "targetSocketName": "Input"
     },
-    {
-      "id": 29,
-      "sourceNodeId": "quick-chipmunk-21",
-      "sourceSocketName": "Content",
-      "targetNodeId": "odd-bobcat-66",
-      "targetSocketName": "JSON"
-    },
-    {
-      "id": 30,
-      "sourceNodeId": "quick-chipmunk-21",
-      "sourceSocketName": "Content",
-      "targetNodeId": "warm-seahorse-93",
-      "targetSocketName": "JSON"
-    },
+    null,
+    null,
     {
       "id": 31,
       "sourceNodeId": "little-rattlesnake-83",
@@ -1947,6 +1987,125 @@
       "sourceSocketName": "Out",
       "targetNodeId": "gentle-vampirebat-87",
       "targetSocketName": "Input 1"
+    },
+    {
+      "id": 37,
+      "sourceNodeId": "quick-chipmunk-21",
+      "sourceSocketName": "Content",
+      "targetNodeId": "fluffy-bat-58",
+      "targetSocketName": "a"
+    },
+    {
+      "id": 38,
+      "sourceNodeId": "fluffy-bat-58",
+      "sourceSocketName": "Value",
+      "targetNodeId": "chilly-fireant-49",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": 39,
+      "sourceNodeId": "quick-chipmunk-21",
+      "sourceSocketName": "Content",
+      "targetNodeId": "tough-quail-37",
+      "targetSocketName": "a"
+    },
+    {
+      "id": 40,
+      "sourceNodeId": "tough-quail-37",
+      "sourceSocketName": "Value",
+      "targetNodeId": "little-rattlesnake-83",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": 41,
+      "sourceNodeId": "fluffy-bat-58",
+      "sourceSocketName": "Value",
+      "targetNodeId": "fresh-rat-44",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": 42,
+      "sourceNodeId": "fresh-rat-44",
+      "sourceSocketName": "Length",
+      "targetNodeId": "friendly-treefrog-7",
+      "targetSocketName": "Max"
+    },
+    {
+      "id": 43,
+      "sourceNodeId": "terrible-tiger-13",
+      "sourceSocketName": "OutData",
+      "targetNodeId": "breezy-eel-76",
+      "targetSocketName": "Injected Data"
+    },
+    {
+      "id": 44,
+      "sourceNodeId": "breezy-eel-76",
+      "sourceSocketName": "Graphics",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Graphics"
+    },
+    {
+      "id": 45,
+      "sourceNodeId": "nasty-baboon-32",
+      "sourceSocketName": "Output",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Total Number"
+    },
+    {
+      "id": 46,
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Number Per Column/Row"
+    },
+    {
+      "id": 47,
+      "sourceNodeId": "witty-mole-15",
+      "sourceSocketName": "Output",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Spacing X"
+    },
+    {
+      "id": 48,
+      "sourceNodeId": "witty-mole-15",
+      "sourceSocketName": "Output",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Spacing Y"
+    },
+    {
+      "id": 49,
+      "sourceNodeId": "loud-dodo-98",
+      "sourceSocketName": "Date and time",
+      "targetNodeId": "heavy-mayfly-10",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": 50,
+      "sourceNodeId": "red-mouse-92",
+      "sourceSocketName": "output array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "j"
+    },
+    {
+      "id": 51,
+      "sourceNodeId": "dull-bird-21",
+      "sourceSocketName": "x-array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "x"
+    },
+    {
+      "id": 52,
+      "sourceNodeId": "dull-bird-21",
+      "sourceSocketName": "y-array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "y"
+    },
+    {
+      "id": 53,
+      "sourceNodeId": "neat-termite-45",
+      "sourceSocketName": "Out",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "size"
     }
   ]
 }
