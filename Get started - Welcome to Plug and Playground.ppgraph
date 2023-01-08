@@ -728,7 +728,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
           "visible": false
         },
         {
@@ -1004,7 +1004,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
           "visible": false
         },
         {
@@ -1287,7 +1287,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing examples.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing examples.ppgraph",
           "visible": false
         },
         {
@@ -1403,7 +1403,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing example - tixy.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing example - tixy.ppgraph",
           "visible": false
         },
         {
@@ -2623,7 +2623,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Node update behaviour example.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Node update behaviour example.ppgraph",
           "visible": false
         },
         {
@@ -3350,7 +3350,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/How to share your playgrounds.ppgraph",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/How to share your playgrounds.ppgraph",
           "visible": false
         },
         {
@@ -4583,7 +4583,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://plugandplayground.dev/?new=true",
+          "data": "/?new=true",
           "visible": false
         },
         {
