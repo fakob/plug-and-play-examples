@@ -3,18 +3,18 @@
   "graphSettings": {
     "showExecutionVisualisation": true,
     "viewportCenterPosition": {
-      "x": 1514.297562142085,
-      "y": -6543.647657793388
+      "x": 954.5212439961831,
+      "y": -6628.282934274546
     },
-    "viewportScale": 0.6521857741751131
+    "viewportScale": 0.6788818202851855
   },
   "nodes": [
     {
       "id": "slimy-swan-80",
       "name": "Get build info",
       "type": "Get",
-      "x": 397.79256043736757,
-      "y": -7309.286303049509,
+      "x": 363.5880412995175,
+      "y": -7622.7454071341,
       "width": 160,
       "height": 112,
       "triggerArray": [],
@@ -52,8 +52,8 @@
       "id": "neat-bird-4",
       "name": "Get build version",
       "type": "JSONGet",
-      "x": 609.9714179525986,
-      "y": -7395.350382437594,
+      "x": 575.7668988147485,
+      "y": -7708.809486522185,
       "width": 160,
       "height": 112,
       "triggerArray": [],
@@ -89,8 +89,8 @@
       "id": "great-goat-84",
       "name": "Get build version",
       "type": "JSONGet",
-      "x": 607.2948667899755,
-      "y": -7256.199404830607,
+      "x": 573.0903476521254,
+      "y": -7569.658508915198,
       "width": 160,
       "height": 112,
       "triggerArray": [],
@@ -126,10 +126,10 @@
       "id": "fresh-kangaroo-75",
       "name": "Welcome 2",
       "type": "TextEditor",
-      "x": 792.4703932171228,
-      "y": -6861.6871158737285,
+      "x": 423.9989965814133,
+      "y": -6859.3669623782325,
       "width": 717.8948435542393,
-      "height": 723.96875,
+      "height": 559.921875,
       "triggerArray": [],
       "socketArray": [
         {
@@ -168,7 +168,7 @@
               ]
             },
             {
-              "type": "heading-six",
+              "type": "heading-four",
               "children": [
                 {
                   "text": "What data can be used?"
@@ -221,7 +221,7 @@
               ]
             },
             {
-              "type": "heading-six",
+              "type": "heading-four",
               "children": [
                 {
                   "text": "How does it work?"
@@ -266,63 +266,10 @@
               ]
             },
             {
-              "type": "paragraph",
+              "type": "heading-four",
               "children": [
                 {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "heading-six",
-              "children": [
-                {
-                  "text": "How do you share?"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "We are a local first platform. To share your playgrounds online"
-                }
-              ]
-            },
-            {
-              "type": "numbered-list",
-              "children": [
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "Log in to Github"
-                    }
-                  ]
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "Store your playground as a Gist"
-                    }
-                  ]
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "Create a shareable link"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "Of course you can also just save the file locally and share it the old school way :-)"
+                  "text": "Click the buttons on the right to learn more"
                 }
               ]
             }
@@ -426,11 +373,19 @@
       "id": "fresh-bird-39",
       "name": "Generate random color",
       "type": "CustomFunction",
-      "x": -44.91240062683676,
-      "y": -6960.025177549413,
+      "x": 6.015560176533114,
+      "y": -6969.606216300409,
       "width": 160,
-      "height": 88,
-      "triggerArray": [],
+      "height": 112,
+      "triggerArray": [
+        {
+          "socketType": "in",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\"}}",
+          "defaultData": {},
+          "visible": true
+        }
+      ],
       "socketArray": [
         {
           "socketType": "in",
@@ -456,8 +411,8 @@
       "id": "good-fish-14",
       "name": "TextEditor",
       "type": "TextEditor",
-      "x": 1066.9248801619149,
-      "y": -7325.9398858349405,
+      "x": 1032.7203610240635,
+      "y": -7639.398989919531,
       "width": 400,
       "height": 156,
       "triggerArray": [],
@@ -610,8 +565,8 @@
       "id": "young-snake-6",
       "name": "DateAndTime",
       "type": "DateAndTime",
-      "x": 820.2940804440952,
-      "y": -7256.367081798005,
+      "x": 786.0895613062452,
+      "y": -7569.826185882595,
       "width": 160,
       "height": 88,
       "triggerArray": [],
@@ -647,8 +602,8 @@
       "id": "loud-quail-70",
       "name": "Import data",
       "type": "TextEditor",
-      "x": 1679.035155940827,
-      "y": -7750.644494471839,
+      "x": 1644.8306368029744,
+      "y": -8064.103598556429,
       "width": 229.74871912443177,
       "height": 199.9375,
       "triggerArray": [],
@@ -719,8 +674,8 @@
       "id": "curly-crab-2",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": 2023.658598701259,
-      "y": -7521.759447441369,
+      "x": 1989.4540795634061,
+      "y": -7835.218551525959,
       "width": 160,
       "height": 88,
       "triggerArray": [],
@@ -756,8 +711,8 @@
       "id": "happy-grasshopper-97",
       "name": "API example",
       "type": "WidgetButton",
-      "x": 1680.241595005072,
-      "y": -7519.726007335357,
+      "x": 1646.0370758672193,
+      "y": -7833.185111419947,
       "width": 309.4175465983981,
       "height": 95.8416464666534,
       "triggerArray": [],
@@ -800,8 +755,8 @@
       "id": "popular-ladybug-69",
       "name": "TextEditor",
       "type": "TextEditor",
-      "x": 1944.3791808657293,
-      "y": -7712.16589294093,
+      "x": 1910.1746617278764,
+      "y": -8025.624997025519,
       "width": 229.74871912443177,
       "height": 157.953125,
       "triggerArray": [],
@@ -872,8 +827,8 @@
       "id": "sharp-goat-9",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1559.4377287047791,
-      "y": -6865.754106052325,
+      "x": 1170.5502738733248,
+      "y": -6856.6673767635575,
       "width": 182.74545387382386,
       "height": 104.51290580165278,
       "triggerArray": [],
@@ -1148,8 +1103,8 @@
       "id": "empty-owl-62",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1790.576819377637,
-      "y": -6845.129930867923,
+      "x": 1379.1535003712659,
+      "y": -6857.596716641772,
       "width": 218.87375519505326,
       "height": 90.62424542075769,
       "triggerArray": [],
@@ -1475,8 +1430,8 @@
       "id": "little-zebra-15",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1662.8390926296984,
-      "y": -6730.111569653751,
+      "x": 1626.0591663264427,
+      "y": -6853.396383247302,
       "width": 212.7233786357633,
       "height": 96.97181820786682,
       "triggerArray": [],
@@ -1526,8 +1481,8 @@
       "id": "helpless-emu-17",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1560.599036157469,
-      "y": -6562.605266154899,
+      "x": 1178.057358402843,
+      "y": -6620.449711378698,
       "width": 254.14326839099,
       "height": 93.8467636961941,
       "triggerArray": [],
@@ -2116,8 +2071,8 @@
       "id": "foolish-earwig-11",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1846.8545815717207,
-      "y": -6543.403222576083,
+      "x": 1665.6105737233709,
+      "y": -6619.69218233936,
       "width": 229.37176757445536,
       "height": 93.54660898326165,
       "triggerArray": [],
@@ -2695,8 +2650,8 @@
       "id": "happy-eel-91",
       "name": "How do I import data",
       "type": "Label",
-      "x": 1682.7765004532407,
-      "y": -7844.937276184819,
+      "x": 1648.5719813153878,
+      "y": -8158.396380269409,
       "width": 355.7135416666667,
       "height": 69,
       "triggerArray": [],
@@ -2975,8 +2930,8 @@
       "id": "nice-pig-82",
       "name": "My playground does not work",
       "type": "Label",
-      "x": -404.89159844737594,
-      "y": -7340.1127689351015,
+      "x": -439.096117585226,
+      "y": -7653.571873019691,
       "width": 469.5572916666667,
       "height": 105.8,
       "triggerArray": [],
@@ -3031,8 +2986,8 @@
       "id": "grumpy-pug-20",
       "name": "How do I share my playgrounds",
       "type": "Label",
-      "x": -863.0679404091215,
-      "y": -6382.122374593224,
+      "x": -1055.3050044017211,
+      "y": -6570.759488797502,
       "width": 510.4635416666667,
       "height": 69,
       "triggerArray": [],
@@ -3087,8 +3042,8 @@
       "id": "tough-turkey-96",
       "name": "Do you want to contribute",
       "type": "Label",
-      "x": 394.63413640832596,
-      "y": -7599.55322349294,
+      "x": 360.4296172704759,
+      "y": -7913.0123275775295,
       "width": 423.3385416666667,
       "height": 69,
       "triggerArray": [],
@@ -3143,8 +3098,8 @@
       "id": "splendid-moth-36",
       "name": "",
       "type": "TextEditor",
-      "x": -409.2262127691581,
-      "y": -7206.89492758232,
+      "x": -443.4307319070082,
+      "y": -7520.35403166691,
       "width": 397.1165399278598,
       "height": 153,
       "triggerArray": [],
@@ -3233,10 +3188,10 @@
       "id": "wonderful-sloth-56",
       "name": "",
       "type": "TextEditor",
-      "x": -861.8778707767401,
-      "y": -6283.802910127211,
-      "width": 397.1165399278598,
-      "height": 153,
+      "x": -1054.1149347693388,
+      "y": -6472.440024331489,
+      "width": 631.2993827168849,
+      "height": 191,
       "triggerArray": [],
       "socketArray": [
         {
@@ -3246,28 +3201,46 @@
           "data": [
             {
               "type": "paragraph",
-              "align": "left",
               "children": [
                 {
-                  "text": "Use console"
+                  "text": "We are a local first platform. To share your playgrounds online"
+                }
+              ]
+            },
+            {
+              "type": "numbered-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Log in to Github"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Store your playground as a Gist"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Create a shareable link"
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "paragraph",
-              "align": "left",
               "children": [
                 {
-                  "text": "Use logger node"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "align": "left",
-              "children": [
-                {
-                  "text": "Use the browser devtools"
+                  "text": "Of course you can also just save the file locally and share it the old school way :-)"
                 }
               ]
             }
@@ -3323,8 +3296,8 @@
       "id": "smooth-bobcat-87",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": -516.9549314628666,
-      "y": -6111.640100247525,
+      "x": -708.9468387619619,
+      "y": -6241.181548332913,
       "width": 160,
       "height": 88,
       "triggerArray": [],
@@ -3360,8 +3333,8 @@
       "id": "blue-donkey-17",
       "name": "",
       "type": "WidgetButton",
-      "x": -860.3719351590539,
-      "y": -6109.606660141513,
+      "x": -1052.3638424581466,
+      "y": -6239.148108226901,
       "width": 309.4175465983981,
       "height": 95.8416464666534,
       "triggerArray": [],
@@ -3404,8 +3377,8 @@
       "id": "angry-earwig-78",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1836.217947462516,
-      "y": -6227.309142428753,
+      "x": 1434.891906770074,
+      "y": -6401.7815441123375,
       "width": 250.01487805803595,
       "height": 120.9867529681087,
       "triggerArray": [],
@@ -3455,8 +3428,8 @@
       "id": "slimy-dingo-89",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1568.5654925916242,
-      "y": -6265.249501259422,
+      "x": 1171.3847442986407,
+      "y": -6401.445106825012,
       "width": 239.80134812060942,
       "height": 104.85632460565103,
       "triggerArray": [],
@@ -3506,8 +3479,8 @@
       "id": "sharp-sheep-72",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1646.008037318271,
-      "y": -6079.820827382447,
+      "x": 1706.2903911087578,
+      "y": -6402.365367988606,
       "width": 289.9799433598241,
       "height": 86.88687319282417,
       "triggerArray": [],
@@ -3545,50 +3518,6 @@
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": false
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "red-moose-84",
-      "name": "WidgetButton",
-      "type": "WidgetButton",
-      "x": 794.6712988310006,
-      "y": -6115.0024226141395,
-      "width": 716.3862127556674,
-      "height": 82.3535940362126,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Off",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "On",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Label",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Start a new playground",
-          "visible": false
-        },
-        {
-          "socketType": "out",
-          "name": "Out",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -3657,8 +3586,8 @@
       "id": "hard-newt-2",
       "name": "",
       "type": "TextEditor",
-      "x": 396.94624065377525,
-      "y": -7519.129477838154,
+      "x": 362.7417215159252,
+      "y": -7832.588581922744,
       "width": 397.1165399278598,
       "height": 102,
       "triggerArray": [],
@@ -3729,8 +3658,8 @@
       "id": "horrible-parrot-19",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": 1156.7497155256085,
-      "y": -7516.542340651269,
+      "x": 1122.5451963877558,
+      "y": -7830.001444735859,
       "width": 160,
       "height": 88,
       "triggerArray": [],
@@ -3766,8 +3695,8 @@
       "id": "helpless-falcon-62",
       "name": "",
       "type": "WidgetButton",
-      "x": 813.3327118294213,
-      "y": -7514.508900545257,
+      "x": 779.1281926915713,
+      "y": -7827.968004629847,
       "width": 309.4175465983981,
       "height": 95.8416464666534,
       "triggerArray": [],
@@ -3989,8 +3918,8 @@
       "id": "lovely-yak-39",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 1691.4803746712919,
-      "y": -6431.314167023073,
+      "x": 1452.8244648714726,
+      "y": -6619.198051688591,
       "width": 195.5236929846194,
       "height": 96.86685555120948,
       "triggerArray": [],
@@ -4050,7 +3979,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4091,8 +4020,8 @@
       "id": "big-tiger-10",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 2055.1579730296194,
-      "y": -7842.48417275423,
+      "x": 2020.9534538917665,
+      "y": -8155.94327683882,
       "width": 160,
       "height": 64,
       "triggerArray": [],
@@ -4101,7 +4030,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4152,7 +4081,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4203,7 +4132,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4254,7 +4183,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4305,7 +4234,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4346,8 +4275,8 @@
       "id": "slimy-stingray-99",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": -336.37847521478886,
-      "y": -6378.434358479328,
+      "x": -528.615539207393,
+      "y": -6567.071472683606,
       "width": 160,
       "height": 64,
       "triggerArray": [],
@@ -4356,7 +4285,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4397,8 +4326,8 @@
       "id": "swift-cat-65",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 78.98899708708427,
-      "y": -7339.532598680323,
+      "x": 44.7844779492342,
+      "y": -7652.9917027649135,
       "width": 160,
       "height": 64,
       "triggerArray": [],
@@ -4407,7 +4336,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4448,8 +4377,8 @@
       "id": "brown-ladybug-57",
       "name": "JumpToNode",
       "type": "JumpToNode",
-      "x": 834.5034838336001,
-      "y": -7598.865188674647,
+      "x": 800.29896469575,
+      "y": -7912.324292759236,
       "width": 160,
       "height": 64,
       "triggerArray": [],
@@ -4458,7 +4387,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fresh-kangaroo-75",
+          "data": "curly-bear-43",
           "visible": false
         },
         {
@@ -4499,15 +4428,22 @@
       "id": "empty-turtle-99",
       "name": "Add emojis",
       "type": "CustomFunction",
-      "x": 168.456446837447,
-      "y": -7081.353411909132,
+      "x": 211.09117496960562,
+      "y": -7116.267265627761,
       "width": 160,
-      "height": 88,
+      "height": 112,
       "triggerArray": [
         {
           "socketType": "in",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":{\"r\":191,\"g\":233,\"b\":175,\"a\":1}}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\"}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Trigger 2",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"change\",\"customFunctionString\":\"\",\"previousData\":{\"r\":181,\"g\":193,\"b\":76,\"a\":1}}}",
           "defaultData": {},
           "visible": true
         }
@@ -4528,7 +4464,7 @@
         }
       ],
       "updateBehaviour": {
-        "update": true,
+        "update": false,
         "interval": false,
         "intervalFrequency": 1000
       }
@@ -4537,8 +4473,8 @@
       "id": "curly-bear-43",
       "name": "Welcome",
       "type": "Label",
-      "x": 422.3111718451743,
-      "y": -7015.37675861567,
+      "x": 422.6918098693025,
+      "y": -7022.589526598304,
       "width": 1090.8645833333333,
       "height": 137.6,
       "triggerArray": [],
@@ -4581,6 +4517,175 @@
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": false
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "warm-bat-36",
+      "name": "OpenURL",
+      "type": "OpenURL",
+      "x": 980.3370764043361,
+      "y": -6148.606574173447,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(url) => {\n  const openNewTab = (thisUrl) => {\n    if (typeof thisUrl === 'string') {\n      window.open(thisUrl, '_blank')?.focus();\n    }\n  };\n  openNewTab(url);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "url",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "OutData",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "modern-lizard-46",
+      "name": "Transform data example",
+      "type": "WidgetButton",
+      "x": 423.4659893329092,
+      "y": -6271.76125798891,
+      "width": 717.874405228717,
+      "height": 100.20937319179302,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": "",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": "https://plugandplayground.dev/?new=true",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Start a new playground",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "weak-dragon-44",
+      "name": "WidgetButton",
+      "type": "WidgetButton",
+      "x": -216.63742190290222,
+      "y": -7095.213617305938,
+      "width": 200,
+      "height": 104,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Change emojis",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "thin-vampirebat-42",
+      "name": "WidgetButton",
+      "type": "WidgetButton",
+      "x": -219.1757203237808,
+      "y": -6963.2788689835415,
+      "width": 200,
+      "height": 104,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Off",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "On",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Change color",
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
         }
       ],
       "updateBehaviour": {
@@ -4718,24 +4823,45 @@
       "targetSocketName": "Code"
     },
     {
-      "id": 21,
+      "id": 18,
       "sourceNodeId": "empty-turtle-99",
       "sourceSocketName": "OutData",
       "targetNodeId": "curly-bear-43",
       "targetSocketName": "Input"
     },
     {
-      "id": 22,
+      "id": 19,
       "sourceNodeId": "fresh-bird-39",
       "sourceSocketName": "OutData",
       "targetNodeId": "curly-bear-43",
       "targetSocketName": "backgroundColor"
     },
     {
-      "id": 23,
+      "id": 20,
+      "sourceNodeId": "modern-lizard-46",
+      "sourceSocketName": "Out",
+      "targetNodeId": "warm-bat-36",
+      "targetSocketName": "url"
+    },
+    {
+      "id": 21,
       "sourceNodeId": "fresh-bird-39",
       "sourceSocketName": "OutData",
       "targetNodeId": "empty-turtle-99",
+      "targetSocketName": "Trigger 2"
+    },
+    {
+      "id": 22,
+      "sourceNodeId": "weak-dragon-44",
+      "sourceSocketName": "Out",
+      "targetNodeId": "empty-turtle-99",
+      "targetSocketName": "Trigger 1"
+    },
+    {
+      "id": 23,
+      "sourceNodeId": "thin-vampirebat-42",
+      "sourceSocketName": "Out",
+      "targetNodeId": "fresh-bird-39",
       "targetSocketName": "Trigger 1"
     }
   ]
