@@ -3,10 +3,10 @@
   "graphSettings": {
     "showExecutionVisualisation": true,
     "viewportCenterPosition": {
-      "x": -604.1091688636284,
-      "y": 700.4165680479741
+      "x": -613.1952266046314,
+      "y": 697.1862247654706
     },
-    "viewportScale": 0.29413704599623525
+    "viewportScale": 0.2738719657333426
   },
   "nodes": [
     {
@@ -212,113 +212,6 @@
       }
     },
     {
-      "id": "bitter-insect-62",
-      "name": "Divide",
-      "type": "Divide",
-      "x": -1500.4892945895156,
-      "y": 1522.516661795525,
-      "width": 160,
-      "height": 112,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Input 2",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.1,\"maxValue\":10,\"stepSize\":0.01}}",
-          "defaultData": 10,
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "wise-monkey-88",
-      "name": "Divide",
-      "type": "Divide",
-      "x": -1500.924713017748,
-      "y": 1665.0512662233507,
-      "width": 160,
-      "height": 112,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Input 2",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.1,\"maxValue\":10,\"stepSize\":0.01}}",
-          "defaultData": 10,
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "chatty-moth-17",
-      "name": "Multiply",
-      "type": "Multiply",
-      "x": -1128.8509386540084,
-      "y": 1561.0859744114216,
-      "width": 160,
-      "height": 112,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Input 2",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "stupid-treefrog-84",
       "name": "Constant",
       "type": "Constant",
@@ -332,7 +225,7 @@
           "socketType": "in",
           "name": "In",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 16,
+          "data": 32,
           "visible": true
         },
         {
@@ -828,7 +721,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "30"
+                  "reactiveText": "13"
                 },
                 {
                   "text": " x "
@@ -841,7 +734,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "35"
+                  "reactiveText": "13"
                 },
                 {
                   "text": " grid rectangles with a color gradient"
@@ -1607,7 +1500,7 @@
           "socketType": "in",
           "name": "Offset X",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 0,
+          "data": 10,
           "visible": false
         },
         {
@@ -1635,7 +1528,7 @@
           "socketType": "in",
           "name": "Angle",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
-          "data": 180,
+          "data": 0,
           "visible": false
         },
         {
@@ -2082,11 +1975,370 @@
       }
     },
     {
-      "id": "bitter-chicken-32",
+      "id": "old-falcon-50",
+      "name": "Table_GetColumnByName",
+      "type": "Table_GetColumnByName",
+      "x": -1471.562168216741,
+      "y": 798.2404324512191,
+      "width": 160,
+      "height": 112,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(ArrayOfArraysIn, ColumnName) => {\n  const index = ArrayOfArraysIn[0].findIndex(col => col == ColumnName);\n  if (index > -1) {\n    return ArrayOfArraysIn.map(row => row[index]).slice(1);\n  }\n  return [];\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "ArrayOfArraysIn",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": 0,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "ColumnName",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Age",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "OutData",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "proud-dingo-13",
+      "name": "ArrayLength",
+      "type": "ArrayLength",
+      "x": -739.632291226625,
+      "y": 683.2935960842847,
+      "width": 160,
+      "height": 88,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(ArrayIn) => {\n\treturn ArrayIn.length;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "ArrayIn",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Length",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "shaggy-chicken-45",
+      "name": "DRAW_Shape",
+      "type": "DRAW_Shape",
+      "x": -486.00060457858297,
+      "y": 1430.197182775932,
+      "width": 160,
+      "height": 208,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Shape",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"},{\"text\":\"Ellipse\",\"value\":\"Ellipse\"}]}}",
+          "data": "Rectangle",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Color",
+          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
+          "data": {
+            "r": 12,
+            "g": 12,
+            "b": 12,
+            "a": 1
+          },
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 16,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Height",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 16,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Border",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Angle",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": {
+            "x": 1,
+            "y": 0
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Always Draw",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Absolute Positions",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "defaultData": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "blue-cougar-38",
+      "name": "DRAW_Multiplier",
+      "type": "DRAW_Multiplier",
+      "x": -280.79993923699215,
+      "y": 1422.9346573884668,
+      "width": 160,
+      "height": 304,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Total Number",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 2,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Number Per Column/Row",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 2,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Change Column/Row drawing order",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 17,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Spacing Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 17,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 217.1070915564062,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 1.472232142270741,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Angle",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": {
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Always Draw",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Absolute Positions",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "data": [],
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "LastPressedInjected",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "PointerDown",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "dull-fly-8",
       "name": "Table",
       "type": "Table",
-      "x": -2354.158401203819,
-      "y": 667.7627456584389,
+      "x": -2342.3305166858268,
+      "y": 682.0694408838549,
       "width": 800,
       "height": 400,
       "triggerArray": [],
@@ -2103,31 +2355,26 @@
               "Sheet1": {
                 "A1": {
                   "v": "Index",
-                  "t": "s",
-                  "w": "Index"
+                  "t": "s"
                 },
                 "B1": {
                   "v": "Year",
-                  "t": "s",
-                  "w": "Year"
+                  "t": "s"
                 },
                 "C1": {
                   "v": "Age",
-                  "t": "s",
-                  "w": "Age"
+                  "t": "s"
                 },
                 "D1": {
                   "v": "Name",
-                  "t": "s",
-                  "w": "Name"
+                  "t": "s"
                 },
                 "E1": {
                   "v": "Movie",
-                  "t": "s",
-                  "w": "Movie"
+                  "t": "s"
                 },
                 "A2": {
-                  "v": "1",
+                  "v": " 1",
                   "t": "s"
                 },
                 "B2": {
@@ -2143,11 +2390,11 @@
                   "t": "s"
                 },
                 "E2": {
-                  "v": "Seventh Heaven,Street Angel and Sunrise: A Song of Two Humans",
+                  "v": "Seventh Heaven, Street Angel and Sunrise: A Song of Two Humans",
                   "t": "s"
                 },
                 "A3": {
-                  "v": "2",
+                  "v": " 2",
                   "t": "s"
                 },
                 "B3": {
@@ -2167,7 +2414,7 @@
                   "t": "s"
                 },
                 "A4": {
-                  "v": "3",
+                  "v": " 3",
                   "t": "s"
                 },
                 "B4": {
@@ -2183,11 +2430,11 @@
                   "t": "s"
                 },
                 "E4": {
-                  "v": "\"The Divorcee\"\t",
+                  "v": "The Divorcee\t",
                   "t": "s"
                 },
                 "A5": {
-                  "v": "4",
+                  "v": " 4",
                   "t": "s"
                 },
                 "B5": {
@@ -2207,7 +2454,7 @@
                   "t": "s"
                 },
                 "A6": {
-                  "v": "5",
+                  "v": " 5",
                   "t": "s"
                 },
                 "B6": {
@@ -2223,11 +2470,11 @@
                   "t": "s"
                 },
                 "E6": {
-                  "v": "\"The Sin of Madelon Claudet\"\t",
+                  "v": "The Sin of Madelon Claudet\t",
                   "t": "s"
                 },
                 "A7": {
-                  "v": "6",
+                  "v": " 6",
                   "t": "s"
                 },
                 "B7": {
@@ -2247,7 +2494,7 @@
                   "t": "s"
                 },
                 "A8": {
-                  "v": "7",
+                  "v": " 7",
                   "t": "s"
                 },
                 "B8": {
@@ -2267,7 +2514,7 @@
                   "t": "s"
                 },
                 "A9": {
-                  "v": "8",
+                  "v": " 8",
                   "t": "s"
                 },
                 "B9": {
@@ -2287,7 +2534,7 @@
                   "t": "s"
                 },
                 "A10": {
-                  "v": "9",
+                  "v": " 9",
                   "t": "s"
                 },
                 "B10": {
@@ -2403,7 +2650,7 @@
                   "t": "s"
                 },
                 "E15": {
-                  "v": "\"Suspicion\"\t",
+                  "v": "Suspicion\t",
                   "t": "s"
                 },
                 "A16": {
@@ -2623,7 +2870,7 @@
                   "t": "s"
                 },
                 "E26": {
-                  "v": "Come Back,Little Sheba",
+                  "v": "Come Back, Little Sheba",
                   "t": "s"
                 },
                 "A27": {
@@ -3083,7 +3330,7 @@
                   "t": "s"
                 },
                 "E49": {
-                  "v": "\"Alice Doesn't Live Here Anymore\"\t",
+                  "v": "Alice Doesn't Live Here Anymore\t",
                   "t": "s"
                 },
                 "A50": {
@@ -3203,7 +3450,7 @@
                   "t": "s"
                 },
                 "E55": {
-                  "v": "\"Coal Miner's Daughter\"\t",
+                  "v": "Coal Miner's Daughter\t",
                   "t": "s"
                 },
                 "A56": {
@@ -3263,7 +3510,7 @@
                   "t": "s"
                 },
                 "E58": {
-                  "v": "\"Terms of Endearment\"\t",
+                  "v": "Terms of Endearment\t",
                   "t": "s"
                 },
                 "A59": {
@@ -3303,7 +3550,7 @@
                   "t": "s"
                 },
                 "E60": {
-                  "v": "\"The Trip to Bountiful\"\t",
+                  "v": "The Trip to Bountiful\t",
                   "t": "s"
                 },
                 "A61": {
@@ -3921,18 +4168,6 @@
         },
         {
           "socketType": "out",
-          "name": "workBook",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "JSON",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
           "name": "Array of arrays",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true
@@ -3945,11 +4180,11 @@
       }
     },
     {
-      "id": "old-falcon-50",
-      "name": "Table_GetColumnByName",
-      "type": "Table_GetColumnByName",
-      "x": -1471.5621682167407,
-      "y": 798.2404324512191,
+      "id": "fuzzy-dodo-45",
+      "name": "Divide",
+      "type": "Divide",
+      "x": -1500.2866610818432,
+      "y": 1529.8060764535805,
       "width": 160,
       "height": 112,
       "triggerArray": [],
@@ -3958,63 +4193,26 @@
           "socketType": "in",
           "name": "Code",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(ArrayOfArraysIn, ColumnName) => {\n  const index = ArrayOfArraysIn[0].findIndex(col => col == ColumnName);\n  if (index > -1) {\n    return ArrayOfArraysIn.map(row => row[index]).slice(1);\n  }\n  return [];\n}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 / Input2;\n}",
           "visible": false
         },
         {
           "socketType": "in",
-          "name": "ArrayOfArraysIn",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "defaultData": 0,
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "ColumnName",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "Age",
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "out",
-          "name": "OutData",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "proud-dingo-13",
-      "name": "ArrayLength",
-      "type": "ArrayLength",
-      "x": -739.632291226625,
-      "y": 683.2935960842847,
-      "width": 160,
-      "height": 88,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Code",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(ArrayIn) => {\n\treturn ArrayIn.length;\n}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "ArrayIn",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "defaultData": [],
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Length",
+          "name": "Result",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
@@ -4026,125 +4224,40 @@
       }
     },
     {
-      "id": "shaggy-chicken-45",
-      "name": "DRAW_Shape",
-      "type": "DRAW_Shape",
-      "x": -486.00060457858297,
-      "y": 1430.197182775932,
+      "id": "quick-turtle-10",
+      "name": "Divide",
+      "type": "Divide",
+      "x": -1500.4328888964642,
+      "y": 1672.9215006930572,
       "width": 160,
-      "height": 208,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Shape",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Circle\",\"value\":\"Circle\"},{\"text\":\"Rectangle\",\"value\":\"Rectangle\"},{\"text\":\"Rounded Rectangle\",\"value\":\"Rounded Rectangle\"},{\"text\":\"Ellipse\",\"value\":\"Ellipse\"}]}}",
-          "data": "Rectangle",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 / Input2;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "Color",
-          "dataType": "{\"class\":\"ColorType\",\"type\":{}}",
-          "data": {
-            "r": 12,
-            "g": 12,
-            "b": 12,
-            "a": 1
-          },
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Width",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Height",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 16,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Border",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Offset X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": {
-            "x": 1,
-            "y": 0
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Always Draw",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Absolute Positions",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Injected Data",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "defaultData": [],
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "out",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "name": "Result",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
       ],
@@ -4155,145 +4268,40 @@
       }
     },
     {
-      "id": "blue-cougar-38",
-      "name": "DRAW_Multiplier",
-      "type": "DRAW_Multiplier",
-      "x": -280.79993923699215,
-      "y": 1422.9346573884668,
+      "id": "great-badger-6",
+      "name": "Multiply",
+      "type": "Multiply",
+      "x": -1128.1309132242034,
+      "y": 1594.585938532385,
       "width": 160,
-      "height": 304,
+      "height": 112,
       "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
-          "defaultData": {},
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 * Input2;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "in",
-          "name": "Total Number",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "defaultData": 2,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Number Per Column/Row",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
-          "defaultData": 2,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Change Column/Row drawing order",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Spacing X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 17,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Spacing Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 17,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Offset X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 217.1070915564062,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Offset Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 1.472232142270741,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale X",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Scale Y",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Angle",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
-          "data": 0,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Pivot",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
-          "data": {
-            "x": 0,
-            "y": 0
-          },
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Always Draw",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": true,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Absolute Positions",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Injected Data",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "data": [],
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
           "visible": true
         },
         {
           "socketType": "out",
-          "name": "LatestPressedIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "LastPressedInjected",
-          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "PointerDown",
-          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "name": "Result",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
       ],
@@ -4314,273 +4322,273 @@
     },
     {
       "id": 1,
-      "sourceNodeId": "friendly-shrimp-27",
-      "sourceSocketName": "screen-x",
-      "targetNodeId": "bitter-insect-62",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 2,
-      "sourceNodeId": "friendly-shrimp-27",
-      "sourceSocketName": "screen-y",
-      "targetNodeId": "wise-monkey-88",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 3,
-      "sourceNodeId": "bitter-insect-62",
-      "sourceSocketName": "Output",
-      "targetNodeId": "chatty-moth-17",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 4,
-      "sourceNodeId": "wise-monkey-88",
-      "sourceSocketName": "Output",
-      "targetNodeId": "chatty-moth-17",
-      "targetSocketName": "Input 2"
-    },
-    {
-      "id": 5,
-      "sourceNodeId": "stupid-treefrog-84",
-      "sourceSocketName": "Out",
-      "targetNodeId": "bitter-insect-62",
-      "targetSocketName": "Input 2"
-    },
-    {
-      "id": 6,
-      "sourceNodeId": "stupid-treefrog-84",
-      "sourceSocketName": "Out",
-      "targetNodeId": "wise-monkey-88",
-      "targetSocketName": "Input 2"
-    },
-    {
-      "id": 7,
-      "sourceNodeId": "chatty-moth-17",
-      "sourceSocketName": "Output",
-      "targetNodeId": "blue-ladybug-41",
-      "targetSocketName": "count"
-    },
-    {
-      "id": 8,
       "sourceNodeId": "spicy-moose-59",
       "sourceSocketName": "color-array",
       "targetNodeId": "sharp-stingray-42",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 9,
+      "id": 2,
       "sourceNodeId": "blue-ladybug-41",
       "sourceSocketName": "color-array",
       "targetNodeId": "mighty-wasp-43",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 10,
+      "id": 3,
       "sourceNodeId": "massive-deer-31",
       "sourceSocketName": "Out",
       "targetNodeId": "old-fireant-57",
       "targetSocketName": "Input"
     },
     {
-      "id": 11,
+      "id": 4,
       "sourceNodeId": "massive-deer-31",
       "sourceSocketName": "Out",
       "targetNodeId": "silent-wasp-52",
       "targetSocketName": "Input 1"
     },
     {
-      "id": 12,
-      "sourceNodeId": "bitter-insect-62",
-      "sourceSocketName": "Output",
-      "targetNodeId": "tender-stingray-81",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 13,
+      "id": 5,
       "sourceNodeId": "tender-stingray-81",
       "sourceSocketName": "Output",
       "targetNodeId": "empty-hound-87",
       "targetSocketName": "Input 1"
     },
     {
-      "id": 14,
+      "id": 6,
       "sourceNodeId": "tricky-eagle-15",
       "sourceSocketName": "Output",
       "targetNodeId": "empty-hound-87",
       "targetSocketName": "Input 2"
     },
     {
-      "id": 15,
-      "sourceNodeId": "wise-monkey-88",
-      "sourceSocketName": "Output",
-      "targetNodeId": "tricky-eagle-15",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 16,
+      "id": 7,
       "sourceNodeId": "sharp-stingray-42",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "ancient-panther-61",
       "targetSocketName": "Injected Data"
     },
     {
-      "id": 17,
+      "id": 8,
       "sourceNodeId": "ancient-panther-61",
       "sourceSocketName": "Graphics",
       "targetNodeId": "wet-panda-73",
       "targetSocketName": "Graphics"
     },
     {
-      "id": 18,
+      "id": 9,
       "sourceNodeId": "old-fireant-57",
       "sourceSocketName": "Output",
       "targetNodeId": "wet-panda-73",
       "targetSocketName": "Total Number"
     },
     {
-      "id": 19,
+      "id": 10,
       "sourceNodeId": "massive-deer-31",
       "sourceSocketName": "Out",
       "targetNodeId": "wet-panda-73",
       "targetSocketName": "Number Per Column/Row"
     },
     {
-      "id": 20,
+      "id": 11,
       "sourceNodeId": "nasty-ladybug-80",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "fast-fox-82",
       "targetSocketName": "Injected Data"
     },
     {
-      "id": 21,
+      "id": 12,
       "sourceNodeId": "odd-bullfrog-9",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "stale-donkey-21",
       "targetSocketName": "Injected Data"
     },
     {
-      "id": 22,
+      "id": 13,
       "sourceNodeId": "horrible-skunk-39",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "thin-eel-19",
       "targetSocketName": "Injected Data"
     },
     {
-      "id": 23,
+      "id": 14,
       "sourceNodeId": "fast-fox-82",
       "sourceSocketName": "Graphics",
       "targetNodeId": "soft-mule-83",
       "targetSocketName": "Foreground"
     },
     {
-      "id": 24,
+      "id": 15,
       "sourceNodeId": "stale-donkey-21",
       "sourceSocketName": "Graphics",
       "targetNodeId": "soft-mule-83",
       "targetSocketName": "Background"
     },
     {
-      "id": 25,
+      "id": 16,
       "sourceNodeId": "soft-mule-83",
       "sourceSocketName": "Graphics",
       "targetNodeId": "rude-rat-33",
       "targetSocketName": "Foreground"
     },
     {
-      "id": 26,
-      "sourceNodeId": "bitter-chicken-32",
-      "sourceSocketName": "Array of arrays",
-      "targetNodeId": "white-catfish-6",
-      "targetSocketName": "ArrayOfArraysIn"
-    },
-    {
-      "id": 27,
+      "id": 17,
       "sourceNodeId": "white-catfish-6",
       "sourceSocketName": "OutData",
       "targetNodeId": "odd-bullfrog-9",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 28,
-      "sourceNodeId": "bitter-chicken-32",
-      "sourceSocketName": "Array of arrays",
-      "targetNodeId": "old-falcon-50",
-      "targetSocketName": "ArrayOfArraysIn"
-    },
-    {
-      "id": 29,
+      "id": 18,
       "sourceNodeId": "old-falcon-50",
       "sourceSocketName": "OutData",
       "targetNodeId": "horrible-skunk-39",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 30,
+      "id": 19,
       "sourceNodeId": "old-falcon-50",
       "sourceSocketName": "OutData",
       "targetNodeId": "nasty-ladybug-80",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 31,
+      "id": 20,
       "sourceNodeId": "white-catfish-6",
       "sourceSocketName": "OutData",
       "targetNodeId": "proud-dingo-13",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": 32,
+      "id": 21,
       "sourceNodeId": "proud-dingo-13",
       "sourceSocketName": "Length",
       "targetNodeId": "spotty-penguin-48",
       "targetSocketName": "Total Number"
     },
     {
-      "id": 33,
+      "id": 22,
       "sourceNodeId": "proud-dingo-13",
       "sourceSocketName": "Length",
       "targetNodeId": "spotty-penguin-48",
       "targetSocketName": "Number Per Column/Row"
     },
     {
-      "id": 34,
+      "id": 23,
       "sourceNodeId": "rude-rat-33",
       "sourceSocketName": "Graphics",
       "targetNodeId": "spotty-penguin-48",
       "targetSocketName": "Graphics"
     },
     {
-      "id": 35,
+      "id": 24,
       "sourceNodeId": "thin-eel-19",
       "sourceSocketName": "Graphics",
       "targetNodeId": "rude-rat-33",
       "targetSocketName": "Background"
     },
     {
-      "id": 36,
+      "id": 25,
       "sourceNodeId": "mighty-wasp-43",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "shaggy-chicken-45",
       "targetSocketName": "Injected Data"
     },
     {
-      "id": 37,
+      "id": 26,
       "sourceNodeId": "shaggy-chicken-45",
       "sourceSocketName": "Graphics",
       "targetNodeId": "blue-cougar-38",
       "targetSocketName": "Graphics"
     },
     {
+      "id": 27,
+      "sourceNodeId": "dull-fly-8",
+      "sourceSocketName": "Array of arrays",
+      "targetNodeId": "white-catfish-6",
+      "targetSocketName": "ArrayOfArraysIn"
+    },
+    {
+      "id": 28,
+      "sourceNodeId": "dull-fly-8",
+      "sourceSocketName": "Array of arrays",
+      "targetNodeId": "old-falcon-50",
+      "targetSocketName": "ArrayOfArraysIn"
+    },
+    {
+      "id": 29,
+      "sourceNodeId": "friendly-shrimp-27",
+      "sourceSocketName": "screen-x",
+      "targetNodeId": "fuzzy-dodo-45",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": 30,
+      "sourceNodeId": "stupid-treefrog-84",
+      "sourceSocketName": "Out",
+      "targetNodeId": "fuzzy-dodo-45",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": 31,
+      "sourceNodeId": "fuzzy-dodo-45",
+      "sourceSocketName": "Result",
+      "targetNodeId": "tender-stingray-81",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": 32,
+      "sourceNodeId": "friendly-shrimp-27",
+      "sourceSocketName": "screen-y",
+      "targetNodeId": "quick-turtle-10",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": 33,
+      "sourceNodeId": "stupid-treefrog-84",
+      "sourceSocketName": "Out",
+      "targetNodeId": "quick-turtle-10",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": 34,
+      "sourceNodeId": "quick-turtle-10",
+      "sourceSocketName": "Result",
+      "targetNodeId": "tricky-eagle-15",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": 35,
+      "sourceNodeId": "fuzzy-dodo-45",
+      "sourceSocketName": "Result",
+      "targetNodeId": "great-badger-6",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": 36,
+      "sourceNodeId": "quick-turtle-10",
+      "sourceSocketName": "Result",
+      "targetNodeId": "great-badger-6",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": 37,
+      "sourceNodeId": "great-badger-6",
+      "sourceSocketName": "Result",
+      "targetNodeId": "blue-ladybug-41",
+      "targetSocketName": "count"
+    },
+    {
       "id": 38,
-      "sourceNodeId": "chatty-moth-17",
-      "sourceSocketName": "Output",
+      "sourceNodeId": "great-badger-6",
+      "sourceSocketName": "Result",
       "targetNodeId": "blue-cougar-38",
       "targetSocketName": "Total Number"
     },
     {
       "id": 39,
-      "sourceNodeId": "wise-monkey-88",
+      "sourceNodeId": "tricky-eagle-15",
       "sourceSocketName": "Output",
       "targetNodeId": "blue-cougar-38",
       "targetSocketName": "Number Per Column/Row"
