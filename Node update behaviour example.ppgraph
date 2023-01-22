@@ -3,10 +3,10 @@
   "graphSettings": {
     "showExecutionVisualisation": true,
     "viewportCenterPosition": {
-      "x": 179.29324340820312,
+      "x": 182.52800290025743,
       "y": 359.81301413405265
     },
-    "viewportScale": 0.5287740367349237
+    "viewportScale": 0.4059275433520627
   },
   "nodes": [
     {
@@ -68,7 +68,7 @@
       "type": "Label",
       "x": 360.2145222687696,
       "y": -56.983196696263875,
-      "width": 185.4921875,
+      "width": 172.14453125,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -76,7 +76,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -123,7 +123,7 @@
       "type": "Label",
       "x": 362.24739716998795,
       "y": 18.36788322661181,
-      "width": 172.14453125,
+      "width": 160,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -131,7 +131,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -178,7 +178,7 @@
       "type": "Label",
       "x": 362.19024807637976,
       "y": 105.65904163556036,
-      "width": 273.5703125,
+      "width": 260.22265625,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -186,7 +186,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -233,7 +233,7 @@
       "type": "Label",
       "x": 364.8109422261432,
       "y": 178.2628829871107,
-      "width": 250.44921875,
+      "width": 265.578125,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -241,7 +241,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -296,7 +296,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -351,7 +351,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -451,7 +451,7 @@
       "type": "Label",
       "x": 1036.7808138704843,
       "y": -56.08105743287173,
-      "width": 172.14453125,
+      "width": 185.4921875,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -459,7 +459,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -506,7 +506,7 @@
       "type": "Label",
       "x": 1038.813688771703,
       "y": 19.270022490003953,
-      "width": 172.14453125,
+      "width": 160,
       "height": 52,
       "triggerArray": [],
       "socketArray": [
@@ -514,7 +514,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -569,7 +569,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -624,7 +624,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -679,7 +679,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -734,7 +734,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -864,7 +864,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -947,7 +947,7 @@
       "type": "Label",
       "x": 842.4036761410936,
       "y": 921.3357910189495,
-      "width": 168.96354166666666,
+      "width": 160,
       "height": 69,
       "triggerArray": [],
       "socketArray": [
@@ -955,7 +955,7 @@
           "socketType": "in",
           "name": "Input",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": false
+          "visible": true
         },
         {
           "socketType": "in",
@@ -1838,7 +1838,7 @@
           "socketType": "in",
           "name": "Trigger 1",
           "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
-          "defaultData": 0,
+          "defaultData": {},
           "visible": true
         }
       ],
@@ -1976,43 +1976,6 @@
       }
     },
     {
-      "id": "afraid-bear-41",
-      "name": "Multiply",
-      "type": "Multiply",
-      "x": 325.23778736006057,
-      "y": -348.55050741666383,
-      "width": 160,
-      "height": 112,
-      "triggerArray": [],
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Input",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-10,\"maxValue\":10,\"stepSize\":0.01}}",
-          "defaultData": 0,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Input 2",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":10,\"stepSize\":0.01}}",
-          "data": 3,
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "hot-starfish-46",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
@@ -2132,6 +2095,50 @@
         "interval": false,
         "intervalFrequency": 1000
       }
+    },
+    {
+      "id": "popular-bird-23",
+      "name": "Multiply",
+      "type": "Multiply",
+      "x": 328.0157969692484,
+      "y": -354.9077455757429,
+      "width": 160,
+      "height": 112,
+      "triggerArray": [],
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 * Input2;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Result",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     }
   ],
   "links": [
@@ -2234,37 +2241,44 @@
       "targetSocketName": "Input"
     },
     {
-      "id": 15,
+      "id": 14,
       "sourceNodeId": "chatty-rattlesnake-28",
       "sourceSocketName": "Value",
       "targetNodeId": "plastic-octopus-3",
       "targetSocketName": "Input"
     },
     {
-      "id": 17,
+      "id": 15,
       "sourceNodeId": "lovely-jellyfish-8",
       "sourceSocketName": "Content",
       "targetNodeId": "chatty-rattlesnake-28",
       "targetSocketName": "JSON"
     },
     {
-      "id": 18,
+      "id": 16,
       "sourceNodeId": "blue-fox-77",
       "sourceSocketName": "Out",
       "targetNodeId": "lovely-jellyfish-8",
       "targetSocketName": "Trigger 1"
     },
     {
-      "id": 19,
+      "id": 17,
       "sourceNodeId": "hot-starfish-46",
       "sourceSocketName": "Out",
-      "targetNodeId": "afraid-bear-41",
-      "targetSocketName": "Input"
+      "targetNodeId": "popular-bird-23",
+      "targetSocketName": "Input1"
     },
     {
-      "id": 20,
-      "sourceNodeId": "afraid-bear-41",
-      "sourceSocketName": "Output",
+      "id": 18,
+      "sourceNodeId": "hot-starfish-46",
+      "sourceSocketName": "Out",
+      "targetNodeId": "popular-bird-23",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": 19,
+      "sourceNodeId": "popular-bird-23",
+      "sourceSocketName": "Result",
       "targetNodeId": "quiet-fireant-80",
       "targetSocketName": "Input"
     }
