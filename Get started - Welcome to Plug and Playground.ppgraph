@@ -837,7 +837,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "happy-eel-91",
+          "data": "How do I import data (happy-eel-91)",
           "visible": false
         },
         {
@@ -1113,7 +1113,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "brave-bobcat-59",
+          "data": "How do I transform data (brave-bobcat-59)",
           "visible": false
         },
         {
@@ -1440,7 +1440,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "fuzzy-baboon-50",
+          "data": "How do I visualise data (fuzzy-baboon-50)",
           "visible": false
         },
         {
@@ -1491,7 +1491,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "spotty-panther-100",
+          "data": "How do I create and connect nodes (spotty-panther-100)",
           "visible": false
         },
         {
@@ -2081,7 +2081,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "orange-donkey-57",
+          "data": "How do I create my own node (orange-donkey-57)",
           "visible": false
         },
         {
@@ -3387,7 +3387,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "nice-pig-82",
+          "data": "My playground does not work (nice-pig-82)",
           "visible": false
         },
         {
@@ -3438,7 +3438,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "grumpy-pug-20",
+          "data": "How do I share my playgrounds (grumpy-pug-20)",
           "visible": false
         },
         {
@@ -3489,7 +3489,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "tough-turkey-96",
+          "data": "Do you want to contribute (tough-turkey-96)",
           "visible": false
         },
         {
@@ -3928,7 +3928,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "tiny-frog-60",
+          "data": "What nodes are available (tiny-frog-60)",
           "visible": false
         },
         {
@@ -3979,7 +3979,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4030,7 +4030,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4081,7 +4081,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4132,7 +4132,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4183,7 +4183,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4234,7 +4234,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4285,7 +4285,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4336,7 +4336,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
@@ -4387,7 +4387,7 @@
           "socketType": "in",
           "name": "Select Node",
           "dataType": "{\"class\":\"DynamicEnumType\",\"type\":{}}",
-          "data": "curly-bear-43",
+          "data": "Welcome (curly-bear-43)",
           "visible": false
         },
         {
