@@ -17,7 +17,6 @@
       "y": 523.2195389097113,
       "width": 421.5260416666667,
       "height": 69,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -78,7 +77,6 @@
       "y": 505.31282014896897,
       "width": 160,
       "height": 112,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -119,7 +117,6 @@
       "y": 383.76063518563205,
       "width": 160,
       "height": 112,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -158,7 +155,6 @@
       "y": 677.8653913863525,
       "width": 160,
       "height": 112,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -197,7 +193,6 @@
       "y": 695.6674981786347,
       "width": 160,
       "height": 88,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -229,7 +224,6 @@
       "y": 512.9491091012883,
       "width": 160,
       "height": 352,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -338,7 +332,6 @@
       "y": 506.21054407393456,
       "width": 160,
       "height": 136,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -384,7 +377,6 @@
       "y": 360.1710008328656,
       "width": 160,
       "height": 112,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -432,7 +424,6 @@
       "y": 393.9119162711951,
       "width": 160,
       "height": 69,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
@@ -493,7 +484,6 @@
       "y": 905.4009867760258,
       "width": 379.16415984974196,
       "height": 334.00693362160723,
-      "triggerArray": [],
       "socketArray": [
         {
           "socketType": "in",
