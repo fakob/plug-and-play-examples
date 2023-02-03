@@ -3,10 +3,10 @@
   "graphSettings": {
     "showExecutionVisualisation": false,
     "viewportCenterPosition": {
-      "x": -572.2596822158005,
-      "y": 616.1907913735656
+      "x": -559.5521089062856,
+      "y": 595.3961858375624
     },
-    "viewportScale": 0.4534483898094021
+    "viewportScale": 0.48089395024523435
   },
   "nodes": [
     {
@@ -234,55 +234,6 @@
       }
     },
     {
-      "id": "nasty-baboon-32",
-      "name": "Multiply",
-      "type": "Multiply",
-      "x": -1115.278535414942,
-      "y": 775.9044435947857,
-      "width": 160,
-      "height": 136,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Code",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(Input1, Input2) => {\n\treturn Input1 * Input2;\n}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Input1",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Input2",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 1,
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Result",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Output",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "terrible-tiger-13",
       "name": "tixy",
       "type": "CustomFunction",
@@ -427,8 +378,8 @@
       "type": "Reroute",
       "x": -975.5231014672179,
       "y": 629.830189463985,
-      "width": 20,
-      "height": 3,
+      "width": 24.021901749745894,
+      "height": 16.637054418343382,
       "socketArray": [
         {
           "socketType": "in",
@@ -456,7 +407,7 @@
       "x": -1063.1547059122368,
       "y": 159.81291174567548,
       "width": 600,
-      "height": 69,
+      "height": 105.8,
       "socketArray": [
         {
           "socketType": "in",
@@ -658,7 +609,7 @@
       "x": -1812.2178726878528,
       "y": 253.13289027226307,
       "width": 160,
-      "height": 112,
+      "height": 136,
       "socketArray": [
         {
           "socketType": "in",
@@ -673,6 +624,19 @@
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "data": {},
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
         },
         {
           "socketType": "out",
@@ -816,7 +780,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "22"
+                  "reactiveText": "0"
                 },
                 {
                   "text": ""
@@ -1650,8 +1614,8 @@
       "id": "slippery-lizard-61",
       "name": "Multiply",
       "type": "Multiply",
-      "x": -1114.77935623801,
-      "y": 798.2709566662055,
+      "x": -1110.377085742572,
+      "y": 783.3580256218358,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -1693,8 +1657,8 @@
       "id": "short-mule-14",
       "name": "Subtract",
       "type": "Subtract",
-      "x": -919.0536519968871,
-      "y": 690.7833337689095,
+      "x": -920.050745447085,
+      "y": 679.9825602019273,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -1736,8 +1700,8 @@
       "id": "moody-catfish-35",
       "name": "Divide",
       "type": "Divide",
-      "x": -729.5780931337409,
-      "y": 499.9665446038053,
+      "x": -729.6488546044005,
+      "y": 499.79285735764176,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -1779,8 +1743,8 @@
       "id": "ancient-quail-63",
       "name": "Multiply",
       "type": "Multiply",
-      "x": -733.670622719231,
-      "y": 1033.2128690879424,
+      "x": -734.4104017306681,
+      "y": 1020.0512355453304,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -1820,260 +1784,257 @@
     }
   ],
   "links": [
-    null,
-    null,
     {
-      "id": 7,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "dull-bird-21",
-      "targetSocketName": "column"
-    },
-    {
-      "id": 9,
-      "sourceNodeId": "strong-fox-44",
-      "sourceSocketName": "Out",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": "c"
-    },
-    {
-      "id": 10,
-      "sourceNodeId": "friendly-treefrog-7",
-      "sourceSocketName": "Out",
-      "targetNodeId": "little-rattlesnake-83",
-      "targetSocketName": "Index"
-    },
-    {
-      "id": 11,
-      "sourceNodeId": "friendly-treefrog-7",
-      "sourceSocketName": "Out",
-      "targetNodeId": "chilly-fireant-49",
-      "targetSocketName": "Index"
-    },
-    {
-      "id": 12,
-      "sourceNodeId": "chilly-fireant-49",
-      "sourceSocketName": "Element",
-      "targetNodeId": "tiny-lion-33",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 13,
-      "sourceNodeId": "little-rattlesnake-83",
-      "sourceSocketName": "Element",
-      "targetNodeId": "brave-cobra-77",
-      "targetSocketName": "str"
-    },
-    {
-      "id": 14,
-      "sourceNodeId": "brave-cobra-77",
-      "sourceSocketName": "OutData",
-      "targetNodeId": "moody-catfish-7",
-      "targetSocketName": "Input"
-    },
-    {
-      "id": 15,
-      "sourceNodeId": "moody-catfish-7",
-      "sourceSocketName": "Output",
-      "targetNodeId": "strong-fox-44",
-      "targetSocketName": "In"
-    },
-    {
-      "id": 16,
-      "sourceNodeId": "neat-termite-45",
-      "sourceSocketName": "Out",
-      "targetNodeId": "honest-ladybug-74",
-      "targetSocketName": "Input 1"
-    },
-    {
-      "id": 17,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "moody-snail-11",
-      "targetSocketName": "Input 1"
-    },
-    {
-      "id": 18,
-      "sourceNodeId": "friendly-treefrog-7",
-      "sourceSocketName": "Out",
-      "targetNodeId": "gentle-vampirebat-87",
-      "targetSocketName": "Input 1"
-    },
-    {
-      "id": 19,
-      "sourceNodeId": "quick-chipmunk-21",
-      "sourceSocketName": "Content",
-      "targetNodeId": "fluffy-bat-58",
-      "targetSocketName": "a"
-    },
-    {
-      "id": 20,
-      "sourceNodeId": "fluffy-bat-58",
-      "sourceSocketName": "Value",
-      "targetNodeId": "chilly-fireant-49",
-      "targetSocketName": "ArrayIn"
-    },
-    {
-      "id": 21,
-      "sourceNodeId": "quick-chipmunk-21",
-      "sourceSocketName": "Content",
-      "targetNodeId": "tough-quail-37",
-      "targetSocketName": "a"
-    },
-    {
-      "id": 22,
-      "sourceNodeId": "tough-quail-37",
-      "sourceSocketName": "Value",
-      "targetNodeId": "little-rattlesnake-83",
-      "targetSocketName": "ArrayIn"
-    },
-    {
-      "id": 23,
-      "sourceNodeId": "fluffy-bat-58",
-      "sourceSocketName": "Value",
-      "targetNodeId": "fresh-rat-44",
-      "targetSocketName": "ArrayIn"
-    },
-    {
-      "id": 24,
-      "sourceNodeId": "fresh-rat-44",
-      "sourceSocketName": "Length",
-      "targetNodeId": "friendly-treefrog-7",
-      "targetSocketName": "Max"
-    },
-    {
-      "id": 25,
-      "sourceNodeId": "terrible-tiger-13",
-      "sourceSocketName": "OutData",
-      "targetNodeId": "breezy-eel-76",
-      "targetSocketName": "Injected Data"
-    },
-    {
-      "id": 26,
-      "sourceNodeId": "breezy-eel-76",
-      "sourceSocketName": "Graphics",
-      "targetNodeId": "tricky-mule-63",
-      "targetSocketName": "Graphics"
-    },
-    {
-      "id": 28,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "tricky-mule-63",
-      "targetSocketName": "Number Per Column/Row"
-    },
-    null,
-    {
-      "id": 32,
-      "sourceNodeId": "red-mouse-92",
-      "sourceSocketName": "output array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": "j"
-    },
-    {
-      "id": 33,
-      "sourceNodeId": "dull-bird-21",
-      "sourceSocketName": "x-array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": "x"
-    },
-    {
-      "id": 34,
-      "sourceNodeId": "dull-bird-21",
-      "sourceSocketName": "y-array",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": "y"
-    },
-    {
-      "id": 35,
-      "sourceNodeId": "neat-termite-45",
-      "sourceSocketName": "Out",
-      "targetNodeId": "terrible-tiger-13",
-      "targetSocketName": "size"
-    },
-    {
-      "id": 36,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "slippery-lizard-61",
-      "targetSocketName": "Input1"
-    },
-    {
-      "id": 37,
-      "sourceNodeId": "jolly-parrot-51",
-      "sourceSocketName": "Out",
-      "targetNodeId": "slippery-lizard-61",
-      "targetSocketName": "Input2"
-    },
-    {
-      "id": 38,
-      "sourceNodeId": "slippery-lizard-61",
-      "sourceSocketName": "Result",
-      "targetNodeId": "short-mule-14",
-      "targetSocketName": "Input1"
-    },
-    {
-      "id": 39,
-      "sourceNodeId": "short-mule-14",
-      "sourceSocketName": "Result",
-      "targetNodeId": "red-mouse-92",
-      "targetSocketName": "stop"
-    },
-    {
-      "id": 40,
-      "sourceNodeId": "slippery-lizard-61",
-      "sourceSocketName": "Result",
-      "targetNodeId": "dull-bird-21",
-      "targetSocketName": "count"
-    },
-    {
-      "id": 41,
-      "sourceNodeId": "slippery-lizard-61",
-      "sourceSocketName": "Result",
-      "targetNodeId": "tricky-mule-63",
-      "targetSocketName": "Total Number"
-    },
-    {
-      "id": 42,
-      "sourceNodeId": "loud-dodo-98",
-      "sourceSocketName": "Date and time",
-      "targetNodeId": "moody-catfish-35",
-      "targetSocketName": "Input1"
-    },
-    {
-      "id": 43,
+      "id": "fe20869e-93e8-4ea1-8ed0-2493aa86b673",
       "sourceNodeId": "moody-catfish-35",
       "sourceSocketName": "Result",
       "targetNodeId": "clever-cougar-42",
       "targetSocketName": "Input"
     },
     {
-      "id": 44,
+      "id": "e94ac13b-299a-47c4-931e-233031d2774b",
+      "sourceNodeId": "short-mule-14",
+      "sourceSocketName": "Result",
+      "targetNodeId": "red-mouse-92",
+      "targetSocketName": "stop"
+    },
+    {
+      "id": "4476b65f-08d2-4569-bfb6-0cf424ecd4d3",
+      "sourceNodeId": "strong-fox-44",
+      "sourceSocketName": "Out",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "c"
+    },
+    {
+      "id": "b2325287-bc9a-4542-a2ca-e11be6134a0c",
       "sourceNodeId": "moody-catfish-35",
       "sourceSocketName": "Result",
       "targetNodeId": "terrible-tiger-13",
       "targetSocketName": "t"
     },
     {
-      "id": 45,
-      "sourceNodeId": "neat-termite-45",
-      "sourceSocketName": "Out",
-      "targetNodeId": "ancient-quail-63",
-      "targetSocketName": "Input1"
+      "id": "84d64a57-053d-4726-aaef-3775db7899ba",
+      "sourceNodeId": "red-mouse-92",
+      "sourceSocketName": "output array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "j"
     },
     {
-      "id": 46,
+      "id": "2ea100f8-284d-482b-b1ef-ac1669d7e4bf",
+      "sourceNodeId": "dull-bird-21",
+      "sourceSocketName": "x-array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "x"
+    },
+    {
+      "id": "d6794249-7572-42aa-8ee8-f017ecbf16f9",
+      "sourceNodeId": "dull-bird-21",
+      "sourceSocketName": "y-array",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "y"
+    },
+    {
+      "id": "eefc2f55-3969-42f4-983c-fade1b1b2fa4",
+      "sourceNodeId": "neat-termite-45",
+      "sourceSocketName": "Out",
+      "targetNodeId": "terrible-tiger-13",
+      "targetSocketName": "size"
+    },
+    {
+      "id": "95cf7ec7-aa13-4c95-b179-0460248b538f",
+      "sourceNodeId": "slippery-lizard-61",
+      "sourceSocketName": "Result",
+      "targetNodeId": "dull-bird-21",
+      "targetSocketName": "count"
+    },
+    {
+      "id": "a73fc696-254f-4323-805e-39030f8b7570",
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "dull-bird-21",
+      "targetSocketName": "column"
+    },
+    {
+      "id": "275b5903-6083-4187-a524-fbba4123dac5",
+      "sourceNodeId": "moody-catfish-7",
+      "sourceSocketName": "Output",
+      "targetNodeId": "strong-fox-44",
+      "targetSocketName": "In"
+    },
+    {
+      "id": "b78fc9db-69ed-407c-9fbc-f661f693cd06",
+      "sourceNodeId": "chilly-fireant-49",
+      "sourceSocketName": "Element",
+      "targetNodeId": "tiny-lion-33",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": "c5e467f3-d3da-460d-ad31-97d2c3296a2b",
+      "sourceNodeId": "tough-quail-37",
+      "sourceSocketName": "Value",
+      "targetNodeId": "little-rattlesnake-83",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": "c65ee87f-39f2-4cfb-9698-e49219b0aa29",
+      "sourceNodeId": "friendly-treefrog-7",
+      "sourceSocketName": "Out",
+      "targetNodeId": "little-rattlesnake-83",
+      "targetSocketName": "Index"
+    },
+    {
+      "id": "2a178ba0-069d-4e13-987a-e1a27740857c",
+      "sourceNodeId": "fresh-rat-44",
+      "sourceSocketName": "Length",
+      "targetNodeId": "friendly-treefrog-7",
+      "targetSocketName": "Max"
+    },
+    {
+      "id": "3d77f63e-5b4a-4f52-a370-953454a7177c",
+      "sourceNodeId": "fluffy-bat-58",
+      "sourceSocketName": "Value",
+      "targetNodeId": "chilly-fireant-49",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": "3bdfd646-3340-464f-b06a-96a2eb112932",
+      "sourceNodeId": "friendly-treefrog-7",
+      "sourceSocketName": "Out",
+      "targetNodeId": "chilly-fireant-49",
+      "targetSocketName": "Index"
+    },
+    {
+      "id": "5a860f8f-f93e-4b19-88ab-283a6f95edd1",
+      "sourceNodeId": "little-rattlesnake-83",
+      "sourceSocketName": "Element",
+      "targetNodeId": "brave-cobra-77",
+      "targetSocketName": "str"
+    },
+    {
+      "id": "fd8ee70d-e100-4d88-8300-3b5eb463dc65",
+      "sourceNodeId": "brave-cobra-77",
+      "sourceSocketName": "OutData",
+      "targetNodeId": "moody-catfish-7",
+      "targetSocketName": "Input"
+    },
+    {
+      "id": "4264851d-1fc6-4eca-b086-15c65b35e75d",
+      "sourceNodeId": "friendly-treefrog-7",
+      "sourceSocketName": "Out",
+      "targetNodeId": "gentle-vampirebat-87",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": "d1295f95-fbe2-409d-bb09-dbeaa4bc6c1f",
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "moody-snail-11",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": "2cdf69f1-3700-47a6-adac-25a06e7e2441",
+      "sourceNodeId": "neat-termite-45",
+      "sourceSocketName": "Out",
+      "targetNodeId": "honest-ladybug-74",
+      "targetSocketName": "Input 1"
+    },
+    {
+      "id": "fd54867f-a387-4229-9ad2-706a33dad065",
+      "sourceNodeId": "quick-chipmunk-21",
+      "sourceSocketName": "Content",
+      "targetNodeId": "fluffy-bat-58",
+      "targetSocketName": "a"
+    },
+    {
+      "id": "f51405b7-cf31-46e9-9fa4-e72b7e7be237",
+      "sourceNodeId": "quick-chipmunk-21",
+      "sourceSocketName": "Content",
+      "targetNodeId": "tough-quail-37",
+      "targetSocketName": "a"
+    },
+    {
+      "id": "4fba46c9-5f88-41b6-8d03-906b671a8a67",
+      "sourceNodeId": "fluffy-bat-58",
+      "sourceSocketName": "Value",
+      "targetNodeId": "fresh-rat-44",
+      "targetSocketName": "ArrayIn"
+    },
+    {
+      "id": "b680daa5-670f-48ed-995b-83df8f972be7",
+      "sourceNodeId": "terrible-tiger-13",
+      "sourceSocketName": "OutData",
+      "targetNodeId": "breezy-eel-76",
+      "targetSocketName": "Injected Data"
+    },
+    {
+      "id": "7280c33d-6492-40fa-be0e-07cae4e15d68",
+      "sourceNodeId": "breezy-eel-76",
+      "sourceSocketName": "Graphics",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Graphics"
+    },
+    {
+      "id": "b5c6d7ea-5e72-4ebd-8f2c-085b6e4e2a51",
+      "sourceNodeId": "slippery-lizard-61",
+      "sourceSocketName": "Result",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Total Number"
+    },
+    {
+      "id": "01227b14-3901-4ce5-b243-07f1d4cd1465",
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "tricky-mule-63",
+      "targetSocketName": "Number Per Column/Row"
+    },
+    {
+      "id": "2a3ef809-798f-4c23-a505-ef54d8fd38d6",
       "sourceNodeId": "ancient-quail-63",
       "sourceSocketName": "Result",
       "targetNodeId": "tricky-mule-63",
       "targetSocketName": "Spacing X"
     },
     {
-      "id": 47,
+      "id": "5ac68b16-f068-49c2-a6f2-99b74daafc12",
       "sourceNodeId": "ancient-quail-63",
       "sourceSocketName": "Result",
       "targetNodeId": "tricky-mule-63",
       "targetSocketName": "Spacing Y"
+    },
+    {
+      "id": "c45efee0-363b-43bc-bcd9-34f6bae2a681",
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "slippery-lizard-61",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": "25dfde52-083b-4530-8ff9-bf53364d3b09",
+      "sourceNodeId": "jolly-parrot-51",
+      "sourceSocketName": "Out",
+      "targetNodeId": "slippery-lizard-61",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": "d5560e67-5ecd-442c-bf87-c1ebcefe911e",
+      "sourceNodeId": "slippery-lizard-61",
+      "sourceSocketName": "Result",
+      "targetNodeId": "short-mule-14",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": "7d27a572-af1a-4985-b506-336785b2331b",
+      "sourceNodeId": "loud-dodo-98",
+      "sourceSocketName": "Date and time",
+      "targetNodeId": "moody-catfish-35",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": "478f6679-8844-441f-8bf7-0f2ee12331a2",
+      "sourceNodeId": "neat-termite-45",
+      "sourceSocketName": "Out",
+      "targetNodeId": "ancient-quail-63",
+      "targetSocketName": "Input1"
     }
   ]
 }
