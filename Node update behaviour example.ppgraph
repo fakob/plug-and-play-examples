@@ -67,7 +67,7 @@
       "type": "Label",
       "x": 360.2145222687696,
       "y": -56.983196696263875,
-      "width": 172.14453125,
+      "width": 160,
       "height": 52,
       "socketArray": [
         {
@@ -175,7 +175,7 @@
       "type": "Label",
       "x": 362.19024807637976,
       "y": 105.65904163556036,
-      "width": 260.22265625,
+      "width": 252.23046875,
       "height": 52,
       "socketArray": [
         {
@@ -229,7 +229,7 @@
       "type": "Label",
       "x": 364.8109422261432,
       "y": 178.2628829871107,
-      "width": 265.578125,
+      "width": 252.23046875,
       "height": 52,
       "socketArray": [
         {
@@ -443,7 +443,7 @@
       "type": "Label",
       "x": 1036.7808138704843,
       "y": -56.08105743287173,
-      "width": 185.4921875,
+      "width": 160,
       "height": 52,
       "socketArray": [
         {
@@ -551,7 +551,7 @@
       "type": "Label",
       "x": 1038.7565396780944,
       "y": 106.5611808989525,
-      "width": 273.5703125,
+      "width": 250.44921875,
       "height": 52,
       "socketArray": [
         {
@@ -605,7 +605,7 @@
       "type": "Label",
       "x": 1041.3772338278584,
       "y": 179.16502225050283,
-      "width": 252.23046875,
+      "width": 225.53515625,
       "height": 52,
       "socketArray": [
         {
@@ -762,44 +762,6 @@
       }
     },
     {
-      "id": "sweet-goose-29",
-      "name": "Get random user",
-      "type": "Get",
-      "x": 377.0604501919846,
-      "y": 632.4553719347225,
-      "width": 160,
-      "height": 112,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "https://randomuser.me/api/",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Headers",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {
-            "Content-Type": "application/json"
-          },
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": false,
-        "intervalFrequency": 10000
-      }
-    },
-    {
       "id": "green-bat-16",
       "name": "Extract first name",
       "type": "JSONGet",
@@ -840,7 +802,7 @@
       "type": "Label",
       "x": 839.2456660934732,
       "y": 658.7703435459567,
-      "width": 160,
+      "width": 190.30729166666666,
       "height": 69,
       "socketArray": [
         {
@@ -929,7 +891,7 @@
       "type": "Label",
       "x": 842.4036761410936,
       "y": 921.3357910189495,
-      "width": 160,
+      "width": 200.96354166666666,
       "height": 69,
       "socketArray": [
         {
@@ -1797,51 +1759,6 @@
       }
     },
     {
-      "id": "lovely-jellyfish-8",
-      "name": "Get random user",
-      "type": "Get",
-      "x": 372.533728851206,
-      "y": 873.7696839684338,
-      "width": 160,
-      "height": 136,
-      "socketArray": [
-        {
-          "socketType": "trigger",
-          "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
-          "defaultData": {},
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "data": "https://randomuser.me/api/",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Headers",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {
-            "Content-Type": "application/json"
-          },
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": false,
-        "intervalFrequency": 10000
-      }
-    },
-    {
       "id": "breezy-seahorse-40",
       "name": "TextEditor",
       "type": "TextEditor",
@@ -2104,148 +2021,285 @@
         "interval": false,
         "intervalFrequency": 1000
       }
+    },
+    {
+      "id": "curvy-termite-48",
+      "name": "Get random user",
+      "type": "HTTPNode",
+      "x": 377.0604501919846,
+      "y": 632.7691691733581,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://randomuser.me/api/",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "data": "Get",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Body",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": false,
+        "intervalFrequency": 10000
+      }
+    },
+    {
+      "id": "bright-cow-50",
+      "name": "Get random user",
+      "type": "HTTPNode",
+      "x": 372.533728851206,
+      "y": 873.7696839684338,
+      "width": 160,
+      "height": 112,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://randomuser.me/api/",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "data": "Get",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Body",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\"}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": false,
+        "intervalFrequency": 10000
+      }
     }
   ],
   "links": [
     {
-      "id": 0,
+      "id": "97dff08d-e3f7-42c6-9677-69adf910dedf",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "screen-x",
       "targetNodeId": "cold-eagle-90",
       "targetSocketName": "Input"
     },
     {
-      "id": 1,
+      "id": "15b42ddb-79a1-446c-96ae-80a8434711bd",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "screen-y",
       "targetNodeId": "tricky-snail-97",
       "targetSocketName": "Input"
     },
     {
-      "id": 2,
+      "id": "dc318880-68b5-4336-8175-9b3fced920e3",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "world-x",
       "targetNodeId": "silent-cheetah-94",
       "targetSocketName": "Input"
     },
     {
-      "id": 3,
+      "id": "eea8f9d5-3029-4125-98cd-553f7efd70ad",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "world-y",
       "targetNodeId": "wise-cobra-86",
       "targetSocketName": "Input"
     },
     {
-      "id": 4,
+      "id": "c173e4f5-e3b0-4471-b99e-7accac7f2220",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "scale",
       "targetNodeId": "fresh-yak-48",
       "targetSocketName": "Input"
     },
     {
-      "id": 5,
+      "id": "59fd7438-84c3-4537-ae96-41d31974452f",
       "sourceNodeId": "green-dragonfly-23",
       "sourceSocketName": "buttons",
       "targetNodeId": "hungry-bullfrog-85",
       "targetSocketName": "Input"
     },
     {
-      "id": 6,
+      "id": "4e95a2e3-9dfd-4fca-9213-ff9fd145843f",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "screen-x",
       "targetNodeId": "yellow-rat-76",
       "targetSocketName": "Input"
     },
     {
-      "id": 7,
+      "id": "80a64f0a-8085-4267-9897-bac9df5250eb",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "screen-y",
       "targetNodeId": "tricky-goat-10",
       "targetSocketName": "Input"
     },
     {
-      "id": 8,
+      "id": "f638f5ef-cd20-4ec3-b7ba-fed61e1490e4",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "world-x",
       "targetNodeId": "calm-penguin-53",
       "targetSocketName": "Input"
     },
     {
-      "id": 9,
+      "id": "fd1a3531-1109-48ce-915c-5b4de1202ca3",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "world-y",
       "targetNodeId": "strong-shrimp-37",
       "targetSocketName": "Input"
     },
     {
-      "id": 10,
+      "id": "89fd8fa5-91a0-4680-bc6a-3c87dab89999",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "scale",
       "targetNodeId": "jolly-robin-52",
       "targetSocketName": "Input"
     },
     {
-      "id": 11,
+      "id": "f42970ae-3aa5-4079-b14d-b9d2d7257bae",
       "sourceNodeId": "selfish-quail-14",
       "sourceSocketName": "buttons",
       "targetNodeId": "odd-squid-16",
       "targetSocketName": "Input"
     },
     {
-      "id": 12,
-      "sourceNodeId": "sweet-goose-29",
+      "id": "769defac-5729-4d30-9b41-e17aceada6cc",
+      "sourceNodeId": "curvy-termite-48",
       "sourceSocketName": "Content",
       "targetNodeId": "green-bat-16",
       "targetSocketName": "JSON"
     },
     {
-      "id": 13,
+      "id": "1fb51cad-662b-4a9f-a14f-9d3e1ea3241e",
       "sourceNodeId": "green-bat-16",
       "sourceSocketName": "Value",
       "targetNodeId": "tough-jellyfish-3",
       "targetSocketName": "Input"
     },
     {
-      "id": 14,
+      "id": "d09bc968-944e-4cac-b47c-bc2babf14b68",
+      "sourceNodeId": "bright-cow-50",
+      "sourceSocketName": "Content",
+      "targetNodeId": "chatty-rattlesnake-28",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": "1373eb28-e1a4-440b-8517-f0934079af68",
       "sourceNodeId": "chatty-rattlesnake-28",
       "sourceSocketName": "Value",
       "targetNodeId": "plastic-octopus-3",
       "targetSocketName": "Input"
     },
     {
-      "id": 15,
-      "sourceNodeId": "lovely-jellyfish-8",
-      "sourceSocketName": "Content",
-      "targetNodeId": "chatty-rattlesnake-28",
-      "targetSocketName": "JSON"
+      "id": "a7cfd350-4ae0-44e8-9417-48cc28b94002",
+      "sourceNodeId": "popular-bird-23",
+      "sourceSocketName": "Result",
+      "targetNodeId": "quiet-fireant-80",
+      "targetSocketName": "Input"
     },
     {
-      "id": 16,
-      "sourceNodeId": "blue-fox-77",
-      "sourceSocketName": "Out",
-      "targetNodeId": "lovely-jellyfish-8",
-      "targetSocketName": "Trigger 1"
-    },
-    {
-      "id": 17,
+      "id": "1a1bb99f-9f84-4a23-a166-df761d2e4fb9",
       "sourceNodeId": "hot-starfish-46",
       "sourceSocketName": "Out",
       "targetNodeId": "popular-bird-23",
       "targetSocketName": "Input1"
     },
     {
-      "id": 18,
+      "id": "10cb1964-7f9c-45ac-854a-57c565790cdb",
       "sourceNodeId": "hot-starfish-46",
       "sourceSocketName": "Out",
       "targetNodeId": "popular-bird-23",
       "targetSocketName": "Input2"
     },
     {
-      "id": 19,
-      "sourceNodeId": "popular-bird-23",
-      "sourceSocketName": "Result",
-      "targetNodeId": "quiet-fireant-80",
-      "targetSocketName": "Input"
+      "id": "60f27471-215e-475f-8ae0-1e4982df5785",
+      "sourceNodeId": "blue-fox-77",
+      "sourceSocketName": "Out",
+      "targetNodeId": "bright-cow-50",
+      "targetSocketName": "Trigger 1"
     }
   ]
 }

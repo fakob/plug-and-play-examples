@@ -65,43 +65,6 @@
       }
     },
     {
-      "id": "curvy-lion-99",
-      "name": "Get catfact",
-      "type": "Get",
-      "x": 382.06450695177904,
-      "y": 715.3180217503623,
-      "width": 160,
-      "height": 112,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Headers",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {
-            "Content-Type": "application/json"
-          },
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 10000
-      }
-    },
-    {
       "id": "short-elephant-91",
       "name": "Extract fact",
       "type": "JSONGet",
@@ -189,43 +152,6 @@
         "update": true,
         "interval": false,
         "intervalFrequency": 1000
-      }
-    },
-    {
-      "id": "evil-pig-65",
-      "name": "Get random user",
-      "type": "Get",
-      "x": 387.3168937634465,
-      "y": 505.31282014896897,
-      "width": 160,
-      "height": 112,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Headers",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {
-            "Content-Type": "application/json"
-          },
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": true,
-        "intervalFrequency": 10000
       }
     },
     {
@@ -319,43 +245,6 @@
       }
     },
     {
-      "id": "stupid-rattlesnake-19",
-      "name": "Get prediction",
-      "type": "Get",
-      "x": 1100.979573895933,
-      "y": 411.98369069718177,
-      "width": 160,
-      "height": 112,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "URL",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Headers",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {
-            "Content-Type": "application/json"
-          },
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "Content",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": true,
-        "interval": false,
-        "intervalFrequency": 10000
-      }
-    },
-    {
       "id": "bright-monkey-84",
       "name": "Extract age",
       "type": "JSONGet",
@@ -397,7 +286,7 @@
       "x": 829.6508005495554,
       "y": 663.3352475080388,
       "width": 565.7021690357302,
-      "height": 292.921875,
+      "height": 166.96875,
       "socketArray": [
         {
           "socketType": "in",
@@ -438,7 +327,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "Relative to its body size, the clouded leopard has the biggest canines of all animals’ canines. Its dagger-like teeth can be as long as 1.8 inches (4.5 cm)."
+                  "reactiveText": "Blue-eyed, white cats are often prone to deafness."
                 },
                 {
                   "text": ""
@@ -548,7 +437,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "Diego"
+                  "reactiveText": "Alessio"
                 },
                 {
                   "text": " "
@@ -579,7 +468,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "50"
+                  "reactiveText": "44"
                 },
                 {
                   "text": ""
@@ -709,84 +598,279 @@
         "interval": false,
         "intervalFrequency": 1000
       }
+    },
+    {
+      "id": "red-mole-54",
+      "name": "HTTPNode",
+      "type": "HTTPNode",
+      "x": 387.3168937634465,
+      "y": 505.49028369674045,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "data": "Get",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Body",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      }
+    },
+    {
+      "id": "modern-cat-65",
+      "name": "HTTPNode",
+      "type": "HTTPNode",
+      "x": 382.06450695177904,
+      "y": 715.3180217503623,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "data": "Get",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Body",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": true,
+        "intervalFrequency": 10000
+      }
+    },
+    {
+      "id": "bad-starfish-91",
+      "name": "HTTPNode",
+      "type": "HTTPNode",
+      "x": 1100.979573895933,
+      "y": 411.98369069718177,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "URL",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "defaultData": "",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Headers",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {
+            "Content-Type": "application/json"
+          },
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Method",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "data": "Get",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Body",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Send Through Companion",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Companion Location",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "out",
+          "name": "Content",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 10000
+      }
     }
   ],
   "links": [
     {
-      "id": 0,
-      "sourceNodeId": "brown-cougar-55",
-      "sourceSocketName": "Output",
-      "targetNodeId": "curvy-lion-99",
-      "targetSocketName": "URL"
-    },
-    {
-      "id": 1,
-      "sourceNodeId": "curvy-lion-99",
+      "id": "1de77ee5-0788-40a3-acdb-130e4d2169f5",
+      "sourceNodeId": "modern-cat-65",
       "sourceSocketName": "Content",
       "targetNodeId": "short-elephant-91",
       "targetSocketName": "JSON"
     },
     {
-      "id": 2,
-      "sourceNodeId": "loud-earwig-33",
-      "sourceSocketName": "Output",
-      "targetNodeId": "evil-pig-65",
-      "targetSocketName": "URL"
-    },
-    {
-      "id": 3,
-      "sourceNodeId": "evil-pig-65",
+      "id": "2e407e2c-bd63-4552-97fc-c9cdd57ca670",
+      "sourceNodeId": "red-mole-54",
       "sourceSocketName": "Content",
       "targetNodeId": "nice-squid-38",
       "targetSocketName": "JSON"
     },
     {
-      "id": 4,
-      "sourceNodeId": "stupid-rattlesnake-19",
+      "id": "41326bf4-4786-47c7-86b3-c71299d785ca",
+      "sourceNodeId": "bad-starfish-91",
       "sourceSocketName": "Content",
       "targetNodeId": "bright-monkey-84",
       "targetSocketName": "JSON"
     },
     {
-      "id": 5,
+      "id": "eeedd105-4b5e-47f4-ad00-92f00772ffb8",
       "sourceNodeId": "short-elephant-91",
       "sourceSocketName": "Value",
       "targetNodeId": "moody-chicken-69",
       "targetSocketName": "Input 1"
     },
     {
-      "id": 6,
-      "sourceNodeId": "bright-monkey-84",
-      "sourceSocketName": "Value",
-      "targetNodeId": "lovely-turtle-25",
-      "targetSocketName": "Input 2"
-    },
-    {
-      "id": 7,
+      "id": "f65ae95f-0d85-4e3f-bbf6-db2d054bc55f",
       "sourceNodeId": "nice-squid-38",
       "sourceSocketName": "Value",
       "targetNodeId": "lovely-turtle-25",
       "targetSocketName": "Input 1"
     },
     {
-      "id": 8,
+      "id": "a887f816-7fec-4696-9766-16edc46944d3",
+      "sourceNodeId": "bright-monkey-84",
+      "sourceSocketName": "Value",
+      "targetNodeId": "lovely-turtle-25",
+      "targetSocketName": "Input 2"
+    },
+    {
+      "id": "074ccb14-192a-4394-b252-b689b262ec5b",
       "sourceNodeId": "kind-goose-25",
       "sourceSocketName": "Output",
       "targetNodeId": "wicked-parrot-92",
       "targetSocketName": "Input1"
     },
     {
-      "id": 9,
+      "id": "feb3f62a-11d5-4f71-83ee-7160c5a219d1",
       "sourceNodeId": "nice-squid-38",
       "sourceSocketName": "Value",
       "targetNodeId": "wicked-parrot-92",
       "targetSocketName": "Input2"
     },
     {
-      "id": 10,
+      "id": "649ccb2d-7efa-4df0-ae1e-cee333a5e988",
+      "sourceNodeId": "loud-earwig-33",
+      "sourceSocketName": "Output",
+      "targetNodeId": "red-mole-54",
+      "targetSocketName": "URL"
+    },
+    {
+      "id": "b4623ac7-82fc-4731-b37a-6578f1d5b72c",
+      "sourceNodeId": "brown-cougar-55",
+      "sourceSocketName": "Output",
+      "targetNodeId": "modern-cat-65",
+      "targetSocketName": "URL"
+    },
+    {
+      "id": "9c59cd12-a137-41f9-a860-729575b3d2a9",
       "sourceNodeId": "wicked-parrot-92",
       "sourceSocketName": "Result",
-      "targetNodeId": "stupid-rattlesnake-19",
+      "targetNodeId": "bad-starfish-91",
       "targetSocketName": "URL"
     }
   ]
