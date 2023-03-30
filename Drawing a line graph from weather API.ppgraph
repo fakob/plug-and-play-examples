@@ -2,11 +2,12 @@
   "version": 0.1,
   "graphSettings": {
     "showExecutionVisualisation": true,
+    "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": -1195.7629427709508,
-      "y": -6797.120036940304
+      "x": -1625.3020201650022,
+      "y": -6836.664904382929
     },
-    "viewportScale": 0.3263295160773597
+    "viewportScale": 0.5879685965248368
   },
   "nodes": [
     {
@@ -30,6 +31,13 @@
           "name": "Lock Outputs",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -113,6 +121,13 @@
           "name": "Lock Outputs",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -230,6 +245,13 @@
           "visible": true
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "output",
           "dataType": "{\"class\":\"CodeType\",\"type\":{\"valueChangedListeners\":{}}}",
@@ -270,7 +292,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "Oslo"
+                  "reactiveText": "Tokyo"
                 },
                 {
                   "text": " which lies in "
@@ -283,7 +305,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "Norway"
+                  "reactiveText": "Japan"
                 },
                 {
                   "text": ""
@@ -320,6 +342,13 @@
         },
         {
           "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
           "name": "Input 2",
           "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":{}}}",
           "defaultData": 0,
@@ -350,7 +379,7 @@
       "type": "Label",
       "x": -1003.7495278370866,
       "y": -6925.620921180018,
-      "width": 746.9973958333334,
+      "width": 758.2708333333334,
       "height": 35,
       "socketArray": [
         {
@@ -384,6 +413,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -591,10 +627,31 @@
         },
         {
           "socketType": "in",
+          "name": "Skew X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1.5707963267948966,\"maxValue\":1.5707963267948966,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Skew Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-1.5707963267948966,\"maxValue\":1.5707963267948966,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
           "name": "Injected Data",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "data": [],
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "out",
@@ -661,6 +718,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
@@ -694,6 +758,13 @@
           "name": "Lock Outputs",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -794,6 +865,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -832,7 +910,7 @@
         {
           "socketType": "in",
           "name": "Method",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Get",
           "visible": true
         },
@@ -855,6 +933,13 @@
           "name": "Companion Location",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "http://localhost:6655"
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "out",
@@ -152211,6 +152296,20 @@
           "visible": true
         },
         {
+          "socketType": "in",
+          "name": "Input",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "data": [],
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Array of objects",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
@@ -152230,11 +152329,11 @@
       }
     },
     {
-      "id": "lucky-elephant-6",
+      "id": "ancient-treefrog-100",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -2183.769368745415,
-      "y": -6863.595884179719,
+      "x": -2184.5766811648764,
+      "y": -6852.509978941442,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -152242,8 +152341,8 @@
           "socketType": "in",
           "name": "Initial value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "defaultData": 0,
-          "visible": true
+          "data": 0,
+          "visible": false
         },
         {
           "socketType": "in",
@@ -152256,8 +152355,8 @@
           "socketType": "in",
           "name": "Max",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 100,
-          "visible": false
+          "defaultData": 100,
+          "visible": true
         },
         {
           "socketType": "in",
@@ -152281,6 +152380,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
@@ -152296,115 +152402,115 @@
   ],
   "links": [
     {
-      "id": "80391738-15c3-4529-a140-593ea4732d00",
+      "id": "b7e8b96e-0232-454d-b0df-d6834044184d",
       "sourceNodeId": "rare-pug-27",
       "sourceSocketName": "Content",
       "targetNodeId": "plastic-snail-68",
       "targetSocketName": "JSON"
     },
     {
-      "id": "6ca6eeac-1075-4fc5-b716-6d08959a40e2",
+      "id": "b8f5fd34-5550-43a8-bd05-679b55963179",
       "sourceNodeId": "plastic-snail-68",
       "sourceSocketName": "hourly",
       "targetNodeId": "sour-crab-27",
       "targetSocketName": "JSON"
     },
     {
-      "id": "405b3f8f-7688-4d52-b6a0-ed8312799d46",
+      "id": "c2089707-1104-4683-a0fc-f84ccc575bae",
       "sourceNodeId": "lazy-swan-93",
       "sourceSocketName": "Array of objects",
       "targetNodeId": "warm-horse-40",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": "c98efdb6-3e2b-4e04-8140-374af09c9133",
+      "id": "bfaa0dcd-a96c-46df-8987-e6767b8cbeba",
       "sourceNodeId": "curvy-owl-11",
       "sourceSocketName": "lat",
       "targetNodeId": "tricky-liger-17",
       "targetSocketName": "lat"
     },
     {
-      "id": "52d8da17-9341-41a4-9d3a-352c0178d4f4",
+      "id": "350f35ce-de1c-46db-b7f1-6864931279a7",
       "sourceNodeId": "curvy-owl-11",
       "sourceSocketName": "lng",
       "targetNodeId": "tricky-liger-17",
       "targetSocketName": "long"
     },
     {
-      "id": "e6292c9f-2355-4a2d-b63d-c9315f13cf23",
+      "id": "6d0d4d42-6dea-4280-8fd9-3f0cf8c2710c",
       "sourceNodeId": "bright-fly-82",
       "sourceSocketName": "Element",
       "targetNodeId": "moody-donkey-74",
       "targetSocketName": "input"
     },
     {
-      "id": "807751d3-eca5-4fe6-a3e9-2587fbdcd3a4",
+      "id": "03baefe1-1548-4a89-9c3f-c482a4ed3ace",
       "sourceNodeId": "curvy-owl-11",
       "sourceSocketName": "country",
       "targetNodeId": "stale-bat-9",
       "targetSocketName": "Input 1"
     },
     {
-      "id": "b4258d86-2177-4524-a9b9-23c2f198221f",
+      "id": "437b9689-d95a-4bb6-9673-3ee0b26f8210",
       "sourceNodeId": "curvy-owl-11",
       "sourceSocketName": "city",
       "targetNodeId": "stale-bat-9",
       "targetSocketName": "Input 2"
     },
     {
-      "id": "5bf21ee0-ec33-468d-ae79-eb87aeb88925",
+      "id": "fd071bd5-2524-42ff-96ac-f7ab910ae6df",
       "sourceNodeId": "tricky-liger-17",
       "sourceSocketName": "OutData",
       "targetNodeId": "lovely-cobra-97",
       "targetSocketName": "Input"
     },
     {
-      "id": "eeff9502-de25-4e32-82a5-4e01f8292723",
+      "id": "d2f219e0-049a-4f6c-b3d8-481332c41cea",
       "sourceNodeId": "sour-crab-27",
       "sourceSocketName": "temperature_2m",
       "targetNodeId": "curly-turkey-98",
       "targetSocketName": "Points X"
     },
     {
-      "id": "05c678af-85dc-4ec0-a67c-6ce96e45ada7",
-      "sourceNodeId": "lucky-elephant-6",
+      "id": "d02745ed-17a6-43b2-ae11-e91858cd08af",
+      "sourceNodeId": "ancient-treefrog-100",
       "sourceSocketName": "Out",
       "targetNodeId": "strong-lion-20",
       "targetSocketName": "In"
     },
     {
-      "id": "b16e6b1e-b45c-4ecb-ad0f-b7df20f7827f",
+      "id": "926b45a4-da07-4a5e-a960-d732e4fbfcf2",
       "sourceNodeId": "bright-fly-82",
       "sourceSocketName": "Element",
       "targetNodeId": "curvy-owl-11",
       "targetSocketName": "JSON"
     },
     {
-      "id": "a7959477-8cb9-481d-9f56-6b143daf70aa",
+      "id": "724355d6-e342-4391-be72-fa5bdeeda9a2",
       "sourceNodeId": "tricky-liger-17",
       "sourceSocketName": "OutData",
       "targetNodeId": "rare-pug-27",
       "targetSocketName": "URL"
     },
     {
-      "id": "bf3999bb-82e0-490e-822b-e902ef95f4ca",
+      "id": "d47dcb08-b77e-4e30-9fc2-18a1c411d9ab",
       "sourceNodeId": "lazy-swan-93",
       "sourceSocketName": "Array of objects",
       "targetNodeId": "bright-fly-82",
       "targetSocketName": "ArrayIn"
     },
     {
-      "id": "fbcd0d05-46a5-4a9e-91ab-5d122d7cd038",
+      "id": "aebe549a-2a8e-4d2d-b2b3-84d4855910e8",
       "sourceNodeId": "strong-lion-20",
       "sourceSocketName": "Out",
       "targetNodeId": "bright-fly-82",
       "targetSocketName": "Index"
     },
     {
-      "id": "124294bd-da61-4fb1-af35-13913f960714",
+      "id": "018e0017-bc0b-4133-abae-2cff42e65713",
       "sourceNodeId": "warm-horse-40",
       "sourceSocketName": "Length",
-      "targetNodeId": "lucky-elephant-6",
+      "targetNodeId": "ancient-treefrog-100",
       "targetSocketName": "Max"
     }
   ]
