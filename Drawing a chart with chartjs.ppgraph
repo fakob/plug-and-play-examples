@@ -511,7 +511,7 @@
         }
       ],
       "updateBehaviour": {
-        "update": false,
+        "update": true,
         "interval": false,
         "intervalFrequency": 1000
       }
