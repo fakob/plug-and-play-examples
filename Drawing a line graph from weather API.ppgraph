@@ -152405,7 +152405,7 @@
       "sourceNodeId": "warm-horse-40",
       "sourceSocketName": "Length",
       "targetNodeId": "lucky-elephant-6",
-      "targetSocketName": "Initial value"
+      "targetSocketName": "Max"
     }
   ]
 }
