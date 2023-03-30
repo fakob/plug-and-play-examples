@@ -152212,7 +152212,7 @@
         },
         {
           "socketType": "out",
-          "name": "Row Objects",
+          "name": "Array of objects",
           "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
           "visible": true
         },
@@ -152312,7 +152312,7 @@
     {
       "id": "405b3f8f-7688-4d52-b6a0-ed8312799d46",
       "sourceNodeId": "lazy-swan-93",
-      "sourceSocketName": "Row Objects",
+      "sourceSocketName": "Array of objects",
       "targetNodeId": "warm-horse-40",
       "targetSocketName": "ArrayIn"
     },
@@ -152389,7 +152389,7 @@
     {
       "id": "bf3999bb-82e0-490e-822b-e902ef95f4ca",
       "sourceNodeId": "lazy-swan-93",
-      "sourceSocketName": "Row Objects",
+      "sourceSocketName": "Array of objects",
       "targetNodeId": "bright-fly-82",
       "targetSocketName": "ArrayIn"
     },
