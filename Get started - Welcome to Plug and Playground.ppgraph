@@ -2,11 +2,12 @@
   "version": 0.1,
   "graphSettings": {
     "showExecutionVisualisation": true,
+    "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": 954.5212439961831,
-      "y": -6628.282934274546
+      "x": 864.6857054722432,
+      "y": -6662.044121741794
     },
-    "viewportScale": 0.6788818202851855
+    "viewportScale": 0.7035674349891698
   },
   "nodes": [
     {
@@ -31,6 +32,13 @@
           "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
           "data": "buildVersion",
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "out",
@@ -67,6 +75,13 @@
           "dataType": "{\"class\":\"StringType\",\"type\":{\"valueChangedListeners\":[]}}",
           "data": "buildTime",
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "out",
@@ -261,6 +276,13 @@
           "visible": true
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{\"valueChangedListeners\":{}}}",
@@ -294,6 +316,13 @@
           "dataType": "{\"class\":\"CodeType\",\"type\":{\"valueChangedListeners\":{}}}",
           "data": "<img src=\"https://github.com/fakob/plug-and-play-examples/blob/dev/help/Get-started-001.gif?raw=true\"></img>",
           "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         }
       ],
       "updateBehaviour": {
@@ -316,6 +345,13 @@
           "name": "Html",
           "dataType": "{\"class\":\"CodeType\",\"type\":{\"valueChangedListeners\":{}}}",
           "data": "<video controls autoplay loop>\n  <source src=\"https://github.com/fakob/plug-and-play-examples/blob/dev/help/Get-started-001.mp4?raw=true\" type=\"video/mp4\">\n</video>",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         }
       ],
@@ -344,7 +380,7 @@
         {
           "socketType": "trigger",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":0}}",
           "defaultData": {},
           "visible": true
         },
@@ -438,7 +474,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "v348"
+                  "reactiveText": "v395"
                 },
                 {
                   "italic": true,
@@ -452,7 +488,7 @@
                       "text": ""
                     }
                   ],
-                  "reactiveText": "Thu, 09 Feb 2023 18:11:34 GMT"
+                  "reactiveText": "Tue, 11 Apr 2023 17:46:16 GMT"
                 },
                 {
                   "text": ""
@@ -487,6 +523,13 @@
           "dataType": "{\"class\":\"AnyType\",\"type\":{\"valueChangedListeners\":{}}}",
           "defaultData": 0,
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "in",
@@ -535,6 +578,13 @@
           "name": "Date method",
           "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"getDate\",\"value\":\"getDate\"},{\"text\":\"getDay\",\"value\":\"getDay\"},{\"text\":\"getFullYear\",\"value\":\"getFullYear\"},{\"text\":\"getHours\",\"value\":\"getHours\"},{\"text\":\"getMilliseconds\",\"value\":\"getMilliseconds\"},{\"text\":\"getMinutes\",\"value\":\"getMinutes\"},{\"text\":\"getMonth\",\"value\":\"getMonth\"},{\"text\":\"getSeconds\",\"value\":\"getSeconds\"},{\"text\":\"getTime\",\"value\":\"getTime\"},{\"text\":\"getTimezoneOffset\",\"value\":\"getTimezoneOffset\"},{\"text\":\"getUTCDate\",\"value\":\"getUTCDate\"},{\"text\":\"getUTCDay\",\"value\":\"getUTCDay\"},{\"text\":\"getUTCFullYear\",\"value\":\"getUTCFullYear\"},{\"text\":\"getUTCHours\",\"value\":\"getUTCHours\"},{\"text\":\"getUTCMilliseconds\",\"value\":\"getUTCMilliseconds\"},{\"text\":\"getUTCMinutes\",\"value\":\"getUTCMinutes\"},{\"text\":\"getUTCMonth\",\"value\":\"getUTCMonth\"},{\"text\":\"getUTCSeconds\",\"value\":\"getUTCSeconds\"},{\"text\":\"getYear\",\"value\":\"getYear\"},{\"text\":\"toDateString\",\"value\":\"toDateString\"},{\"text\":\"toGMTString\",\"value\":\"toGMTString\"},{\"text\":\"toISOString\",\"value\":\"toISOString\"},{\"text\":\"toJSON\",\"value\":\"toJSON\"},{\"text\":\"toLocaleDateString\",\"value\":\"toLocaleDateString\"},{\"text\":\"toLocaleString\",\"value\":\"toLocaleString\"},{\"text\":\"toLocaleTimeString\",\"value\":\"toLocaleTimeString\"},{\"text\":\"toString\",\"value\":\"toString\"},{\"text\":\"toTimeString\",\"value\":\"toTimeString\"},{\"text\":\"toUTCString\",\"value\":\"toUTCString\"},{\"text\":\"valueOf\",\"value\":\"valueOf\"}]}}",
           "data": "toUTCString",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -603,6 +653,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -626,7 +683,7 @@
       "name": "OpenURL",
       "type": "OpenURL",
       "x": 1989.4540795634061,
-      "y": -7835.218551525959,
+      "y": -7825.362151453035,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -640,8 +697,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":0}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -677,7 +741,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -685,6 +749,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Open API example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -753,6 +824,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -806,6 +884,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "How do I import data?",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -874,6 +959,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -896,8 +988,8 @@
       "id": "fluffy-bear-79",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": 3339.3383284365123,
-      "y": -7058.652877505713,
+      "x": 3333.659030605175,
+      "y": -7053.0981256794485,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -911,8 +1003,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -941,14 +1040,14 @@
           "socketType": "in",
           "name": "Off",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "",
+          "data": "0",
           "visible": false
         },
         {
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Get API example.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -956,6 +1055,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Open data transform example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1024,6 +1130,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -1077,6 +1190,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "How do I transform data?",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1145,6 +1265,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -1164,49 +1291,6 @@
       }
     },
     {
-      "id": "great-sloth-53",
-      "name": "OpenURL",
-      "type": "OpenURL",
-      "x": 3161.7065973351837,
-      "y": -6122.018400630205,
-      "width": 160,
-      "height": 112,
-      "socketArray": [
-        {
-          "socketType": "in",
-          "name": "Code",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "(url, url2) => {\n  const openNewTab = (thisUrl) => {\n    if (typeof thisUrl === 'string') {\n      window.open(thisUrl, '_blank')?.focus();\n    }\n  };\n  openNewTab(url || url2);\n}",
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
-          "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "url2",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
-          "visible": true
-        },
-        {
-          "socketType": "out",
-          "name": "OutData",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "visible": true
-        }
-      ],
-      "updateBehaviour": {
-        "update": false,
-        "interval": false,
-        "intervalFrequency": 1000
-      }
-    },
-    {
       "id": "selfish-fly-9",
       "name": "drawing example",
       "type": "WidgetButton",
@@ -1219,14 +1303,14 @@
           "socketType": "in",
           "name": "Off",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "",
+          "data": "0",
           "visible": false
         },
         {
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing examples.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -1234,6 +1318,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Open drawing example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1302,6 +1393,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -1324,8 +1422,8 @@
       "id": "yellow-eagle-29",
       "name": "Transform data example",
       "type": "WidgetButton",
-      "x": 2824.567542404838,
-      "y": -6050.920129504141,
+      "x": 2822.421199584077,
+      "y": -6000.715634859137,
       "width": 309.4175465983981,
       "height": 95.8416464666534,
       "socketArray": [
@@ -1333,14 +1431,14 @@
           "socketType": "in",
           "name": "Off",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "",
+          "data": "0",
           "visible": false
         },
         {
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing example - tixy.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -1348,6 +1446,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Open tixy example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1401,6 +1506,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -1448,6 +1560,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "How do I create and connect nodes?",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1545,6 +1664,13 @@
           "name": "Input 1",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1664,6 +1790,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -1762,6 +1895,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -1853,6 +1993,13 @@
           "name": "Input 1",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -1979,6 +2126,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -2035,6 +2189,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -2075,6 +2236,13 @@
           "name": "Reset size",
           "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"resetNodeSize\",\"previousData\":0}}",
           "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2222,6 +2390,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -2319,6 +2494,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -2371,6 +2553,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2470,6 +2659,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -2492,8 +2688,8 @@
       "id": "strong-cow-27",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": 3121.564216004773,
-      "y": -4652.530776484022,
+      "x": 3114.9757323364006,
+      "y": -4643.725373925347,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -2507,8 +2703,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Node update behaviour example.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"\"}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -2537,14 +2740,14 @@
           "socketType": "in",
           "name": "Off",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "",
+          "data": "0",
           "visible": false
         },
         {
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Node update behaviour example.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -2552,6 +2755,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Open update behaviour example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2610,6 +2820,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -2662,6 +2879,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2720,6 +2944,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -2772,6 +3003,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2830,6 +3068,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -2882,6 +3127,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -2940,6 +3192,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -2992,6 +3251,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3075,6 +3341,13 @@
           "name": "Input 1",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3185,6 +3458,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -3207,8 +3487,8 @@
       "id": "smooth-bobcat-87",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": -708.9468387619619,
-      "y": -6241.181548332913,
+      "x": -712.9110211819096,
+      "y": -6236.15654788057,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -3222,8 +3502,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/How to share your playgrounds.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":0}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -3259,7 +3546,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/How to share your playgrounds.ppgraph",
+          "data": "1",
           "visible": false
         },
         {
@@ -3267,6 +3554,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "How to share playgrounds example",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3320,6 +3614,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -3370,6 +3671,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -3417,6 +3725,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Want to contribute?",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3472,6 +3787,13 @@
           "name": "min-width",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":1,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 128,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3540,6 +3862,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -3562,8 +3891,8 @@
       "id": "horrible-parrot-19",
       "name": "OpenURL",
       "type": "OpenURL",
-      "x": 1122.5451963877558,
-      "y": -7830.001444735859,
+      "x": 1124.3552649948197,
+      "y": -7823.375597265966,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -3577,8 +3906,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "https://github.com/fakob/plug-and-play",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":0}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -3614,7 +3950,7 @@
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "https://github.com/fakob/plug-and-play",
+          "data": "1",
           "visible": false
         },
         {
@@ -3622,6 +3958,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Go to github project",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3716,6 +4059,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -3771,6 +4121,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -3798,6 +4155,13 @@
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
           "data": "//define your function here, node will adapt to inputs automatically\n(word) => {\n    let vowels = ['a', 'e', 'i', 'o', 'u'];\n    let newStr = \"\";\n\n    if (vowels.indexOf(word[0]) > -1) {\n        newStr = word + \"way\";\n        return newStr;\n    } else {\n        let firstMatch = word.match(/[aeiou]/g) || 0;\n        let vowel = word.indexOf(firstMatch[0]);\n        newStr = word.substring(vowel) + word.substring(0, vowel) + \"ay\";\n        return newStr;\n    }\n}",
           "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
         },
         {
           "socketType": "out",
@@ -3847,6 +4211,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "What nodes are available?",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -3900,6 +4271,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -3947,6 +4325,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Back",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -4000,6 +4385,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4047,6 +4439,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Back",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -4100,6 +4499,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4147,6 +4553,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Back",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -4200,6 +4613,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4247,6 +4667,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Back",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -4300,6 +4727,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4331,14 +4765,14 @@
         {
           "socketType": "trigger",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":0}}",
           "defaultData": {},
           "visible": true
         },
         {
           "socketType": "trigger",
           "name": "Trigger 2",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"change\",\"customFunctionString\":\"\",\"previousData\":{\"r\":158,\"g\":47,\"b\":178,\"a\":1}}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"change\",\"customFunctionString\":\"\",\"previousData\":{\"r\":150,\"g\":3,\"b\":141,\"a\":1}}}",
           "defaultData": {},
           "visible": true
         },
@@ -4398,6 +4832,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Output",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
@@ -4429,8 +4870,15 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "defaultData": 0,
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "/?new=true",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
+          "defaultData": {},
           "visible": true
         },
         {
@@ -4459,14 +4907,14 @@
           "socketType": "in",
           "name": "Off",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "",
+          "data": "0",
           "visible": false
         },
         {
           "socketType": "in",
           "name": "On",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
-          "data": "/?new=true",
+          "data": "1",
           "visible": false
         },
         {
@@ -4474,6 +4922,13 @@
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Start a new playground",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
           "visible": false
         },
         {
@@ -4520,6 +4975,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4563,6 +5025,13 @@
           "visible": false
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Out",
           "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
@@ -4601,7 +5070,7 @@
         {
           "socketType": "in",
           "name": "Method",
-          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"Get\",\"value\":\"Get\"},{\"text\":\"Post\",\"value\":\"Post\"},{\"text\":\"Put\",\"value\":\"Put\"},{\"text\":\"Patch\",\"value\":\"Patch\"},{\"text\":\"Delete\",\"value\":\"Delete\"}]}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Get",
           "visible": false
         },
@@ -4626,6 +5095,13 @@
           "data": "http://localhost:6655"
         },
         {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
           "socketType": "out",
           "name": "Content",
           "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
@@ -4637,176 +5113,262 @@
         "interval": true,
         "intervalFrequency": 10000
       }
+    },
+    {
+      "id": "blue-impala-93",
+      "name": "OpenURL",
+      "type": "OpenURL",
+      "x": 3186.8875557760603,
+      "y": -6125.374279085458,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(url) => {\n  const openNewTab = (thisUrl) => {\n    if (typeof thisUrl === 'string') {\n      window.open(thisUrl, '_blank')?.focus();\n    }\n  };\n  openNewTab(url);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "url",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing examples.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"\"}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "OutData",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "good-hound-59",
+      "name": "OpenURL",
+      "type": "OpenURL",
+      "x": 3184.2927208569995,
+      "y": -5998.088261900654,
+      "width": 160,
+      "height": 88,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(url) => {\n  const openNewTab = (thisUrl) => {\n    if (typeof thisUrl === 'string') {\n      window.open(thisUrl, '_blank')?.focus();\n    }\n  };\n  openNewTab(url);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "url",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing example - tixy.ppgraph",
+          "visible": false
+        },
+        {
+          "socketType": "trigger",
+          "name": "Trigger 1",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"1\"}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "OutData",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": false,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     }
   ],
   "links": [
     {
-      "id": "6cfba5bc-6247-4f3f-b46c-53889188f627",
+      "id": "4dbf190b-c535-44e1-8599-003fd33991dd",
       "sourceNodeId": "cold-moth-100",
       "sourceSocketName": "Content",
       "targetNodeId": "neat-bird-4",
       "targetSocketName": "JSON"
     },
     {
-      "id": "42abd9c4-68d1-4fe0-b0e7-430de8afa48e",
+      "id": "d3ec0598-ca70-47c9-944a-a8a7ba93d175",
       "sourceNodeId": "cold-moth-100",
       "sourceSocketName": "Content",
       "targetNodeId": "great-goat-84",
       "targetSocketName": "JSON"
     },
     {
-      "id": "54d0f1ce-1804-4b4e-b68b-e6c29fbb9f75",
+      "id": "927f425e-3efc-45c7-8016-1bec451d3c9c",
       "sourceNodeId": "fresh-bird-39",
       "sourceSocketName": "OutData",
       "targetNodeId": "fresh-kangaroo-75",
       "targetSocketName": "Background Color"
     },
     {
-      "id": "d68b8318-0203-41ed-b3fd-e6500e23d900",
+      "id": "200684f2-3e1e-487f-94e3-932f6e366e54",
       "sourceNodeId": "thin-vampirebat-42",
       "sourceSocketName": "Out",
       "targetNodeId": "fresh-bird-39",
       "targetSocketName": "Trigger 1"
     },
     {
-      "id": "82d5e04f-684d-47c5-8adb-37435239da63",
+      "id": "6daed1b5-e9a9-45a2-a89b-8539b2e0ed81",
       "sourceNodeId": "neat-bird-4",
       "sourceSocketName": "Value",
       "targetNodeId": "good-fish-14",
       "targetSocketName": "Input 1"
     },
     {
-      "id": "fd3e09be-f73e-42b6-a91f-0530164a866d",
+      "id": "405cdd21-9334-479d-845a-798faa391b02",
       "sourceNodeId": "young-snake-6",
       "sourceSocketName": "Date and time",
       "targetNodeId": "good-fish-14",
       "targetSocketName": "Input 2"
     },
     {
-      "id": "7a375b5e-f18b-4726-9a72-0b3aefed8b38",
+      "id": "49408e7d-7c73-40dd-8e85-97d894c297f5",
       "sourceNodeId": "great-goat-84",
       "sourceSocketName": "Value",
       "targetNodeId": "young-snake-6",
       "targetSocketName": "Date string"
     },
     {
-      "id": "a58fbfa3-319f-4ecb-9501-a4fd8495e0bb",
+      "id": "644ea914-36e5-463e-848a-06027966730d",
       "sourceNodeId": "happy-grasshopper-97",
       "sourceSocketName": "Out",
       "targetNodeId": "curly-crab-2",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
     },
     {
-      "id": "348ef364-63e0-4f47-89bf-d357721a4d95",
+      "id": "c93518a4-60d9-43f3-8614-1c0e6889f9e1",
       "sourceNodeId": "cold-frog-7",
       "sourceSocketName": "Out",
       "targetNodeId": "fluffy-bear-79",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
     },
     {
-      "id": "fc0fee9d-1231-4e5b-86bf-902b7153f3c6",
-      "sourceNodeId": "selfish-fly-9",
-      "sourceSocketName": "Out",
-      "targetNodeId": "great-sloth-53",
-      "targetSocketName": "url"
-    },
-    {
-      "id": "aa44b4d2-bc8c-4b90-95e9-755ecdcd2475",
-      "sourceNodeId": "yellow-eagle-29",
-      "sourceSocketName": "Out",
-      "targetNodeId": "great-sloth-53",
-      "targetSocketName": "url2"
-    },
-    {
-      "id": "5d4cd74e-fe26-40f8-a9a9-47122c41e120",
+      "id": "767bbf3a-7ed3-4353-afd2-16e1c4b430a4",
       "sourceNodeId": "shaggy-octopus-39",
       "sourceSocketName": "Output",
       "targetNodeId": "curvy-impala-57",
       "targetSocketName": "word"
     },
     {
-      "id": "3a8785ae-bc8f-42cc-9f8f-99c8006566d3",
+      "id": "04d60f35-c897-412b-ae93-7e35fe7022bd",
       "sourceNodeId": "curvy-impala-57",
       "sourceSocketName": "OutData",
       "targetNodeId": "orange-wombat-81",
       "targetSocketName": "Input"
     },
     {
-      "id": "d427e5b3-af2e-4541-93af-03322deb8e4e",
+      "id": "b58b36c8-bec7-4fc2-80b5-bca4f8bcf321",
       "sourceNodeId": "spotty-goose-93",
       "sourceSocketName": "Out",
       "targetNodeId": "strong-cow-27",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
     },
     {
-      "id": "7c1a58d2-cc8c-45d0-931b-a7d9e21d39da",
+      "id": "15e32df1-6434-4891-845c-0c8898bd6069",
       "sourceNodeId": "blue-donkey-17",
       "sourceSocketName": "Out",
       "targetNodeId": "smooth-bobcat-87",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
     },
     {
-      "id": "474d429a-e8a9-464c-a0f1-b626d7dffa1d",
+      "id": "fdf59555-2e6e-4abd-98b3-6933d42ff1a9",
       "sourceNodeId": "helpless-falcon-62",
       "sourceSocketName": "Out",
       "targetNodeId": "horrible-parrot-19",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
     },
     {
-      "id": "8789b9f2-3850-49c5-a2a5-51b13a3c79d0",
+      "id": "45e135d9-26e8-4399-9591-796aee4dab5a",
       "sourceNodeId": "odd-kangaroo-40",
       "sourceSocketName": "output",
       "targetNodeId": "ordinary-vampirebat-80",
       "targetSocketName": "Code"
     },
     {
-      "id": "15a3dc53-57cf-4d61-870e-74805d4ba0d4",
+      "id": "f32e298e-a974-44c5-a992-3ed6d5780c19",
       "sourceNodeId": "wet-rattlesnake-74",
       "sourceSocketName": "Output",
       "targetNodeId": "ordinary-vampirebat-80",
       "targetSocketName": "word"
     },
     {
-      "id": "fdd3edfb-baee-47a6-be49-4bd52ec8f064",
+      "id": "be681279-58bf-4bf7-9258-9215bb1be333",
       "sourceNodeId": "ordinary-vampirebat-80",
       "sourceSocketName": "OutData",
       "targetNodeId": "big-ape-0",
       "targetSocketName": "Input"
     },
     {
-      "id": "f3e2158c-3528-40b1-8ab0-35883bd1e0ae",
+      "id": "2a28ad65-dd44-4c3e-9651-311e41a45154",
       "sourceNodeId": "weak-dragon-44",
       "sourceSocketName": "Out",
       "targetNodeId": "empty-turtle-99",
       "targetSocketName": "Trigger 1"
     },
     {
-      "id": "70b6d15f-345d-4772-9b2d-ce5df77ec2dd",
+      "id": "79484fd8-3286-4d52-8a5c-a5c21244f71d",
       "sourceNodeId": "fresh-bird-39",
       "sourceSocketName": "OutData",
       "targetNodeId": "empty-turtle-99",
       "targetSocketName": "Trigger 2"
     },
     {
-      "id": "eb48a3a9-21a9-4c2a-9b4d-f10df489699d",
+      "id": "21d3fd1d-bd85-4f18-8924-6ab1bf8021f3",
       "sourceNodeId": "empty-turtle-99",
       "sourceSocketName": "OutData",
       "targetNodeId": "curly-bear-43",
       "targetSocketName": "Input"
     },
     {
-      "id": "3e4e8be7-32d2-4df5-9ce2-3dd0c87b1f35",
+      "id": "1c9153eb-07ad-444c-9e44-ab26e4a44455",
       "sourceNodeId": "fresh-bird-39",
       "sourceSocketName": "OutData",
       "targetNodeId": "curly-bear-43",
       "targetSocketName": "backgroundColor"
     },
     {
-      "id": "e2d9abd4-22fb-43c1-bf24-862139cea164",
+      "id": "db093100-35e9-4d9c-9532-8ffe648afe09",
       "sourceNodeId": "modern-lizard-46",
       "sourceSocketName": "Out",
       "targetNodeId": "warm-bat-36",
-      "targetSocketName": "url"
+      "targetSocketName": "Trigger 1"
+    },
+    {
+      "id": "86734228-6877-445c-8c73-648a9a69b818",
+      "sourceNodeId": "selfish-fly-9",
+      "sourceSocketName": "Out",
+      "targetNodeId": "blue-impala-93",
+      "targetSocketName": "Trigger 1"
+    },
+    {
+      "id": "feff8a0b-d5b2-48aa-ad58-8b6567c2e114",
+      "sourceNodeId": "yellow-eagle-29",
+      "sourceSocketName": "Out",
+      "targetNodeId": "good-hound-59",
+      "targetSocketName": "Trigger 1"
     }
   ]
 }
