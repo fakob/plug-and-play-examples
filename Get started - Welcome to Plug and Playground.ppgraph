@@ -2703,14 +2703,14 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Node update behaviour example.ppgraph",
           "visible": false
         },
         {
           "socketType": "trigger",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
           "defaultData": {},
           "visible": true
         },
@@ -5133,14 +5133,14 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing examples.ppgraph",
           "visible": false
         },
         {
           "socketType": "trigger",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
           "defaultData": {},
           "visible": true
         },
@@ -5176,14 +5176,14 @@
         {
           "socketType": "in",
           "name": "url",
-          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "/?loadURL=https://raw.githubusercontent.com/fakob/plug-and-play-examples/dev/Drawing example - tixy.ppgraph",
           "visible": false
         },
         {
           "socketType": "trigger",
           "name": "Trigger 1",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"1\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"\",\"previousData\":\"0\"}}",
           "defaultData": {},
           "visible": true
         },
