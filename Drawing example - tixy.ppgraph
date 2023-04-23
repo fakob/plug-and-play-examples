@@ -144,13 +144,6 @@
         },
         {
           "socketType": "in",
-          "name": "Step size",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0.01,
-          "visible": false
-        },
-        {
-          "socketType": "in",
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Slider",
@@ -204,13 +197,6 @@
           "name": "Round",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Step size",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0.01,
           "visible": false
         },
         {
@@ -531,13 +517,6 @@
           "name": "Round",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
           "data": true,
-          "visible": false
-        },
-        {
-          "socketType": "in",
-          "name": "Step size",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0.01,
           "visible": false
         },
         {

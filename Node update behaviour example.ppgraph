@@ -1899,13 +1899,6 @@
         },
         {
           "socketType": "in",
-          "name": "Step size",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 0.01,
-          "visible": false
-        },
-        {
-          "socketType": "in",
           "name": "Label",
           "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "data": "Slider",
