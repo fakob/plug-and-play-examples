@@ -4,18 +4,18 @@
     "showExecutionVisualisation": true,
     "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": -2577.3676728638516,
-      "y": -9023.43245582012
+      "x": -3174.8756202616987,
+      "y": -8968.359549474784
     },
-    "viewportScale": 0.3129398212193292
+    "viewportScale": 0.46176071435651245
   },
   "nodes": [
     {
       "id": "perfect-yak-95",
       "name": "WidgetSwitch",
       "type": "WidgetSwitch",
-      "x": -3919.6090726979455,
-      "y": -9712.435965091056,
+      "x": -4196.0269687637465,
+      "y": -9640.43696248196,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -71,8 +71,8 @@
       "id": "mighty-moth-17",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3924.8164645177894,
-      "y": -9471.957248008985,
+      "x": -4201.23436058359,
+      "y": -9399.958245399888,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -135,8 +135,8 @@
       "id": "warm-wolverine-28",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3929.5279142595527,
-      "y": -9107.937052569758,
+      "x": -4205.945810325353,
+      "y": -9035.938049960663,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -199,8 +199,8 @@
       "id": "brave-dingo-23",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3930.34679536522,
-      "y": -8990.417370241514,
+      "x": -4206.764691431021,
+      "y": -8918.418367632417,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -263,8 +263,8 @@
       "id": "lovely-wombat-90",
       "name": "WidgetSwitch",
       "type": "WidgetSwitch",
-      "x": -3924.5338928686506,
-      "y": -9591.88296261083,
+      "x": -4200.9517889344515,
+      "y": -9519.883960001735,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -272,7 +272,7 @@
           "socketType": "in",
           "name": "Initial Selection",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
+          "data": true,
           "visible": false
         },
         {
@@ -320,8 +320,8 @@
       "id": "loud-ape-55",
       "name": "WidgetButton",
       "type": "WidgetButton",
-      "x": -3931.5963323376036,
-      "y": -8857.511117380467,
+      "x": -3928.789981437185,
+      "y": -8883.811072540126,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -370,8 +370,8 @@
       "id": "green-monkey-15",
       "name": "WidgetButton",
       "type": "WidgetButton",
-      "x": -3930.837861255767,
-      "y": -8616.819478264546,
+      "x": -3932.371386337963,
+      "y": -8613.798433852622,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -420,8 +420,8 @@
       "id": "serious-snail-95",
       "name": "WidgetSwitch",
       "type": "WidgetSwitch",
-      "x": -3926.523427949322,
-      "y": -9351.63043936615,
+      "x": -4202.9413240151225,
+      "y": -9279.631436757056,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -477,8 +477,8 @@
       "id": "cowardly-eel-29",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3928.2880590643517,
-      "y": -9231.377308840114,
+      "x": -4204.705955130152,
+      "y": -9159.378306231018,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -541,8 +541,8 @@
       "id": "lazy-catfish-37",
       "name": "WidgetButton",
       "type": "WidgetButton",
-      "x": -3929.250692527619,
-      "y": -8739.58499566548,
+      "x": -3931.5663154017348,
+      "y": -8756.990505348404,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -591,8 +591,8 @@
       "id": "wonderful-fly-58",
       "name": "DRAW_Image",
       "type": "DRAW_Image",
-      "x": -2466.9051616805214,
-      "y": -10815.795620413059,
+      "x": -3304.8660848848767,
+      "y": -10368.447579404805,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -704,15 +704,15 @@
       "id": "purple-pig-66",
       "name": "drawSingle",
       "type": "Macro",
-      "x": -2696.9051616805214,
-      "y": -10939.795620413059,
+      "x": -3534.8660848848767,
+      "y": -10492.447579404805,
       "width": 632,
       "height": 336,
       "socketArray": [
         {
           "socketType": "in",
           "name": "Output",
-          "dataType": "{\"class\":\"FunctionType\",\"type\":{}}",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
           "defaultData": 0,
           "visible": true
         },
@@ -726,7 +726,7 @@
         {
           "socketType": "out",
           "name": "Parameter 1",
-          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
           "visible": true
         },
         {
@@ -954,8 +954,8 @@
       "id": "ugly-cow-13",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3928.431539186313,
-      "y": -8500.922332890344,
+      "x": -3933.982899983862,
+      "y": -8504.365096699874,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -1018,8 +1018,8 @@
       "id": "clever-warthog-59",
       "name": "WidgetSlider",
       "type": "WidgetSlider",
-      "x": -3930.0599770424187,
-      "y": -8255.343441744622,
+      "x": -3933.295714965852,
+      "y": -8256.616267562844,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -1264,8 +1264,8 @@
       "id": "mean-termite-34",
       "name": "WidgetButton",
       "type": "WidgetButton",
-      "x": -3930.371223666212,
-      "y": -8375.187400646066,
+      "x": -3934.6497586455384,
+      "y": -8368.761930551666,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -1336,14 +1336,14 @@
         {
           "socketType": "in",
           "name": "Reset size",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"resetNodeSize\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"resetNodeSize\",\"previousData\":0}}",
           "data": 0,
           "visible": false
         },
         {
           "socketType": "in",
           "name": "Save image",
-          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"saveImage\"}}",
+          "dataType": "{\"class\":\"TriggerType\",\"type\":{\"triggerType\":\"positiveFlank\",\"customFunctionString\":\"saveImage\",\"previousData\":0}}",
           "data": 0,
           "visible": false
         },
@@ -1376,133 +1376,133 @@
   ],
   "links": [
     {
-      "id": "0134f162-1f46-4e09-9fc5-dd9d3f1e17c8",
+      "id": "0ca022fb-c676-4c2b-9e50-a4631f110d88",
       "sourceNodeId": "purple-pig-66",
       "sourceSocketName": "Parameter 1",
       "targetNodeId": "wonderful-fly-58",
       "targetSocketName": "Image"
     },
     {
-      "id": "38525fb0-9857-42e6-b1a5-2ef3c983d7d8",
+      "id": "2d36f279-681d-4b56-8f31-6143df9fdf91",
       "sourceNodeId": "wonderful-fly-58",
       "sourceSocketName": "Graphics",
       "targetNodeId": "purple-pig-66",
       "targetSocketName": "Output"
     },
     {
-      "id": "2ee686e8-fdc9-497e-bcf6-6fbaafdd526d",
+      "id": "d010a1bc-059f-4a84-a416-6cdf1160e7ea",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "FrameArray",
       "targetNodeId": "modern-husky-85",
       "targetSocketName": "Images"
     },
     {
-      "id": "7e150436-8a3c-4187-855d-4beb29641a26",
+      "id": "995e7111-1e13-46a0-9ebd-2b03faf6f748",
       "sourceNodeId": "modern-husky-85",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "heavy-lionfish-6",
       "targetSocketName": "GraphicsArray"
     },
     {
-      "id": "fca771f8-0dea-477c-b19e-40e121f5b357",
+      "id": "936f7899-e60b-4b2b-b879-e9b49b1f7704",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "Details",
       "targetNodeId": "stale-bear-27",
       "targetSocketName": "input"
     },
     {
-      "id": "d3b510ac-e62d-4e97-ab44-427f8db52039",
+      "id": "6a8389f7-04d0-4197-8f30-00a78f409718",
       "sourceNodeId": "perfect-yak-95",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Play/Pause"
     },
     {
-      "id": "e4b6a170-2b65-477a-bd56-4ec80c35b1f9",
+      "id": "51469cbd-854f-45da-a146-21c2a9c835f4",
       "sourceNodeId": "lovely-wombat-90",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Loop"
     },
     {
-      "id": "ce988bd5-9034-4adc-934d-027270cd07c0",
+      "id": "08fcd5b1-d500-4e02-8302-ae3d6b9610d6",
       "sourceNodeId": "mighty-moth-17",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Speed"
     },
     {
-      "id": "bbf5d0c8-3b1a-4dfc-85cc-28a88e63a596",
+      "id": "4e909442-6171-47db-a14b-b3695ac75feb",
       "sourceNodeId": "serious-snail-95",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Mute"
     },
     {
-      "id": "3207f463-ba78-4374-975e-be6a5096c072",
+      "id": "e3fb02de-a06f-4ac1-b98b-19957ee4668f",
       "sourceNodeId": "cowardly-eel-29",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Volume"
     },
     {
-      "id": "6a248263-66a1-4b6c-8485-d57d3e67c8d0",
+      "id": "5a757862-b20d-46d1-904a-1eb671d4d23d",
       "sourceNodeId": "warm-wolverine-28",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Position (s)"
     },
     {
-      "id": "a843d184-edab-46a7-9730-abb39b5d1676",
+      "id": "83b18eb2-27d9-4f18-979e-d68168120697",
       "sourceNodeId": "brave-dingo-23",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Position (%)"
     },
     {
-      "id": "e0522c6f-2bc0-49a7-8677-74eb7a49d317",
+      "id": "16c8ffa8-ed59-4ac8-83f7-1ada68459deb",
       "sourceNodeId": "loud-ape-55",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Transcode video"
     },
     {
-      "id": "380d43c3-8264-4501-a7fc-d94625a75407",
+      "id": "ac8c89a6-9c9e-4971-b444-6f52d2d17cc9",
       "sourceNodeId": "lazy-catfish-37",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get current frame"
     },
     {
-      "id": "61117505-a4f3-436a-b99a-f02b96918d8e",
+      "id": "85296eb5-0ba1-4fe8-9ea9-8b897ba6e9e6",
       "sourceNodeId": "green-monkey-15",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get frames (interval)"
     },
     {
-      "id": "83b0c774-d195-4f8a-b068-dee15a578b75",
+      "id": "e5321cf2-21bb-4b37-aaa4-ba61f5350e1b",
       "sourceNodeId": "ugly-cow-13",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Interval (s)"
     },
     {
-      "id": "313e9c9a-84a9-4f63-b4fb-2a71c0f63769",
+      "id": "26cc7d98-d7d3-4e55-bd20-3c9b808c9959",
       "sourceNodeId": "mean-termite-34",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get frames (count)"
     },
     {
-      "id": "03732176-4a98-4d19-a66d-044ba06c40ee",
+      "id": "93ccbb0b-71a9-4065-84db-d6034eadab97",
       "sourceNodeId": "clever-warthog-59",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Count"
     },
     {
-      "id": "7f5b7888-994e-47a1-951f-098834053468",
+      "id": "a79dd415-585e-4b5e-a6ae-2b749807a0f3",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "Frame",
       "targetNodeId": "wise-chipmunk-74",
