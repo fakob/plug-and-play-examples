@@ -4,10 +4,10 @@
     "showExecutionVisualisation": true,
     "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": -3174.8756202616987,
-      "y": -8968.359549474784
+      "x": -2858.2211292925113,
+      "y": -8871.800670550623
     },
-    "viewportScale": 0.46176071435651245
+    "viewportScale": 0.4225462412757295
   },
   "nodes": [
     {
@@ -23,7 +23,7 @@
           "socketType": "in",
           "name": "Initial Selection",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": true,
+          "data": false,
           "visible": false
         },
         {
@@ -420,8 +420,8 @@
       "id": "serious-snail-95",
       "name": "WidgetSwitch",
       "type": "WidgetSwitch",
-      "x": -4202.9413240151225,
-      "y": -9279.631436757056,
+      "x": -4202.340701785086,
+      "y": -9281.45868185125,
       "width": 200,
       "height": 104,
       "socketArray": [
@@ -591,8 +591,8 @@
       "id": "wonderful-fly-58",
       "name": "DRAW_Image",
       "type": "DRAW_Image",
-      "x": -3304.8660848848767,
-      "y": -10368.447579404805,
+      "x": -3280.8498357526314,
+      "y": -10857.374745829802,
       "width": 160,
       "height": 112,
       "socketArray": [
@@ -704,15 +704,15 @@
       "id": "purple-pig-66",
       "name": "drawSingle",
       "type": "Macro",
-      "x": -3534.8660848848767,
-      "y": -10492.447579404805,
+      "x": -3510.8498357526314,
+      "y": -10981.374745829802,
       "width": 632,
       "height": 336,
       "socketArray": [
         {
           "socketType": "in",
           "name": "Output",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "dataType": "{\"class\":\"FunctionType\",\"type\":{}}",
           "defaultData": 0,
           "visible": true
         },
@@ -726,7 +726,7 @@
         {
           "socketType": "out",
           "name": "Parameter 1",
-          "dataType": "{\"class\":\"AnyType\",\"type\":{}}",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
           "visible": true
         },
         {
@@ -746,8 +746,8 @@
       "id": "modern-husky-85",
       "name": "Map",
       "type": "Map",
-      "x": -2688.491894597067,
-      "y": -9237.707642965079,
+      "x": -2728.140869659921,
+      "y": -9244.252750489768,
       "width": 160,
       "height": 88,
       "socketArray": [
@@ -782,8 +782,8 @@
       "id": "heavy-lionfish-6",
       "name": "DRAW_COMBINE_ARRAY",
       "type": "DRAW_COMBINE_ARRAY",
-      "x": -2490.5576924595666,
-      "y": -9269.320163358068,
+      "x": -2296.829088846718,
+      "y": -9360.448812902896,
       "width": 160,
       "height": 280,
       "socketArray": [
@@ -812,28 +812,21 @@
           "socketType": "in",
           "name": "Spacing X",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 403,
+          "defaultData": 403,
           "visible": true
         },
         {
           "socketType": "in",
           "name": "Spacing Y",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":1000,\"stepSize\":0.01}}",
-          "data": 319,
+          "defaultData": 319,
           "visible": true
-        },
-        {
-          "socketType": "in",
-          "name": "Meta",
-          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
-          "data": {},
-          "visible": false
         },
         {
           "socketType": "in",
           "name": "Offset X",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 125,
+          "data": 125.21675688200412,
           "visible": false
         },
         {
@@ -908,6 +901,13 @@
         },
         {
           "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "in",
           "name": "Number Per Column",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "data": 2,
@@ -915,7 +915,7 @@
         },
         {
           "socketType": "out",
-          "name": "LatestPressedIndex",
+          "name": "LastPressedIndex",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         },
@@ -933,14 +933,14 @@
         },
         {
           "socketType": "out",
-          "name": "LastPressedIndex",
-          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
           "visible": true
         },
         {
           "socketType": "out",
-          "name": "Graphics",
-          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "name": "LatestPressedIndex",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
           "visible": true
         }
       ],
@@ -963,7 +963,7 @@
           "socketType": "in",
           "name": "Initial Value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 1,
+          "data": 4,
           "visible": false
         },
         {
@@ -1082,8 +1082,8 @@
       "id": "stale-bear-27",
       "name": "CodeEditor",
       "type": "CodeEditor",
-      "x": -2728.392759832321,
-      "y": -8892.349004326932,
+      "x": -2769.901700516689,
+      "y": -8847.22180195155,
       "width": 400,
       "height": 300,
       "socketArray": [
@@ -1121,7 +1121,7 @@
       "x": -3571.3692858930312,
       "y": -9276.440143066933,
       "width": 754.4241301510478,
-      "height": 565.8125,
+      "height": 424.359375,
       "socketArray": [
         {
           "socketType": "in",
@@ -1372,141 +1372,395 @@
         "interval": false,
         "intervalFrequency": 1000
       }
+    },
+    {
+      "id": "rare-penguin-16",
+      "name": "Break",
+      "type": "Break",
+      "x": -2729.091463933293,
+      "y": -9132.325165016526,
+      "width": 160,
+      "height": 136,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "JSON",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "defaultData": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Lock Outputs",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "videoWidth",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "videoHeight",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "duration",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "pretty-shrimp-23",
+      "name": "Add",
+      "type": "Add",
+      "x": -2505.6636554873285,
+      "y": -9160.158003595448,
+      "width": 160,
+      "height": 112,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 + Input2;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Result",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "shy-walrus-44",
+      "name": "WidgetSlider",
+      "type": "WidgetSlider",
+      "x": -2754.5873340620974,
+      "y": -8976.892218083503,
+      "width": 200,
+      "height": 104,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Initial Value",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 40,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Min",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Max",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "data": 100,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Round",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Label",
+          "dataType": "{\"class\":\"StringType\",\"type\":{}}",
+          "data": "Slider",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Out",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "curly-badger-34",
+      "name": "Add",
+      "type": "Add",
+      "x": -2504.2637734439463,
+      "y": -9038.86538193655,
+      "width": 160,
+      "height": 112,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Code",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "(Input1, Input2) => {\n\treturn Input1 + Input2;\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Input1",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Input2",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "defaultData": 1,
+          "visible": true
+        },
+        {
+          "socketType": "out",
+          "name": "Result",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
     }
   ],
   "links": [
     {
-      "id": "0ca022fb-c676-4c2b-9e50-a4631f110d88",
+      "id": "f27879bb-8334-44a6-b98c-8b5300438220",
       "sourceNodeId": "purple-pig-66",
       "sourceSocketName": "Parameter 1",
       "targetNodeId": "wonderful-fly-58",
       "targetSocketName": "Image"
     },
     {
-      "id": "2d36f279-681d-4b56-8f31-6143df9fdf91",
+      "id": "16ecf388-b403-4fb6-9f9a-8383e20d8524",
       "sourceNodeId": "wonderful-fly-58",
       "sourceSocketName": "Graphics",
       "targetNodeId": "purple-pig-66",
       "targetSocketName": "Output"
     },
     {
-      "id": "d010a1bc-059f-4a84-a416-6cdf1160e7ea",
+      "id": "f2dd04a6-5dbf-4383-a74a-465f4b0f4f2e",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "FrameArray",
       "targetNodeId": "modern-husky-85",
       "targetSocketName": "Images"
     },
     {
-      "id": "995e7111-1e13-46a0-9ebd-2b03faf6f748",
+      "id": "2428144b-1ab1-46f0-856e-5d7fee7a0783",
       "sourceNodeId": "modern-husky-85",
       "sourceSocketName": "ArrayOut",
       "targetNodeId": "heavy-lionfish-6",
       "targetSocketName": "GraphicsArray"
     },
     {
-      "id": "936f7899-e60b-4b2b-b879-e9b49b1f7704",
+      "id": "42d62912-6d82-4358-99e8-59e19a998e6d",
+      "sourceNodeId": "pretty-shrimp-23",
+      "sourceSocketName": "Result",
+      "targetNodeId": "heavy-lionfish-6",
+      "targetSocketName": "Spacing X"
+    },
+    {
+      "id": "48064086-0ffb-4442-b96a-878d14532b48",
+      "sourceNodeId": "curly-badger-34",
+      "sourceSocketName": "Result",
+      "targetNodeId": "heavy-lionfish-6",
+      "targetSocketName": "Spacing Y"
+    },
+    {
+      "id": "cd1ab080-6d54-461a-a82d-14b922ed7ff7",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "Details",
       "targetNodeId": "stale-bear-27",
       "targetSocketName": "input"
     },
     {
-      "id": "6a8389f7-04d0-4197-8f30-00a78f409718",
+      "id": "4941e185-61a8-4e64-ae7f-8a9438bfd135",
       "sourceNodeId": "perfect-yak-95",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Play/Pause"
     },
     {
-      "id": "51469cbd-854f-45da-a146-21c2a9c835f4",
+      "id": "1b66c0f6-c258-4d3b-8b30-ab4aab98a0c3",
       "sourceNodeId": "lovely-wombat-90",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Loop"
     },
     {
-      "id": "08fcd5b1-d500-4e02-8302-ae3d6b9610d6",
+      "id": "764a66b1-ec50-4234-8e2c-98177f69c447",
       "sourceNodeId": "mighty-moth-17",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Speed"
     },
     {
-      "id": "4e909442-6171-47db-a14b-b3695ac75feb",
+      "id": "80b8bc96-db2e-4000-bbf4-012ceb6ee30a",
       "sourceNodeId": "serious-snail-95",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Mute"
     },
     {
-      "id": "e3fb02de-a06f-4ac1-b98b-19957ee4668f",
+      "id": "bf109398-6591-4fb1-b759-45d8251301aa",
       "sourceNodeId": "cowardly-eel-29",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Volume"
     },
     {
-      "id": "5a757862-b20d-46d1-904a-1eb671d4d23d",
+      "id": "57c761da-b20d-450d-9e44-04969007a683",
       "sourceNodeId": "warm-wolverine-28",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Position (s)"
     },
     {
-      "id": "83b18eb2-27d9-4f18-979e-d68168120697",
+      "id": "3bb23658-ed62-452c-9560-118758d6dba9",
       "sourceNodeId": "brave-dingo-23",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Position (%)"
     },
     {
-      "id": "16c8ffa8-ed59-4ac8-83f7-1ada68459deb",
+      "id": "32c702f6-0a6e-4bd7-90c8-3dbf177ad724",
       "sourceNodeId": "loud-ape-55",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Transcode video"
     },
     {
-      "id": "ac8c89a6-9c9e-4971-b444-6f52d2d17cc9",
+      "id": "586a5d9c-0227-476d-9646-4840cb3dbbbe",
       "sourceNodeId": "lazy-catfish-37",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get current frame"
     },
     {
-      "id": "85296eb5-0ba1-4fe8-9ea9-8b897ba6e9e6",
+      "id": "f82d182c-2a83-49a3-9b1e-ca8f6430a1c0",
       "sourceNodeId": "green-monkey-15",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get frames (interval)"
     },
     {
-      "id": "e5321cf2-21bb-4b37-aaa4-ba61f5350e1b",
+      "id": "8956dcb1-6c3b-4ae9-ad0d-12addd33a9d4",
       "sourceNodeId": "ugly-cow-13",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Interval (s)"
     },
     {
-      "id": "26cc7d98-d7d3-4e55-bd20-3c9b808c9959",
+      "id": "ce789c18-b11c-41d4-a831-f89bc864d4c7",
       "sourceNodeId": "mean-termite-34",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Get frames (count)"
     },
     {
-      "id": "93ccbb0b-71a9-4065-84db-d6034eadab97",
+      "id": "c25dba7e-fb8f-460f-a2e4-4165f59dd7aa",
       "sourceNodeId": "clever-warthog-59",
       "sourceSocketName": "Out",
       "targetNodeId": "ancient-donkey-29",
       "targetSocketName": "Count"
     },
     {
-      "id": "a79dd415-585e-4b5e-a6ae-2b749807a0f3",
+      "id": "852e4cf7-668e-48db-88e3-e1758fd0666c",
       "sourceNodeId": "ancient-donkey-29",
       "sourceSocketName": "Frame",
       "targetNodeId": "wise-chipmunk-74",
       "targetSocketName": "Image"
+    },
+    {
+      "id": "3cc17e0d-e34f-41f7-896f-bbb2765a77e4",
+      "sourceNodeId": "ancient-donkey-29",
+      "sourceSocketName": "Details",
+      "targetNodeId": "rare-penguin-16",
+      "targetSocketName": "JSON"
+    },
+    {
+      "id": "da7b584e-a968-46a5-b315-bfea4fff7da2",
+      "sourceNodeId": "rare-penguin-16",
+      "sourceSocketName": "videoWidth",
+      "targetNodeId": "pretty-shrimp-23",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": "4eb459ed-9967-41c6-9217-ef4e446cbfdf",
+      "sourceNodeId": "shy-walrus-44",
+      "sourceSocketName": "Out",
+      "targetNodeId": "pretty-shrimp-23",
+      "targetSocketName": "Input2"
+    },
+    {
+      "id": "2b434066-7e2a-47ba-816d-737d366f14cb",
+      "sourceNodeId": "rare-penguin-16",
+      "sourceSocketName": "videoHeight",
+      "targetNodeId": "curly-badger-34",
+      "targetSocketName": "Input1"
+    },
+    {
+      "id": "283c5752-cc37-4b9d-ad9e-76861a5d067e",
+      "sourceNodeId": "shy-walrus-44",
+      "sourceSocketName": "Out",
+      "targetNodeId": "curly-badger-34",
+      "targetSocketName": "Input2"
     }
   ]
 }
