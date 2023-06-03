@@ -4,8 +4,8 @@
     "showExecutionVisualisation": true,
     "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": -2955.2798075382416,
-      "y": -8943.45897335831
+      "x": -3021.845720022836,
+      "y": -8970.86846673432
     },
     "viewportScale": 0.5107719361297555
   },
@@ -607,7 +607,7 @@
           "socketType": "in",
           "name": "Offset X",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 400,
+          "data": 0,
           "visible": false
         },
         {
@@ -649,7 +649,7 @@
           "socketType": "in",
           "name": "Always Draw",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": true,
+          "data": false,
           "visible": false
         },
         {
@@ -826,14 +826,14 @@
           "socketType": "in",
           "name": "Offset X",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": 125.21675688200412,
+          "data": 187.1251968593465,
           "visible": false
         },
         {
           "socketType": "in",
           "name": "Offset Y",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
-          "data": -10.304470288810194,
+          "data": -0.6453770594863499,
           "visible": false
         },
         {
@@ -963,7 +963,7 @@
           "socketType": "in",
           "name": "Initial Value",
           "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0,\"maxValue\":100,\"stepSize\":0.01}}",
-          "data": 4,
+          "data": 3.04,
           "visible": false
         },
         {
