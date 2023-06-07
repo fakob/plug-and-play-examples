@@ -1391,7 +1391,7 @@
           "socketType": "in",
           "name": "Initial Selection",
           "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
-          "data": false,
+          "data": true,
           "visible": false
         },
         {
