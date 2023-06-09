@@ -4,10 +4,10 @@
     "showExecutionVisualisation": true,
     "showNonPresentationNodes": true,
     "viewportCenterPosition": {
-      "x": 119.67284616020834,
-      "y": -7613.792741706566
+      "x": 101.60208772415444,
+      "y": -5841.1156274965315
     },
-    "viewportScale": 0.18840367000966474
+    "viewportScale": 0.2489636902585984
   },
   "nodes": [
     {
@@ -169,7 +169,7 @@
       "updateBehaviour": {
         "update": true,
         "interval": true,
-        "intervalFrequency": 32
+        "intervalFrequency": 16
       }
     },
     {
@@ -382,7 +382,7 @@
       "updateBehaviour": {
         "update": false,
         "interval": true,
-        "intervalFrequency": 32
+        "intervalFrequency": 16
       }
     },
     {
@@ -461,8 +461,8 @@
       "id": "silent-cheetah-83",
       "name": "CodeEditor",
       "type": "CodeEditor",
-      "x": -1215.7632674123997,
-      "y": -7233.634909091084,
+      "x": -1115.5177239458849,
+      "y": -7530.105632225021,
       "width": 400,
       "height": 300,
       "socketArray": [
@@ -470,7 +470,7 @@
           "socketType": "in",
           "name": "input",
           "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
-          "data": "precision mediump float;\nuniform float time;\nvarying vec2 uv;\n\nvoid main() {\n\n  float modifiedTime = time/400.;\n  modifiedTime += uv.x * 40.; // lower frequency\n\n  // higher amplitude and moved downwards\n  float diff = sin(modifiedTime*0.5) - (uv.y - 0.5)*4.;\n  float distance = 1. - abs(diff);\n  if (diff > 0. ){\n      distance = 0.;\n  }\n\n  gl_FragColor = vec4(distance,pow(distance,1.3),pow(distance,1.8),1.0);\n\n}\n",
+          "data": "precision mediump float;\nuniform float time;\nvarying vec2 uv;\n\nvoid main() {\n\n  float modifiedTime = time/400.;\n  modifiedTime += uv.x * 40.; // lower frequency\n\n  // higher amplitude and moved downwards\n  float diff = sin(modifiedTime*0.5) - (uv.y - 0.5)*4.;\n  float distance = 1. - abs(diff);\n  if (diff > 0. ){\n      distance = 0.;\n  }\n\n  gl_FragColor = vec4(distance + sin(time/1000. + uv.y),pow(distance,1.3),pow(distance,1.8),1.0);\n\n}\n",
           "visible": true
         },
         {
@@ -642,36 +642,227 @@
         "interval": false,
         "intervalFrequency": 16
       }
+    },
+    {
+      "id": "honest-bobcat-62",
+      "name": "CodeEditor",
+      "type": "CodeEditor",
+      "x": -1394.184526816215,
+      "y": -5462.179634180158,
+      "width": 400,
+      "height": 300,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "input",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "precision mediump float;\nuniform float time;\nvarying vec2 uv;\n\n// stolen from here https://www.shadertoy.com/view/MdsXDM\nvoid main() {\t\n  \n\tvec2 pos = (uv.xy-0.5);\n  float mTime = time/1000.;\n\n\tvec2 cir = ((pos.xy*pos.xy+sin(uv.x*18.0+mTime)/25.0*sin(uv.y*7.0+mTime*1.5)/1.0)+uv.x*sin(mTime)/16.0+uv.y*sin(mTime*1.2)/16.0);\n\n\tfloat circles = (sqrt(abs(cir.x+cir.y*0.5)*25.0)*5.0);\n\n\tgl_FragColor = vec4(sin(circles*1.25+2.0),abs(sin(circles*1.0-1.0)-sin(circles)),abs(sin(circles)*1.0),1.0);\n}",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "output",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": false,
+        "intervalFrequency": 1000
+      }
+    },
+    {
+      "id": "green-pug-31",
+      "name": "Shader",
+      "type": "Shader",
+      "x": -855.1318301864994,
+      "y": -5591.709656042078,
+      "width": 160,
+      "height": 208,
+      "socketArray": [
+        {
+          "socketType": "in",
+          "name": "Uniforms",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Images",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Vertex",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "data": "\nprecision mediump float;\nattribute vec2 aVertexPosition;\nattribute vec3 aColor;\nattribute vec2 vUV;\n\nuniform mat3 translationMatrix;\nuniform mat3 projectionMatrix;\nuniform float time;\n\nvarying vec2 uv;\n\nvoid main() {\n  uv = vUV;\n  gl_Position = vec4((projectionMatrix * translationMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n}",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Fragment",
+          "dataType": "{\"class\":\"CodeType\",\"type\":{}}",
+          "defaultData": "\nprecision mediump float;\nuniform float time; // this one comes in by default\n\n// designate your input data yourself, it will be automatically fed in here\n//uniform float inputData;\nvarying vec2 uv;\n\nvoid main() {\ngl_FragColor = vec4(0.5,uv*vec2(sin(time),cos(time)),1.0);\n}\n\n",
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Width",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 1600,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Height",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1,\"maxValue\":1000,\"stepSize\":0.01}}",
+          "data": 1600,
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Offset X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": 568.6809580560548,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Offset Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-2000,\"maxValue\":2000,\"stepSize\":0.01}}",
+          "data": -395.12930809311274,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Scale Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":0.01,\"maxValue\":10,\"stepSize\":0.01}}",
+          "data": 1,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Angle",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":true,\"minValue\":-180,\"maxValue\":180,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Pivot",
+          "dataType": "{\"class\":\"EnumType\",\"type\":{\"options\":[{\"text\":\"top left\",\"value\":{\"x\":0,\"y\":0}},{\"text\":\"top center\",\"value\":{\"x\":0.5,\"y\":0}},{\"text\":\"top right\",\"value\":{\"x\":1,\"y\":0}},{\"text\":\"center left\",\"value\":{\"x\":0,\"y\":0.5}},{\"text\":\"center center\",\"value\":{\"x\":0.5,\"y\":0.5}},{\"text\":\"center right\",\"value\":{\"x\":1,\"y\":0.5}},{\"text\":\"bottom left\",\"value\":{\"x\":0,\"y\":1}},{\"text\":\"bottom center\",\"value\":{\"x\":0.5,\"y\":1}},{\"text\":\"bottom right\",\"value\":{\"x\":1,\"y\":1}}]}}",
+          "data": "top left",
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Always Draw",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": true,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Absolute Positions",
+          "dataType": "{\"class\":\"BooleanType\",\"type\":{}}",
+          "data": false,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Skew X",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":1.5707963267948966,\"maxValue\":1.5707963267948966,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Skew Y",
+          "dataType": "{\"class\":\"NumberType\",\"type\":{\"round\":false,\"minValue\":-1.5707963267948966,\"maxValue\":1.5707963267948966,\"stepSize\":0.01}}",
+          "data": 0,
+          "visible": false
+        },
+        {
+          "socketType": "in",
+          "name": "Injected Data",
+          "dataType": "{\"class\":\"ArrayType\",\"type\":{}}",
+          "data": [],
+          "visible": true
+        },
+        {
+          "socketType": "in",
+          "name": "Meta",
+          "dataType": "{\"class\":\"JSONType\",\"type\":{}}",
+          "data": {},
+          "visible": false
+        },
+        {
+          "socketType": "out",
+          "name": "Graphics",
+          "dataType": "{\"class\":\"DeferredPixiType\",\"type\":{}}",
+          "visible": true
+        }
+      ],
+      "updateBehaviour": {
+        "update": true,
+        "interval": true,
+        "intervalFrequency": 16
+      }
     }
   ],
   "links": [
     {
-      "id": "57db2c69-c5ae-4477-9c6c-5614e21bc7d7",
+      "id": "1eff47ec-095f-44d8-be11-6d63e22ec256",
       "sourceNodeId": "silent-cheetah-83",
       "sourceSocketName": "output",
       "targetNodeId": "angry-bat-66",
       "targetSocketName": "Fragment"
     },
     {
-      "id": "f9f7110f-1bf0-45d1-bdd8-8177305025a0",
+      "id": "2ca8a5c6-c1ec-437f-8201-b3b181a6e90f",
       "sourceNodeId": "fat-cougar-96",
       "sourceSocketName": "OutData",
       "targetNodeId": "ancient-parrot-23",
       "targetSocketName": "Images"
     },
     {
-      "id": "811e4967-78eb-4b23-bc4d-5f6fdc27e301",
+      "id": "7eff149d-3f35-48a1-a048-2f9cef88ab9b",
       "sourceNodeId": "smart-falcon-100",
       "sourceSocketName": "output",
       "targetNodeId": "ancient-parrot-23",
       "targetSocketName": "Fragment"
     },
     {
-      "id": "784b1cfb-c29d-4935-a55f-5fc57be6699f",
+      "id": "f5c99b5f-5184-4ed0-8a6e-a4cb4f1c587f",
       "sourceNodeId": "orange-dog-72",
       "sourceSocketName": "Image",
       "targetNodeId": "fat-cougar-96",
       "targetSocketName": "a"
+    },
+    {
+      "id": "6150b8b8-02fa-4ad1-bfb0-0c96393369e0",
+      "sourceNodeId": "honest-bobcat-62",
+      "sourceSocketName": "output",
+      "targetNodeId": "green-pug-31",
+      "targetSocketName": "Fragment"
     }
   ]
 }
